@@ -4,12 +4,16 @@ from typing import Any, Dict, List, Optional
 from tools.toolbox import Toolbox
 from tools.FMInfo.fminfo import FMInfo
 from tools.Internet_Connection_Tool.internet_connection_tool import InternetConnectionTool
+from tools.Azure_Connection_Tool.azure_connection_tool import AzureConnectionTool
+from tools.Domain_Connection_Tool.domain_connection_tool import DomainConnectionTool
 
 app = FastAPI()
 toolbox = Toolbox()
 
 toolbox.register_tool(FMInfo)
 toolbox.register_tool(InternetConnectionTool)
+toolbox.register_tool(AzureConnectionTool)
+toolbox.register_tool(DomainConnectionTool)
 
 # Toolbox API
 @app.get("/tools")
