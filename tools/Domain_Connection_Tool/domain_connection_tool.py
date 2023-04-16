@@ -1,6 +1,6 @@
 import platform
-import subprocess
 import re
+import os
 from tools.base_tool.base_tool import BaseTool
 
 
@@ -11,25 +11,26 @@ class DomainConnectionTool(BaseTool):
     @staticmethod
     def execute():
         system = platform.system()
-        connection_status = {"connection_type": None}
+        connection_status = {"zscaler_authenticated": False}
 
         if system == "Windows":
-            vpn_adapters = subprocess.check_output("ipconfig /all", shell=True, text=True)
-            routing_table = subprocess.check_output("route print", shell=True, text=True)
-
-            is_vpn = re.search(r"Description\s+: .*(VPN|TAP|TUNNEL|Tunneling)", vpn_adapters, re.IGNORECASE)
-            is_zscaler = re.search(r"\b0\.0\.0\.0\b.*\b100\.64\.", routing_table)
-
+            log_path = os.path.expandvars(r"%ProgramData%\zscaler\Zscaler Client Connector\logs\zcc.log")
         elif system == "Darwin":
-            vpn_adapters = subprocess.check_output("ifconfig", shell=True, text=True)
-            routing_table = subprocess.check_output("netstat -rn", shell=True, text=True)
+            log_path = "/Library/Application Support/zscaler/Zscaler Client Connector/logs/zcc.log"
+        else:
+            return connection_status
 
-            is_vpn = re.search(r"utun\d+", vpn_adapters)
-            is_zscaler = re.search(r"\b0\.0\.0\.0\b.*\b100\.64\.", routing_table)
+        try:
+            with open(log_path, "r") as log_file:
+                log_data = log_file.read()
 
-        if is_vpn:
-            connection_status["connection_type"] = "VPN"
-        elif is_zscaler:
-            connection_status["connection_type"] = "ZPA"
+            authenticated_pattern = r"ZPA\s+authenticated"
+            is_authenticated = re.search(authenticated_pattern, log_data, re.IGNORECASE)
+
+            if is_authenticated:
+                connection_status["zscaler_authenticated"] = True
+
+        except FileNotFoundError:
+            pass
 
         return connection_status
