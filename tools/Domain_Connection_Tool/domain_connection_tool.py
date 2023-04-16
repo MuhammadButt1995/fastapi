@@ -1,7 +1,7 @@
 import platform
 import subprocess
 import re
-from tools.base_tool.base_tool import BaseTool
+from tools.base_tool import BaseTool
 
 
 class DomainConnectionTool(BaseTool):
@@ -9,24 +9,27 @@ class DomainConnectionTool(BaseTool):
         super().__init__('DomainConnectionTool', 'Check if connected to ZPA or VPN', 'domain_connection_tool.png')
 
     @staticmethod
+    def check_zscaler_routes(system):
+        zscaler_route_pattern = re.compile(r'100\.64\.')
+
+        if system == 'Windows':
+            routes_output = subprocess.check_output('route print', shell=True, text=True)
+        elif system == 'Darwin':
+            routes_output = subprocess.check_output('netstat -rn', shell=True, text=True)
+        else:
+            return False
+
+        if zscaler_route_pattern.search(routes_output):
+            return True
+
+        return False
+
+    @staticmethod
     def execute():
         system = platform.system()
         connection_status = {"zscaler_authenticated": False}
 
-        if system == "Windows":
-            cmd = "ipconfig /all"
-        elif system == "Darwin":
-            cmd = "scutil --dns"
-        else:
-            return connection_status
-
-        result = subprocess.check_output(cmd, shell=True, text=True)
-
-        zscaler_dns_pattern = r"100\.(6[4-9]|[7-9][0-9]|1[0-1][0-9]|12[0-7])\.[0-9]+\.[0-9]+"
-
-        is_zscaler_dns = re.search(zscaler_dns_pattern, result)
-
-        if is_zscaler_dns:
-            connection_status["zscaler_authenticated"] = True
+        if system == "Windows" or system == "Darwin":
+            connection_status["zscaler_authenticated"] = DomainConnectionTool.check_zscaler_routes(system)
 
         return connection_status
