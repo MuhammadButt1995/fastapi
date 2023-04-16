@@ -3,6 +3,7 @@ import psutil
 import socket
 import datetime
 from getpass import getuser
+from typing import Dict
 from tools.base_tool.base_tool import BaseTool
 
 class FMInfo(BaseTool):
@@ -92,6 +93,17 @@ class FMInfo(BaseTool):
 
         return manufacturer, model, serial_number
 
-    def get_networking_data(self):
-        ip_addresses = [addr[4][0] for addr in socket.getaddrinfo(socket.gethostname(), None, family=socket.AF_INET)]
-        return {"ip_addresses": ip_addresses}
+    @staticmethod
+    def get_networking_data():
+        active_adapters = {}
+        other_adapters = {}
+        
+        for interface, addrs in psutil.net_if_addrs().items():
+            for addr in addrs:
+                if addr.family == socket.AF_INET:
+                    if psutil.net_if_stats()[interface].isup:
+                        active_adapters[interface] = addr.address
+                    else:
+                        other_adapters[interface] = addr.address
+
+        return {"active_adapters": active_adapters, "other_adapters": other_adapters}
