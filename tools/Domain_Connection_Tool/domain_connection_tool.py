@@ -1,17 +1,16 @@
 import platform
 import subprocess
-from base_tool.base_tool import BaseTool
+from tools.base_tool.base_tool import BaseTool
 
 
 class DomainConnectionTool(BaseTool):
 
     def __init__(self):
-        super().__init__()
-        self.name = "Domain Connection Tool"
-        self.description = "Check if the user is connected to VPN or ZPA"
-        self.icon = "domain.png"
+        super().__init__(name="Domain Connection Tool", description="Check if the user is connected to VPN or ZPA", icon="domainconnectiontool.png")
 
-    def check_vpn_status(self, system):
+    @staticmethod
+    def check_vpn_status():
+        system = platform.system()
         target_machine = "pwsys-apcm12-27"
 
         if system == "Windows":
@@ -27,9 +26,10 @@ class DomainConnectionTool(BaseTool):
         except subprocess.CalledProcessError:
             return False
 
-    def check_zpa_connection() -> bool:
+    @staticmethod
+    def check_zpa_connection():
         system = platform.system()
-        
+
         if system == "Windows":
             try:
                 output = subprocess.check_output("net user %USERNAME% /domain", shell=True, text=True)
@@ -43,13 +43,10 @@ class DomainConnectionTool(BaseTool):
             if "OriginalNodeName" in output:
                 return True
 
-        return False
-
     def execute(self):
-        system = platform.system()
-        if self.check_vpn_status(system):
+        if self.check_vpn_status():
             return {"connection_type": "VPN"}
-        elif self.check_zpa_status(system):
+        elif self.check_zpa_connection():
             return {"connection_type": "ZPA"}
         else:
             return {"connection_type": None}
