@@ -1,7 +1,6 @@
 import subprocess
 import re
 import platform
-import json
 from tools.base_tool.base_tool import BaseTool
 
 
