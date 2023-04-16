@@ -1,37 +1,55 @@
+import os
 import platform
 import subprocess
-import re
-from tools.base_tool.base_tool import BaseTool
-
+import json
+from typing import Dict
+from tools.base_tool import BaseTool
 
 class DomainConnectionTool(BaseTool):
-    def __init__(self):
-        super().__init__('DomainConnectionTool', 'Check if connected to ZPA or VPN', 'domain_connection_tool.png')
+    @staticmethod
+    def execute() -> Dict[str, str]:
+        connection_type = None
+
+        # Check for VPN connection
+        if DomainConnectionTool.check_vpn_connection():
+            connection_type = "VPN"
+        else:
+            # Check for ZPA connection
+            if DomainConnectionTool.check_zpa_connection():
+                connection_type = "ZPA"
+
+        return {"connection_type": connection_type}
 
     @staticmethod
-    def check_zscaler_connection(system):
-        zscaler_process_pattern = re.compile(r'Zscaler')
+    def check_vpn_connection() -> bool:
+        system = platform.system()
 
-        if system == 'Windows':
-            process_output = subprocess.check_output('tasklist /SVC /FO CSV', shell=True, text=True)
-            netstat_output = subprocess.check_output('netstat -b -n', shell=True, text=True)
-        elif system == 'Darwin':
-            process_output = subprocess.check_output('ps aux', shell=True, text=True)
-            netstat_output = subprocess.check_output('netstat -n -p TCP', shell=True, text=True)
-        else:
-            return False
-
-        if zscaler_process_pattern.search(process_output) and zscaler_process_pattern.search(netstat_output):
-            return True
+        if system == "Windows":
+            output = subprocess.check_output("netsh interface show interface", shell=True, text=True)
+            if "VPN" in output:
+                return True
+        elif system == "Darwin":
+            output = subprocess.check_output("ifconfig -a", shell=True, text=True)
+            if "utun" in output:
+                return True
 
         return False
 
     @staticmethod
-    def execute():
+    def check_zpa_connection() -> bool:
         system = platform.system()
-        connection_status = {"zscaler_authenticated": False}
+        
+        if system == "Windows":
+            try:
+                output = subprocess.check_output("net user %USERNAME% /domain", shell=True, text=True)
+            except subprocess.CalledProcessError:
+                return False
 
-        if system == "Windows" or system == "Darwin":
-            connection_status["zscaler_authenticated"] = DomainConnectionTool.check_zscaler_connection(system)
+            if "User name" in output:
+                return True
+        elif system == "Darwin":
+            output = subprocess.check_output("dscl /Search -read /Users/$(whoami)", shell=True, text=True)
+            if "OriginalNodeName" in output:
+                return True
 
-        return connection_status
+        return False
