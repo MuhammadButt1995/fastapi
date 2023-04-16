@@ -1,39 +1,34 @@
-import platform
 import subprocess
-from tools.toolbox import BaseTool
+import re
+import platform
+import json
+from tools.base_tool.base_tool import BaseTool
 
 
 class AzureConnectionTool(BaseTool):
     def __init__(self):
-        super().__init__(
-            name="AzureConnectionTool",
-            description="A tool to check if the user and machine are connected to Azure AD.",
-            icon="azure_connection_tool.png",
-        )
+        super().__init__('AzureConnectionTool', 'Check Azure AD join and registration status', 'azure_connection_tool.png')
 
     @staticmethod
-    def check_azure_ad_join_status():
-        if platform.system() == "Windows":
-            result = subprocess.check_output(["dsregcmd", "/status"]).decode("utf-8")
-            lines = result.split("\r\n")
-            azure_ad_status = {"Machine": {}, "User": {}}
+    def execute():
+        system = platform.system()
 
-            for line in lines:
-                if ": " in line:
-                    key, value = line.split(": ", 1)
-                    key = key.strip()
-                    value = value.strip()
+        if system == "Windows":
+            result = subprocess.check_output("dsregcmd /status", shell=True, text=True)
+            azure_ad_joined = re.search(r"AzureAdJoined\s+:\s+(\w+)", result)
+            azure_ad_registered = re.search(r"IsDeviceJoined\s+:\s+(\w+)", result)
+            domain_joined = re.search(r"DomainJoined\s+:\s+(\w+)", result)
+            azure_ad_user = re.search(r"IsUserAzureAD\s+:\s+(\w+)", result)
 
-                    if "AzureAdJoined" in key or "WamDefaultSet" in key:
-                        azure_ad_status["Machine"][key] = value == "Yes"
-                    elif "AzureAdPrt" in key:
-                        azure_ad_status["User"][key] = value == "Yes"
+            status = {
+                "azure_ad_joined": azure_ad_joined.group(1) == "YES" if azure_ad_joined else False,
+                "azure_ad_registered": azure_ad_registered.group(1) == "YES" if azure_ad_registered else False,
+                "domain_joined": domain_joined.group(1) == "YES" if domain_joined else False,
+                "azure_ad_user": azure_ad_user.group(1) == "YES" if azure_ad_user else False,
+            }
 
-            return azure_ad_status
+            return status
 
-        elif platform.system() == "Darwin":
-            # macOS implementation is not provided as Azure AD join is not supported on macOS
-            return {"error": "Azure AD join is not supported on macOS"}
-
-    def execute(self):
-        return self.check_azure_ad_join_status()
+        elif system == "Darwin":
+            # Add macOS implementation if needed
+            pass
