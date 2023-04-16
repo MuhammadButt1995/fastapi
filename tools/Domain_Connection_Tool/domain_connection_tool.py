@@ -44,9 +44,9 @@ class DomainConnectionTool(BaseTool):
                 return True
 
     def execute(self):
-        if self.check_vpn_status():
-            return {"connection_type": "VPN"}
-        elif self.check_zpa_connection():
+        if self.check_zpa_connection():
             return {"connection_type": "ZPA"}
+        elif self.check_vpn_status():
+            return {"connection_type": "VPN"}
         else:
             return {"connection_type": None}
