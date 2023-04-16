@@ -9,17 +9,17 @@ class DomainConnectionTool(BaseTool):
         super().__init__('DomainConnectionTool', 'Check if connected to ZPA or VPN', 'domain_connection_tool.png')
 
     @staticmethod
-    def check_zscaler_routes(system):
-        zscaler_route_pattern = re.compile(r'100\.64\.')
+    def check_zscaler_process(system):
+        zscaler_process_pattern = re.compile(r'Zscaler')
 
         if system == 'Windows':
-            routes_output = subprocess.check_output('route print', shell=True, text=True)
+            process_output = subprocess.check_output('tasklist', shell=True, text=True)
         elif system == 'Darwin':
-            routes_output = subprocess.check_output('netstat -rn', shell=True, text=True)
+            process_output = subprocess.check_output('ps aux', shell=True, text=True)
         else:
             return False
 
-        if zscaler_route_pattern.search(routes_output):
+        if zscaler_process_pattern.search(process_output):
             return True
 
         return False
@@ -30,6 +30,6 @@ class DomainConnectionTool(BaseTool):
         connection_status = {"zscaler_authenticated": False}
 
         if system == "Windows" or system == "Darwin":
-            connection_status["zscaler_authenticated"] = DomainConnectionTool.check_zscaler_routes(system)
+            connection_status["zscaler_authenticated"] = DomainConnectionTool.check_zscaler_process(system)
 
         return connection_status
