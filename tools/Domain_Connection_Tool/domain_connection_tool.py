@@ -27,19 +27,23 @@ class DomainConnectionTool(BaseTool):
         except subprocess.CalledProcessError:
             return False
 
-    def check_zpa_status(self, system):
+    def check_zpa_connection() -> bool:
+        system = platform.system()
+        
         if system == "Windows":
-            command = 'net user %USERNAME% /domain'
-        elif system == "Darwin":
-            command = 'id -Gn'
-        else:
-            return False
+            try:
+                output = subprocess.check_output("net user %USERNAME% /domain", shell=True, text=True)
+            except subprocess.CalledProcessError:
+                return False
 
-        try:
-            output = subprocess.check_output(command, shell=True, text=True).strip()
-            return "ZPA" in output
-        except subprocess.CalledProcessError:
-            return False
+            if "User name" in output:
+                return True
+        elif system == "Darwin":
+            output = subprocess.check_output("dscl /Search -read /Users/$(whoami)", shell=True, text=True)
+            if "OriginalNodeName" in output:
+                return True
+
+        return False
 
     def execute(self):
         system = platform.system()
