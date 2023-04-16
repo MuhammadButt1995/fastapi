@@ -7,6 +7,9 @@ class DomainConnectionTool(BaseTool):
 
     def __init__(self):
         super().__init__()
+        self.name = "Domain Connection Tool"
+        self.description = "Check if the user is connected to VPN or ZPA"
+        self.icon = "domain.png"
 
     def check_vpn_status(self, system):
         target_machine = "pwsys-apcm12-27"
