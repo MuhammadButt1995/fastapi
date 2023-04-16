@@ -1,55 +1,48 @@
-import os
 import platform
 import subprocess
-import json
-from typing import Dict
-from tools.base_tool import BaseTool
+from base_tool.base_tool import BaseTool
+
 
 class DomainConnectionTool(BaseTool):
-    @staticmethod
-    def execute() -> Dict[str, str]:
-        connection_type = None
 
-        # Check for VPN connection
-        if DomainConnectionTool.check_vpn_connection():
-            connection_type = "VPN"
+    def __init__(self):
+        super().__init__()
+
+    def check_vpn_status(self, system):
+        target_machine = "pwsys-apcm12-27"
+
+        if system == "Windows":
+            command = f'powershell.exe Test-Connection -ComputerName "{target_machine}" -Count 1 -Quiet'
+        elif system == "Darwin":
+            command = f'ping -c 1 {target_machine} > /dev/null && echo True || echo False'
         else:
-            # Check for ZPA connection
-            if DomainConnectionTool.check_zpa_connection():
-                connection_type = "ZPA"
+            return False
 
-        return {"connection_type": connection_type}
+        try:
+            output = subprocess.check_output(command, shell=True, text=True).strip()
+            return output.lower() == "true"
+        except subprocess.CalledProcessError:
+            return False
 
-    @staticmethod
-    def check_vpn_connection() -> bool:
-        system = platform.system()
-
+    def check_zpa_status(self, system):
         if system == "Windows":
-            output = subprocess.check_output("netsh interface show interface", shell=True, text=True)
-            if "VPN" in output:
-                return True
+            command = 'net user %USERNAME% /domain'
         elif system == "Darwin":
-            output = subprocess.check_output("ifconfig -a", shell=True, text=True)
-            if "utun" in output:
-                return True
+            command = 'id -Gn'
+        else:
+            return False
 
-        return False
+        try:
+            output = subprocess.check_output(command, shell=True, text=True).strip()
+            return "ZPA" in output
+        except subprocess.CalledProcessError:
+            return False
 
-    @staticmethod
-    def check_zpa_connection() -> bool:
+    def execute(self):
         system = platform.system()
-        
-        if system == "Windows":
-            try:
-                output = subprocess.check_output("net user %USERNAME% /domain", shell=True, text=True)
-            except subprocess.CalledProcessError:
-                return False
-
-            if "User name" in output:
-                return True
-        elif system == "Darwin":
-            output = subprocess.check_output("dscl /Search -read /Users/$(whoami)", shell=True, text=True)
-            if "OriginalNodeName" in output:
-                return True
-
-        return False
+        if self.check_vpn_status(system):
+            return {"connection_type": "VPN"}
+        elif self.check_zpa_status(system):
+            return {"connection_type": "ZPA"}
+        else:
+            return {"connection_type": None}
