@@ -1,6 +1,6 @@
 import platform
+import subprocess
 import re
-import os
 from tools.base_tool.base_tool import BaseTool
 
 
@@ -14,23 +14,19 @@ class DomainConnectionTool(BaseTool):
         connection_status = {"zscaler_authenticated": False}
 
         if system == "Windows":
-            log_path = os.path.expandvars(r"%ProgramData%\zscaler\Zscaler Client Connector\logs\zcc.log")
+            cmd = "ipconfig /all"
         elif system == "Darwin":
-            log_path = "/Library/Application Support/zscaler/Zscaler Client Connector/logs/zcc.log"
+            cmd = "scutil --dns"
         else:
             return connection_status
 
-        try:
-            with open(log_path, "r") as log_file:
-                log_data = log_file.read()
+        result = subprocess.check_output(cmd, shell=True, text=True)
 
-            authenticated_pattern = r"ZPA\s+authenticated"
-            is_authenticated = re.search(authenticated_pattern, log_data, re.IGNORECASE)
+        zscaler_dns_pattern = r"100\.(6[4-9]|[7-9][0-9]|1[0-1][0-9]|12[0-7])\.[0-9]+\.[0-9]+"
 
-            if is_authenticated:
-                connection_status["zscaler_authenticated"] = True
+        is_zscaler_dns = re.search(zscaler_dns_pattern, result)
 
-        except FileNotFoundError:
-            pass
+        if is_zscaler_dns:
+            connection_status["zscaler_authenticated"] = True
 
         return connection_status
