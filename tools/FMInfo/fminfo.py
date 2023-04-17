@@ -3,7 +3,6 @@ import psutil
 import socket
 import datetime
 from getpass import getuser
-from typing import Dict
 from tools.base_tool.base_tool import BaseTool
 
 class FMInfo(BaseTool):
@@ -13,7 +12,6 @@ class FMInfo(BaseTool):
             description="Fetches and displays system and user information.",
             icon="fm_info.png",
         )
-
     def execute(self, section: str):
         section_methods = {
             "user": self.get_user_data,
@@ -107,3 +105,6 @@ class FMInfo(BaseTool):
                         other_adapters[interface] = addr.address
 
         return {"active_adapters": active_adapters, "other_adapters": other_adapters}
+    
+
+    
