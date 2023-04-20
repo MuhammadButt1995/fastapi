@@ -1,6 +1,5 @@
 import platform
 import subprocess
-import socket
 from tools.base_tool.base_tool import BaseTool
 import winreg
 
@@ -16,11 +15,11 @@ class DomainConnectionTool(BaseTool):
         target_url = "zsproxy.company.com"
 
         if system == "Windows":
-            flush_command = "ipconfig /flushdns"
+            flush_command = "ipconfig /flushdns > NUL"
             ping_command = f'ping -n 1 {target_url} > NUL && echo True || echo False'
             command = f'{flush_command} && {ping_command}'
         elif system == "Darwin":
-            flush_command = "sudo killall -HUP mDNSResponder"
+            flush_command = "sudo killall -HUP mDNSResponder > /dev/null"
             ping_command = f'ping -c 1 {target_url} > /dev/null && echo True || echo False'
             command = f'{flush_command} && {ping_command}'
         else:
