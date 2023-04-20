@@ -1,8 +1,6 @@
 import platform
 import subprocess
 from tools.toolbox import BaseTool
-
-
 class InternetConnectionTool(BaseTool):
     def __init__(self):
         super().__init__(
@@ -10,7 +8,6 @@ class InternetConnectionTool(BaseTool):
             description="A tool to check the user's internet connection status.",
             icon="internet_connection_tool.png",
         )
-
     @staticmethod
     def get_internet_details():
         if platform.system() == "Windows":

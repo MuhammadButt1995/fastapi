@@ -1,22 +1,28 @@
 import platform
 import subprocess
+import socket
 from tools.base_tool.base_tool import BaseTool
-
+import winreg
 
 class DomainConnectionTool(BaseTool):
 
     def __init__(self):
         super().__init__(name="Domain Connection Tool", description="Check if the user is connected to VPN or ZPA", icon="domainconnectiontool.png")
 
+    
     @staticmethod
     def check_vpn_status():
         system = platform.system()
-        target_machine = "pwsys-apcm12-27"
+        target_url = "zsproxy.company.com"
 
         if system == "Windows":
-            command = f'powershell.exe Test-Connection -ComputerName "{target_machine}" -Count 1 -Quiet'
+            flush_command = "ipconfig /flushdns"
+            ping_command = f'ping -n 1 {target_url} > NUL && echo True || echo False'
+            command = f'{flush_command} && {ping_command}'
         elif system == "Darwin":
-            command = f'ping -c 1 {target_machine} > /dev/null && echo True || echo False'
+            flush_command = "sudo killall -HUP mDNSResponder"
+            ping_command = f'ping -c 1 {target_url} > /dev/null && echo True || echo False'
+            command = f'{flush_command} && {ping_command}'
         else:
             return False
 
@@ -32,16 +38,23 @@ class DomainConnectionTool(BaseTool):
 
         if system == "Windows":
             try:
-                output = subprocess.check_output("net user %USERNAME% /domain", shell=True, text=True)
-            except subprocess.CalledProcessError:
+                registry = winreg.ConnectRegistry(None, winreg.HKEY_CURRENT_USER)
+                zscaler_key = winreg.OpenKey(registry, r"SOFTWARE\Zscaler\App")
+                zpa_state, _ = winreg.QueryValueEx(zscaler_key, "ZPA_State")
+                winreg.CloseKey(zscaler_key)
+                winreg.CloseKey(registry)
+
+                if zpa_state == "TUNNEL_FORWARDING":
+                    return True
+            except FileNotFoundError:
                 return False
 
-            if "User name" in output:
-                return True
         elif system == "Darwin":
             output = subprocess.check_output("dscl /Search -read /Users/$(whoami)", shell=True, text=True)
             if "OriginalNodeName" in output:
                 return True
+
+        return False
 
     def execute(self):
         if self.check_zpa_connection():
