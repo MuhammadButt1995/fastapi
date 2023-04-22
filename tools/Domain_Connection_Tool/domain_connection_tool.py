@@ -1,12 +1,15 @@
 import platform
 import subprocess
+from observable import Observable
+import asyncio
 from tools.base_tool.base_tool import BaseTool
 import winreg
 
-class DomainConnectionTool(BaseTool):
-
+class DomainConnectionTool(Observable, BaseTool):
     def __init__(self):
-        super().__init__(name="Domain Connection Tool", description="Check if the user is connected to VPN or ZPA", icon="domainconnectiontool.png")
+        Observable.__init__(self)
+        BaseTool.__init__(self, name="Domain Connection Tool", description="Check if the user can connect to a domain", icon="domainconnectiontool.png")
+        self._previous_status = None
 
     
     @staticmethod
@@ -62,3 +65,11 @@ class DomainConnectionTool(BaseTool):
             return {"connection_type": "VPN"}
         else:
             return {"connection_type": None}
+        
+    async def monitor_status(self, domain: str):
+        while True:
+            status = self.execute(domain)
+            if status != self._previous_status:
+                self._previous_status = status
+                await self.notify(status)
+            await asyncio.sleep(5)  # Adjust the interval as needed

@@ -1,15 +1,16 @@
 import platform
 import subprocess
+import asyncio
+from observable import Observable
 from tools.toolbox import BaseTool
-class InternetConnectionTool(BaseTool):
+class InternetConnectionTool(Observable, BaseTool):
     def __init__(self):
-        super().__init__(
-            name="InternetConnectionTool",
-            description="A tool to check the user's internet connection status.",
-            icon="internet_connection_tool.png",
-        )
+        Observable.__init__(self)
+        BaseTool.__init__(self, name="Internet Connection Tool", description="Check if the user is connected to the internet", icon="internetconnectiontool.png")
+        self._previous_status = None
+
     @staticmethod
-    def get_internet_details():
+    def check_internet_connection():
         if platform.system() == "Windows":
             cmd_output = subprocess.check_output(["netsh", "wlan", "show", "interfaces"]).decode("utf-8")
             lines = cmd_output.split("\r\n")
@@ -75,4 +76,12 @@ class InternetConnectionTool(BaseTool):
             return {"wifi_details": wifi_details, "connection": connection}
 
     def execute(self):
-        return self.get_internet_details()
+        return self.check_internet_connection()
+    
+    async def monitor_status(self):
+        while True:
+            status = self.check_internet_connection()
+            if status != self._previous_status:
+                self._previous_status = status
+                await self.notify(status)
+            await asyncio.sleep(5)  # Adjust the interval as needed
