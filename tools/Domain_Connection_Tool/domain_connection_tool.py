@@ -58,17 +58,29 @@ class DomainConnectionTool(Observable, BaseTool):
 
         return False
 
-    def execute(self):
+    def _get_connection_type(self):
         if self.check_zpa_connection():
-            return {"connection_type": "ZPA"}
+            return "ZPA"
         elif self.check_vpn_status():
-            return {"connection_type": "VPN"}
+            return "VPN"
         else:
-            return {"connection_type": None}
+            return None
+
+    async def execute(self):
+        async def _execute_with_retry(retries, delay):
+            for _ in range(retries):
+                result = self._get_connection_type()
+                if result is not None:
+                    return result
+                await asyncio.sleep(delay)
+            return None
+
+        connection_type = await _execute_with_retry(retries=3, delay=1)
+        return {"connection_type": connection_type}
         
     async def monitor_status(self):
         while True:
-            status = self.execute()
+            status = await self.execute()
             if status != self._previous_status:
                 self._previous_status = status
                 await self.notify(status)
