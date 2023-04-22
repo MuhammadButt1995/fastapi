@@ -27,6 +27,7 @@ toolbox.register_tool(DomainConnectionTool)
 
 internet_connection_tool = InternetConnectionTool()
 domain_connection_tool = DomainConnectionTool()
+azure_connection_tool = AzureConnectionTool()
 
 class WebSocketObserver(Observer):
     def __init__(self, websocket: WebSocket):
@@ -73,3 +74,14 @@ async def websocket_domain_endpoint(websocket: WebSocket):
         await domain_connection_tool.monitor_status()
     finally:
         domain_connection_tool.detach(observer)
+
+@app.websocket("/azure_connection/")
+async def websocket_domain_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    observer = WebSocketObserver(websocket)
+    domain_connection_tool.attach(observer)
+
+    try:
+        await azure_connection_tool.monitor_status()
+    finally:
+        azure_connection_tool.detach(observer)
