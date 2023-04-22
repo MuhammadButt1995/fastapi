@@ -3,15 +3,19 @@ import psutil
 import socket
 import datetime
 from getpass import getuser
+import asyncio
+from observable import Observable
 from tools.base_tool.base_tool import BaseTool
 
-class FMInfo(BaseTool):
+class FMInfo(Observable, BaseTool):
     def __init__(self):
         super().__init__(
             name="FMInfo",
             description="Fetches and displays system and user information.",
             icon="fm_info.png",
         )
+        self._previous_network_data = None
+
     def execute(self, section: str):
         section_methods = {
             "user": self.get_user_data,
@@ -105,6 +109,14 @@ class FMInfo(BaseTool):
                         other_adapters[interface] = addr.address
 
         return {"active_adapters": active_adapters, "other_adapters": other_adapters}
+    
+    async def monitor_networking_data(self):
+        while True:
+            network_data = self.get_networking_data()
+            if network_data != self._previous_network_data:
+                self._previous_network_data = network_data
+                await self.notify(network_data)
+            await asyncio.sleep(5)  # Adjust the interval as needed
     
 
     

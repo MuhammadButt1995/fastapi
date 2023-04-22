@@ -37,7 +37,8 @@ class AzureConnectionTool(Observable, BaseTool):
 
     async def monitor_status(self):
         while True:
-            status = await self.execute()
+            status = self.execute()
+            print("monitoring status")
             if status != self._previous_status:
                 self._previous_status = status
                 await self.notify(status)

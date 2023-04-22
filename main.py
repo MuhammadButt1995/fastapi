@@ -28,6 +28,7 @@ toolbox.register_tool(DomainConnectionTool)
 internet_connection_tool = InternetConnectionTool()
 domain_connection_tool = DomainConnectionTool()
 azure_connection_tool = AzureConnectionTool()
+fminfo = FMInfo()
 
 class WebSocketObserver(Observer):
     def __init__(self, websocket: WebSocket):
@@ -79,9 +80,20 @@ async def websocket_domain_endpoint(websocket: WebSocket):
 async def websocket_domain_endpoint(websocket: WebSocket):
     await websocket.accept()
     observer = WebSocketObserver(websocket)
-    domain_connection_tool.attach(observer)
+    azure_connection_tool.attach(observer)
 
     try:
         await azure_connection_tool.monitor_status()
     finally:
         azure_connection_tool.detach(observer)
+
+@app.websocket("/fminfo_networking/")
+async def websocket_fminfo_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    observer = WebSocketObserver(websocket)
+    fminfo.attach(observer)
+
+    try:
+        await fminfo.monitor_networking_data()
+    finally:
+        fminfo.detach(observer)
