@@ -63,13 +63,13 @@ async def websocket_endpoint(websocket: WebSocket):
     finally:
         internet_connection_tool.detach(observer)
 
-@app.websocket("/domain_connection/{domain}")
-async def websocket_domain_endpoint(websocket: WebSocket, domain: str):
+@app.websocket("/domain_connection/")
+async def websocket_domain_endpoint(websocket: WebSocket):
     await websocket.accept()
     observer = WebSocketObserver(websocket)
     domain_connection_tool.attach(observer)
 
     try:
-        await domain_connection_tool.monitor_status(domain)
+        await domain_connection_tool.monitor_status()
     finally:
         domain_connection_tool.detach(observer)

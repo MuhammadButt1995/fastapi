@@ -66,9 +66,9 @@ class DomainConnectionTool(Observable, BaseTool):
         else:
             return {"connection_type": None}
         
-    async def monitor_status(self, domain: str):
+    async def monitor_status(self):
         while True:
-            status = self.execute(domain)
+            status = self.execute()
             if status != self._previous_status:
                 self._previous_status = status
                 await self.notify(status)
