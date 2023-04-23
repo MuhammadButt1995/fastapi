@@ -5,6 +5,7 @@ from observable import Observer
 from tools.toolbox import Toolbox
 from tools.FMInfo.fminfo import FMInfo
 from tools.Internet_Connection_Tool.internet_connection_tool import InternetConnectionTool
+from tools.Internet_Details_Tool.internet_details_tool import InternetDetailsTool
 from tools.Azure_Connection_Tool.azure_connection_tool import AzureConnectionTool
 from tools.Domain_Connection_Tool.domain_connection_tool import DomainConnectionTool
 
@@ -22,10 +23,12 @@ toolbox = Toolbox()
 
 toolbox.register_tool(FMInfo)
 toolbox.register_tool(InternetConnectionTool)
+toolbox.register_tool(InternetDetailsTool)
 toolbox.register_tool(AzureConnectionTool)
 toolbox.register_tool(DomainConnectionTool)
 
 internet_connection_tool = InternetConnectionTool()
+internet_details_tool = InternetDetailsTool()
 domain_connection_tool = DomainConnectionTool()
 azure_connection_tool = AzureConnectionTool()
 fminfo = FMInfo()
@@ -64,6 +67,17 @@ async def websocket_endpoint(websocket: WebSocket):
         await internet_connection_tool.monitor_status()
     finally:
         internet_connection_tool.detach(observer)
+
+@app.websocket("/internet_details/")
+async def websocket_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    observer = WebSocketObserver(websocket)
+    internet_details_tool.attach(observer)
+    
+    try:
+        await internet_details_tool.monitor_status()
+    finally:
+        internet_details_tool.detach(observer)
 
 @app.websocket("/domain_connection/")
 async def websocket_domain_endpoint(websocket: WebSocket):
