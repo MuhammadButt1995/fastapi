@@ -9,12 +9,10 @@ from tools.base_tool.base_tool import BaseTool
 
 class FMInfo(Observable, BaseTool):
     def __init__(self):
-        super().__init__(
-            name="FMInfo",
-            description="Fetches and displays system and user information.",
-            icon="fm_info.png",
-        )
-        self._previous_network_data = None
+        Observable.__init__(self)
+        BaseTool.__init__(self, name="FMInfo", description="Fetches and displays system and user information", icon="fminfo.png")
+        self._previous_status = None
+
 
     def execute(self, section: str):
         section_methods = {
@@ -113,8 +111,8 @@ class FMInfo(Observable, BaseTool):
     async def monitor_networking_data(self):
         while True:
             network_data = self.get_networking_data()
-            if network_data != self._previous_network_data:
-                self._previous_network_data = network_data
+            if network_data != self._previous_status:
+                self._previous_status = network_data
                 await self.notify(network_data)
             await asyncio.sleep(5)  # Adjust the interval as needed
     

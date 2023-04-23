@@ -1,5 +1,6 @@
 import platform
 import subprocess
+import socket
 from observable import Observable
 import asyncio
 from tools.base_tool.base_tool import BaseTool
@@ -33,6 +34,7 @@ class DomainConnectionTool(Observable, BaseTool):
             return output.lower() == "true"
         except subprocess.CalledProcessError:
             return False
+        
 
     @staticmethod
     def check_zpa_connection():
@@ -57,14 +59,28 @@ class DomainConnectionTool(Observable, BaseTool):
                 return True
 
         return False
+    
+    @staticmethod
+    def check_internet_connection(host="8.8.8.8", port=53, timeout=3):
+        try:
+            socket.setdefaulttimeout(timeout)
+            socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((host, port))
+            return True
+        except Exception as ex:
+            print(ex)
+            return False
 
     def _get_connection_type(self):
+        if not self.check_internet_connection():
+            return {"connection_type": "NO_INTERNET"}
+
         if self.check_zpa_connection():
-            return "ZPA"
+            return {"connection_type": "ZPA"}
         elif self.check_vpn_status():
-            return "VPN"
+            return {"connection_type": "VPN"}
         else:
-            return None
+            return {"connection_type": "NOT_CONNECTED"}
+
 
     async def execute(self):
         async def _execute_with_retry(retries, delay):
@@ -76,7 +92,7 @@ class DomainConnectionTool(Observable, BaseTool):
             return None
 
         connection_type = await _execute_with_retry(retries=3, delay=1)
-        return {"connection_type": connection_type}
+        return connection_type
         
     async def monitor_status(self):
         while True:
