@@ -86,10 +86,10 @@ class DomainConnectionTool(Observable, BaseTool):
         async def _execute_with_retry(retries, delay):
             for _ in range(retries):
                 result = self._get_connection_type()
-                if result is not None:
+                if result["connection_type"] != "NOT_CONNECTED":
                     return result
                 await asyncio.sleep(delay)
-            return None
+            return {"connection_type": "NOT_CONNECTED"}
 
         connection_type = await _execute_with_retry(retries=3, delay=1)
         return connection_type
