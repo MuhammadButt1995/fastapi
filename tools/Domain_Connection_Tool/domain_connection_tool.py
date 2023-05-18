@@ -1,16 +1,19 @@
 import platform
 import subprocess
-import socket
-from observable import Observable
 import asyncio
+from tools.Internet_Connection_Tool.internet_connection_tool import InternetConnectionTool
 from tools.base_tool.base_tool import BaseTool
+from observable import Observable
 import winreg
 
-class DomainConnectionTool(Observable, BaseTool):
+class DomainConnectionTool(BaseTool, Observable):
     def __init__(self):
+        super().__init__(
+            name="Domain Connection Tool",
+            description="Check if the user can connect to a domain",
+            icon="domainconnectiontool.png"
+        )
         Observable.__init__(self)
-        BaseTool.__init__(self, name="Domain Connection Tool", description="Check if the user can connect to a domain", icon="domainconnectiontool.png")
-        self._previous_status = None
 
     
     @staticmethod
@@ -60,18 +63,9 @@ class DomainConnectionTool(Observable, BaseTool):
 
         return False
     
-    @staticmethod
-    def check_internet_connection(host="8.8.8.8", port=53, timeout=3):
-        try:
-            socket.setdefaulttimeout(timeout)
-            socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((host, port))
-            return True
-        except Exception as ex:
-            print(ex)
-            return False
 
     def _get_connection_type(self):
-        if not self.check_internet_connection():
+        if not InternetConnectionTool.check_internet_connection()["connected"]:
             return {"connection_type": "NO_INTERNET"}
 
         if self.check_zpa_connection():
@@ -93,11 +87,12 @@ class DomainConnectionTool(Observable, BaseTool):
 
         connection_type = await _execute_with_retry(retries=3, delay=1)
         return connection_type
-        
+
     async def monitor_status(self):
+        previous_state = None
         while True:
-            status = await self.execute()
-            if status != self._previous_status:
-                self._previous_status = status
-                await self.notify(status)
+            current_state = await self.execute()
+            if current_state != previous_state:
+                previous_state = current_state
+                await self.notify_all(current_state)
             await asyncio.sleep(5)  # Adjust the interval as needed

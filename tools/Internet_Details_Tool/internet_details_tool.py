@@ -1,14 +1,17 @@
 import platform
 import subprocess
 import asyncio
+from tools.base_tool.base_tool import BaseTool
 from observable import Observable
-from tools.toolbox import BaseTool
 
-class InternetDetailsTool(Observable, BaseTool):
+class InternetDetailsTool(BaseTool, Observable):
     def __init__(self):
+        super().__init__(
+            name="Internet Details Tool",
+            description="Get Wi-Fi and Ethernet connection details",
+            icon="internetdetailstool.png"
+        )
         Observable.__init__(self)
-        BaseTool.__init__(self, name="Internet Details Tool", description="Get Wi-Fi and Ethernet connection details", icon="internetdetailstool.png")
-        self._previous_state = None
 
     def parse_wifi_details(self, raw_output):
         lines = raw_output.split("\n")
@@ -37,9 +40,10 @@ class InternetDetailsTool(Observable, BaseTool):
         return self.get_wifi_details()
 
     async def monitor_status(self):
+        previous_state = None
         while True:
-            wifi_details = self.get_wifi_details()
-            if wifi_details != self._previous_state:
-                self._previous_state = wifi_details
-                await self.notify(wifi_details)
+            current_state = self.execute()
+            if current_state != previous_state:
+                previous_state = current_state
+                await self.notify_all(current_state)
             await asyncio.sleep(5)  # Adjust the interval as needed

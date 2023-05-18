@@ -1,6 +1,5 @@
 from fastapi import FastAPI, Request, WebSocket
 from fastapi.middleware.cors import CORSMiddleware
-
 from observable import Observer
 from tools.toolbox import Toolbox
 from tools.FMInfo.fminfo import FMInfo
@@ -8,6 +7,7 @@ from tools.Internet_Connection_Tool.internet_connection_tool import InternetConn
 from tools.Internet_Details_Tool.internet_details_tool import InternetDetailsTool
 from tools.Azure_Connection_Tool.azure_connection_tool import AzureConnectionTool
 from tools.Domain_Connection_Tool.domain_connection_tool import DomainConnectionTool
+from observable import Observable
 
 app = FastAPI()
 
@@ -27,19 +27,12 @@ toolbox.register_tool(InternetDetailsTool)
 toolbox.register_tool(AzureConnectionTool)
 toolbox.register_tool(DomainConnectionTool)
 
-internet_connection_tool = InternetConnectionTool()
-internet_details_tool = InternetDetailsTool()
-domain_connection_tool = DomainConnectionTool()
-azure_connection_tool = AzureConnectionTool()
-fminfo = FMInfo()
-
 class WebSocketObserver(Observer):
     def __init__(self, websocket: WebSocket):
         self.websocket = websocket
 
     async def update(self, data: any):
         await self.websocket.send_json(data)
-
 
 @app.get("/tools")
 def get_tools():
@@ -56,58 +49,28 @@ async def execute_tool(tool_name: str, request: Request):
     except Exception as e:
         return {"status": "error", "message": str(e)}
     
-
-@app.websocket("/internet_connection/")
-async def websocket_endpoint(websocket: WebSocket):
+@app.websocket("/tools/{tool_name}/ws")
+async def common_websocket_endpoint(tool_name: str, websocket: WebSocket):
     await websocket.accept()
     observer = WebSocketObserver(websocket)
-    internet_connection_tool.attach(observer)
-    
-    try:
-        await internet_connection_tool.monitor_status()
-    finally:
-        internet_connection_tool.detach(observer)
-
-@app.websocket("/internet_details/")
-async def websocket_endpoint(websocket: WebSocket):
-    await websocket.accept()
-    observer = WebSocketObserver(websocket)
-    internet_details_tool.attach(observer)
-    
-    try:
-        await internet_details_tool.monitor_status()
-    finally:
-        internet_details_tool.detach(observer)
-
-@app.websocket("/domain_connection/")
-async def websocket_domain_endpoint(websocket: WebSocket):
-    await websocket.accept()
-    observer = WebSocketObserver(websocket)
-    domain_connection_tool.attach(observer)
 
     try:
-        await domain_connection_tool.monitor_status()
-    finally:
-        domain_connection_tool.detach(observer)
+        tool_class = toolbox.get_tool(tool_name)
+        tool_instance = tool_class()
+    except KeyError:
+        await websocket.send_json({"status": "error", "message": f"Tool '{tool_name}' not found"})
+        await websocket.close()
+        return
 
-@app.websocket("/azure_connection/")
-async def websocket_domain_endpoint(websocket: WebSocket):
-    await websocket.accept()
-    observer = WebSocketObserver(websocket)
-    azure_connection_tool.attach(observer)
+    if not isinstance(tool_instance, Observable):
+        await websocket.send_json({"status": "error", "message": f"Tool '{tool_name}' is not observable"})
+        await websocket.close()
+        return
 
-    try:
-        await azure_connection_tool.monitor_status()
-    finally:
-        azure_connection_tool.detach(observer)
-
-@app.websocket("/fminfo_networking/")
-async def websocket_fminfo_endpoint(websocket: WebSocket):
-    await websocket.accept()
-    observer = WebSocketObserver(websocket)
-    fminfo.attach(observer)
+    tool_instance.add_observer(observer)
 
     try:
-        await fminfo.monitor_networking_data()
+        await tool_instance.monitor_status()
     finally:
-        fminfo.detach(observer)
+        tool_instance.remove_observer(observer)
+        await websocket.close()

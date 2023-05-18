@@ -1,23 +1,26 @@
-from typing import List, Any
-
+from abc import ABC, abstractmethod
 
 class Observable:
     def __init__(self):
-        self._observers: List[Observer] = []
+        self._observers = set()
 
-    def attach(self, observer: "Observer"):
-        if observer not in self._observers:
-            self._observers.append(observer)
+    def add_observer(self, observer):
+        self._observers.add(observer)
 
-    def detach(self, observer: "Observer"):
-        if observer in self._observers:
-            self._observers.remove(observer)
+    def remove_observer(self, observer):
+        self._observers.discard(observer)
 
-    async def notify(self, data: Any):
+    async def notify_all(self, data):
         for observer in self._observers:
             await observer.update(data)
 
+    async def monitor_status(self):
+        # Default implementation, can be overridden by subclasses that need real-time updates
+        pass
 
-class Observer:
-    def update(self, data: Any):
-        raise NotImplementedError
+
+class Observer(ABC):
+    
+    @abstractmethod
+    def update(self, data, *args, **kwargs):
+        pass

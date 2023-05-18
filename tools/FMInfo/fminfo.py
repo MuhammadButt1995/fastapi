@@ -4,15 +4,13 @@ import socket
 import datetime
 from getpass import getuser
 import asyncio
-from observable import Observable
 from tools.base_tool.base_tool import BaseTool
+from observable import Observable
 
-class FMInfo(Observable, BaseTool):
+class FMInfo(BaseTool, Observable):
     def __init__(self):
+        super().__init__(name="FMInfo", description="Fetches and displays system and user information", icon="fminfo.png")
         Observable.__init__(self)
-        BaseTool.__init__(self, name="FMInfo", description="Fetches and displays system and user information", icon="fminfo.png")
-        self._previous_status = None
-
 
     def execute(self, section: str):
         section_methods = {
@@ -37,6 +35,7 @@ class FMInfo(Observable, BaseTool):
             "last_password_set": "2023-03-20T14:30:15",
             "password_expiration": "2023-06-20T14:30:15",
         }
+
 
     def get_device_data(self):
         cpu_info = platform.processor() 
@@ -108,12 +107,13 @@ class FMInfo(Observable, BaseTool):
 
         return {"active_adapters": active_adapters, "other_adapters": other_adapters}
     
-    async def monitor_networking_data(self):
+    async def monitor_status(self):
+        previous_state = None
         while True:
-            network_data = self.get_networking_data()
-            if network_data != self._previous_status:
-                self._previous_status = network_data
-                await self.notify(network_data)
+            current_state = self.get_networking_data()
+            if current_state != previous_state:
+                previous_state = current_state
+                await self.notify_all(current_state)
             await asyncio.sleep(5)  # Adjust the interval as needed
     
 

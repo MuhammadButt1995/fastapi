@@ -1,33 +1,41 @@
-import platform
-import subprocess
 import asyncio
-import socket
+from typing import Dict
+from tools.base_tool.base_tool import BaseTool
 from observable import Observable
-from tools.toolbox import BaseTool
 
-class InternetConnectionTool(Observable, BaseTool):
+class InternetConnectionTool(BaseTool, Observable):
+
     def __init__(self):
+        super().__init__(
+            name="InternetConnectionTool",
+            description="Checks the status of the internet connection.",
+            icon="internet_connection_tool_icon.png"
+        )
         Observable.__init__(self)
-        BaseTool.__init__(self, name="Internet Connection Tool", description="Check if the user is connected to the internet", icon="internetconnectiontool.png")
-        self._previous_state = None
 
     @staticmethod
-    def check_internet_connection(host="8.8.8.8", port=53, timeout=3):
-        try:
-            socket.setdefaulttimeout(timeout)
-            socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((host, port))
-            return True
-        except Exception as ex:
-            print(ex)
-            return False
+    def check_internet_connection() -> Dict:
+        """
+        Perform a simple internet connectivity check.
+        """
+        import socket
 
-    def execute(self):
-        return {"connected": self.check_internet_connection()}
+        try:
+            # Try connecting to a common DNS server (Google's public DNS)
+            socket.create_connection(("8.8.8.8", 53))
+            return {"connected": True}
+        except OSError:
+            return {"connected": False}
+
+
+    def execute(self) -> Dict:
+       return self.check_internet_connection()
 
     async def monitor_status(self):
+        previous_state = None
         while True:
-            connection_status = self.check_internet_connection()
-            if connection_status != self._previous_state:
-                self._previous_state = connection_status
-                await self.notify(connection_status)
+            current_state = self.execute()
+            if current_state != previous_state:
+                previous_state = current_state
+                await self.notify_all(current_state)
             await asyncio.sleep(5)  # Adjust the interval as needed
