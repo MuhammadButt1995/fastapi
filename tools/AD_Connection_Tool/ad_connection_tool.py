@@ -5,12 +5,12 @@ import asyncio
 from tools.base_tool.base_tool import BaseTool
 from observable import Observable
 
-class AzureConnectionTool(BaseTool, Observable):
+class ADConnectionTool(BaseTool, Observable):
     def __init__(self):
         super().__init__(
-            name="Azure Connection Tool",
-            description="Check Azure AD join and registration status",
-            icon="azure_connection_tool.png"
+            name="AD Connection Tool",
+            description="Check AD or Azure AD join and registration status",
+            icon="ad_connection_tool.png"
         )
         Observable.__init__(self)
 
@@ -27,11 +27,18 @@ class AzureConnectionTool(BaseTool, Observable):
                 "domain_joined": domain_joined.group(1) == "YES" if domain_joined else False,
             }
 
+            status["is_connected"] = status["azure_ad_joined"] and status["domain_joined"]
+
             return status
 
         elif system == "Darwin":
-            # Add macOS implementation if needed
-            pass
+            status = {
+                "ad_bind": True
+            }
+
+            status["is_connected"] = status["ad_bind"]
+
+            return status
 
     def execute(self):
         return self.get_connection_status()

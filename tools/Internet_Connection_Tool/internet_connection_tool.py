@@ -23,9 +23,9 @@ class InternetConnectionTool(BaseTool, Observable):
         try:
             # Try connecting to a common DNS server (Google's public DNS)
             socket.create_connection(("8.8.8.8", 53))
-            return {"connected": True}
+            return {"is_connected": True}
         except OSError:
-            return {"connected": False}
+            return {"is_connected": False}
 
 
     def execute(self) -> Dict:

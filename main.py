@@ -5,7 +5,7 @@ from tools.toolbox import Toolbox
 from tools.FMInfo.fminfo import FMInfo
 from tools.Internet_Connection_Tool.internet_connection_tool import InternetConnectionTool
 from tools.Internet_Details_Tool.internet_details_tool import InternetDetailsTool
-from tools.Azure_Connection_Tool.azure_connection_tool import AzureConnectionTool
+from tools.AD_Connection_Tool.ad_connection_tool import ADConnectionTool
 from tools.Domain_Connection_Tool.domain_connection_tool import DomainConnectionTool
 from observable import Observable
 
@@ -24,7 +24,7 @@ toolbox = Toolbox()
 toolbox.register_tool(FMInfo)
 toolbox.register_tool(InternetConnectionTool)
 toolbox.register_tool(InternetDetailsTool)
-toolbox.register_tool(AzureConnectionTool)
+toolbox.register_tool(ADConnectionTool)
 toolbox.register_tool(DomainConnectionTool)
 
 class WebSocketObserver(Observer):
