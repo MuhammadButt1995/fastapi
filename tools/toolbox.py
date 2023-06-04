@@ -37,5 +37,20 @@ class Toolbox:
         return tool_instance.execute(*args, **kwargs)
 
     def list_tools(self):
-        """Lists all the current tools."""
-        return list(self.tools.keys())
+        """Lists all the current tools as objects with their name, description, and icon."""
+        tools_list = []
+
+        for tool_name in self.tools:
+            tool_class = self.get_tool(tool_name)
+            tool_instance = tool_class()
+        
+            tool_data = {
+                "name": tool_instance.name,
+                "description": tool_instance.description,
+                "tool_type": tool_instance.tool_type,
+                "tags": tool_instance.tags,
+                "icon": tool_instance.icon
+            }
+            tools_list.append(tool_data)
+
+        return tools_list

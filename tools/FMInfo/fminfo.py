@@ -6,17 +6,20 @@ from getpass import getuser
 import asyncio
 from tools.base_tool.base_tool import BaseTool
 from observable import Observable
+from tools.tool_type import ToolType
+from tools.tags import Tag
 
 class FMInfo(BaseTool, Observable):
     def __init__(self):
-        super().__init__(name="FMInfo", description="Fetches and displays system and user information", icon="fminfo.png")
+        super().__init__(name="FMInfo", description="Your system & user data.",  tool_type=ToolType.SELF_SERVICE,
+            tags=[Tag.INFORMATION, Tag.WIDGET], icon="Users")
         Observable.__init__(self)
 
     def execute(self, section: str):
         section_methods = {
             "user": self.get_user_data,
             "device": self.get_device_data,
-            "networking": self.get_networking_data,
+            "network": self.get_network_data,
         }
 
         if section not in section_methods:
@@ -29,11 +32,11 @@ class FMInfo(BaseTool, Observable):
         # environment-dependent. You might need to use platform-specific libraries or call
         # external tools or services to obtain some of the information.
         return {
-            "logged_on_domain": "example.com",  # Platform-dependent, needs a specific implementation
-            "current_user_name": getuser(),
-            "last_login_time": "2023-04-12T10:15:30",
-            "last_password_set": "2023-03-20T14:30:15",
-            "password_expiration": "2023-06-20T14:30:15",
+            "Logged on domain": "example.com",  # Platform-dependent, needs a specific implementation
+            "Logged on user": getuser(),
+            "Last login time": "2023-04-12T10:15:30",
+            "Last password set": "2023-03-20T14:30:15",
+            "Password expiration date": "2023-06-20T14:30:15",
         }
 
 
@@ -47,16 +50,16 @@ class FMInfo(BaseTool, Observable):
         manufacturer, model, serial_number = self.get_device_identifiers()
 
         return {
-            "computer_name": platform.node(),
-            "CPU_details": cpu_info,
+            "Computer name": platform.node(),
+            "CPU details": cpu_info,
             "RAM": f"{round(float(ram_info.total) / (1024 ** 3), 2)} GB",
-            "total_disk_size": f"{total_disk_size_gb:.2f} GB",
-            "current_disk_usage": f"{current_disk_usage_gb:.2f} GB",
-            "manufacturer": manufacturer,
-            "model": model,
-            "CPU_architecture": platform.machine(),
-            "last_boot_time": boot_time,
-            "serial_number": serial_number,
+            "Total disk size": f"{total_disk_size_gb:.2f} GB",
+            "Current disk usage": f"{current_disk_usage_gb:.2f} GB",
+            "Manufacturer": manufacturer,
+            "Model": model,
+            "CPU architecture": platform.machine(),
+            "Last boot time": boot_time,
+            "Serial number": serial_number,
         }
 
     def get_device_identifiers(self):
@@ -93,7 +96,7 @@ class FMInfo(BaseTool, Observable):
         return manufacturer, model, serial_number
 
     @staticmethod
-    def get_networking_data():
+    def get_network_data():
         active_adapters = {}
         other_adapters = {}
         
@@ -110,7 +113,7 @@ class FMInfo(BaseTool, Observable):
     async def monitor_status(self):
         previous_state = None
         while True:
-            current_state = self.get_networking_data()
+            current_state = self.get_network_data()
             if current_state != previous_state:
                 previous_state = current_state
                 await self.notify_all(current_state)

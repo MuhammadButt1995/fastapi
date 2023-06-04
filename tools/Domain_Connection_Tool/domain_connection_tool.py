@@ -5,13 +5,17 @@ from tools.Internet_Connection_Tool.internet_connection_tool import InternetConn
 from tools.base_tool.base_tool import BaseTool
 from observable import Observable
 import winreg
+from tools.tool_type import ToolType
+from tools.tags import Tag
 
 class DomainConnectionTool(BaseTool, Observable):
     def __init__(self):
         super().__init__(
-            name="Domain Connection Tool",
-            description="Check if the user can connect to a domain",
-            icon="domainconnectiontool.png"
+            name="Domain Connection",
+            description="Get live data about the status of your connection to trusted networks.",
+            tool_type=ToolType.AUTO_ENABLED,
+            tags=[Tag.ZSCALER, Tag.NETWORK],
+            icon="ShieldCheck"
         )
         Observable.__init__(self)
 

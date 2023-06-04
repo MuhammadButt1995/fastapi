@@ -2,14 +2,17 @@ import asyncio
 from typing import Dict
 from tools.base_tool.base_tool import BaseTool
 from observable import Observable
-
+from tools.tool_type import ToolType
+from tools.tags import Tag
 class InternetConnectionTool(BaseTool, Observable):
 
     def __init__(self):
         super().__init__(
-            name="InternetConnectionTool",
-            description="Checks the status of the internet connection.",
-            icon="internet_connection_tool_icon.png"
+            name="Internet Connection",
+            description="Get live data about the status of your Internet connection.",
+            tool_type=ToolType.AUTO_ENABLED,
+            tags=[Tag.INTERNET],
+            icon="Wifi"
         )
         Observable.__init__(self)
 

@@ -38,12 +38,12 @@ class WebSocketObserver(Observer):
 def get_tools():
     return toolbox.list_tools()
 
-@app.post("/tools/{tool_name}/execute")
+@app.get("/tools/{tool_name}/execute")
 async def execute_tool(tool_name: str, request: Request):
     try:
         query_params = request.query_params._dict
         result = toolbox.execute_tool(tool_name, **query_params)
-        return {"status": "success", "result": result}
+        return {"result": result}
     except KeyError:
         return {"status": "error", "message": f"Tool '{tool_name}' not found"}
     except Exception as e:

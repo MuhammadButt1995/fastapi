@@ -4,13 +4,16 @@ import platform
 import asyncio
 from tools.base_tool.base_tool import BaseTool
 from observable import Observable
-
+from tools.tool_type import ToolType
+from tools.tags import Tag
 class ADConnectionTool(BaseTool, Observable):
     def __init__(self):
         super().__init__(
-            name="AD Connection Tool",
-            description="Check AD or Azure AD join and registration status",
-            icon="ad_connection_tool.png"
+            name="AD Connection",
+            description="Get live data about the status of your Active Directory or AAD connection.",
+            tool_type=ToolType.AUTO_ENABLED,
+            tags=[Tag.AD],
+            icon='Cloud'
         )
         Observable.__init__(self)
 
