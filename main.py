@@ -42,12 +42,12 @@ def get_tools():
 async def execute_tool(tool_name: str, request: Request):
     try:
         query_params = request.query_params._dict
-        result = toolbox.execute_tool(tool_name, **query_params)
-        return {"result": result}
+        result = await toolbox.execute_tool(tool_name, **query_params) if tool_name == "DomainConnectionTool" else toolbox.execute_tool(tool_name, **query_params)
+        return {"success": True, "message": result}
     except KeyError:
-        return {"status": "error", "message": f"Tool '{tool_name}' not found"}
+        return {"success": False, "message": f"Tool '{tool_name}' not found"}
     except Exception as e:
-        return {"status": "error", "message": str(e)}
+        return {"success": False, "message": str(e)}
     
 @app.websocket("/tools/{tool_name}/ws")
 async def common_websocket_endpoint(tool_name: str, websocket: WebSocket):
@@ -58,12 +58,15 @@ async def common_websocket_endpoint(tool_name: str, websocket: WebSocket):
         tool_class = toolbox.get_tool(tool_name)
         tool_instance = tool_class()
     except KeyError:
-        await websocket.send_json({"status": "error", "message": f"Tool '{tool_name}' not found"})
+        await websocket.send_json({"success": False, "message": f"Tool '{tool_name}' not found"})
         await websocket.close()
         return
+    except Exception as e:
+        await {"success": False, "message": str(e)}
+        await websocket.close()
 
     if not isinstance(tool_instance, Observable):
-        await websocket.send_json({"status": "error", "message": f"Tool '{tool_name}' is not observable"})
+        await websocket.send_json({"success": False, "message": f"Tool '{tool_name}' is not observable"})
         await websocket.close()
         return
 

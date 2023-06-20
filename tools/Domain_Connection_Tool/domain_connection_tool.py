@@ -70,24 +70,24 @@ class DomainConnectionTool(BaseTool, Observable):
 
     def _get_connection_type(self):
         if not InternetConnectionTool.check_internet_connection()["is_connected"]:
-            return {"is_connected": False, "status": "no_internet"}
+            return {"is_connected": False, "status_message": "no_internet"}
 
         if self.check_zpa_connection():
-            return {"is_connected": True, "status": "ZPA"}
+            return {"is_connected": True, "status_message": "ZPA"}
         elif self.check_vpn_status():
-            return {"is_connected": True, "status": "VPN"}
+            return {"is_connected": True, "status_message": "VPN"}
         else:
-            return {"is_connected": False, "status": "not_connected"}
+            return {"is_connected": False, "status_message": "not_connected"}
 
 
     async def execute(self):
         async def _execute_with_retry(retries, delay):
             for _ in range(retries):
                 result = self._get_connection_type()
-                if result["status"] != "not_connected":
+                if result["status_message"] != "not_connected":
                     return result
                 await asyncio.sleep(delay)
-            return {"is_connected": False, "status": "not_connected"}
+            return {"is_connected": False, "status_message": "not_connected"}
 
         connection_type = await _execute_with_retry(retries=3, delay=1)
         return connection_type

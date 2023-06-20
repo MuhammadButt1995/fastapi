@@ -13,7 +13,7 @@ class ADConnectionTool(BaseTool, Observable):
             description="Get live data about the status of your Active Directory or AAD connection.",
             tool_type=ToolType.AUTO_ENABLED,
             tags=[Tag.AD],
-            icon='Cloud'
+            icon='Cloud',
         )
         Observable.__init__(self)
 
