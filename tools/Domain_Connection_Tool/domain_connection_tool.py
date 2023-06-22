@@ -1,7 +1,6 @@
 import platform
 import subprocess
 import asyncio
-from tools.Internet_Connection_Tool.internet_connection_tool import InternetConnectionTool
 from tools.base_tool.base_tool import BaseTool
 from observable import Observable
 import winreg
@@ -69,9 +68,6 @@ class DomainConnectionTool(BaseTool, Observable):
     
 
     def _get_connection_type(self):
-        if not InternetConnectionTool.check_internet_connection()["is_connected"]:
-            return {"is_connected": False, "status_message": "no_internet"}
-
         if self.check_zpa_connection():
             return {"is_connected": True, "status_message": "ZPA"}
         elif self.check_vpn_status():

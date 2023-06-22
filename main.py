@@ -3,8 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from observable import Observer
 from tools.toolbox import Toolbox
 from tools.FMInfo.fminfo import FMInfo
-from tools.Internet_Connection_Tool.internet_connection_tool import InternetConnectionTool
-from tools.Internet_Details_Tool.internet_details_tool import InternetDetailsTool
+from tools.WiFi_Details_Tool.wifi_details_tool import WiFiDetailsTool
 from tools.AD_Connection_Tool.ad_connection_tool import ADConnectionTool
 from tools.Domain_Connection_Tool.domain_connection_tool import DomainConnectionTool
 from observable import Observable
@@ -22,8 +21,7 @@ app.add_middleware(
 toolbox = Toolbox()
 
 toolbox.register_tool(FMInfo)
-toolbox.register_tool(InternetConnectionTool)
-toolbox.register_tool(InternetDetailsTool)
+toolbox.register_tool(WiFiDetailsTool)
 toolbox.register_tool(ADConnectionTool)
 toolbox.register_tool(DomainConnectionTool)
 
