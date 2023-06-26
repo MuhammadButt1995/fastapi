@@ -1,0 +1,265 @@
+2023-06-24 18:30:42,506 - Error executing tool Network Adapters: getNetworkAdapters.get_network_adapters() takes 0 positional arguments but 1 was given
+2023-06-24 18:31:17,729 - Error executing tool Network Adapters: getNetworkAdapters.get_network_adapters() takes 0 positional arguments but 1 was given
+2023-06-24 18:31:45,154 - Error executing tool Network Adapters: getNetworkAdapters.get_network_adapters() takes 0 positional arguments but 1 was given
+2023-06-24 18:32:43,970 - Error executing tool LADP Data: getLDAPData.get_LDAP_data() takes 0 positional arguments but 1 was given
+2023-06-24 18:33:07,882 - Error executing tool Network Adapters: getNetworkAdapters.get_network_adapters() takes 0 positional arguments but 1 was given
+2023-06-24 18:33:15,563 - Error executing tool Network Adapters: getNetworkAdapters.get_network_adapters() takes 0 positional arguments but 1 was given
+2023-06-24 18:34:19,731 - Error executing tool Network Adapters: getNetworkAdapters.get_network_adapters() takes 0 positional arguments but 1 was given
+2023-06-24 18:35:38,175 - Error executing tool Network Adapters: getNetworkAdapters.get_network_adapters() takes 0 positional arguments but 1 was given
+2023-06-24 18:36:21,408 - Error executing tool Network Adapters: getNetworkAdapters.get_network_adapters() takes 0 positional arguments but 1 was given
+2023-06-24 18:36:50,792 - Error executing tool Network Adapters: getNetworkAdapters.get_network_adapters() takes 0 positional arguments but 1 was given
+2023-06-24 18:37:27,223 - Error executing tool Network Adapters: getNetworkAdapters.get_network_adapters() takes 0 positional arguments but 1 was given
+2023-06-24 19:13:14,152 - Error executing tool Trusted Network Status: 'getTrustedNetworkStatus' object has no attribute 'set_trusted_network_status'
+2023-06-24 19:27:20,043 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 19:27:20,060 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 19:27:20,151 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 19:27:20,153 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 19:27:20,165 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 19:27:20,169 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 19:31:42,579 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 19:31:42,581 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 19:37:41,957 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 19:37:41,960 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 19:40:57,328 - Error executing tool Wi-Fi Data Metrics: getWifiData.execute() takes 1 positional argument but 2 were given
+2023-06-24 19:40:57,328 - Error executing tool Wi-Fi Data Metrics: 
+2023-06-24 19:40:57,331 - Error executing tool Wi-Fi Data Metrics: getWifiData.execute() takes 1 positional argument but 2 were given
+2023-06-24 19:40:57,331 - Error executing tool Wi-Fi Data Metrics: 
+2023-06-24 19:45:07,156 - Error executing tool Wi-Fi Data Metrics: no close frame received or sent
+2023-06-24 19:45:07,369 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 19:47:45,649 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 19:47:45,763 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 19:50:22,261 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 19:50:22,349 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 19:50:52,970 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 19:50:53,055 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 19:58:52,330 - Error executing tool Wi-Fi Data Metrics: no close frame received or sent
+2023-06-24 19:58:52,521 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 19:59:07,381 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 19:59:07,533 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 19:59:07,997 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 19:59:08,181 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:03:59,328 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:03:59,425 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:04:23,513 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:04:23,594 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:05:13,797 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:05:13,933 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:06:42,775 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:06:42,851 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:10:03,842 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:10:03,928 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:10:58,207 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:10:58,434 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:11:05,133 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:11:05,259 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:17:12,342 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:17:12,609 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:18:26,131 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:18:26,262 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:19:16,002 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:19:16,168 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:20:35,395 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:20:35,980 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:20:37,768 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:20:37,849 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:21:06,032 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:21:06,118 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:21:08,248 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:21:08,507 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:21:16,309 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:21:16,462 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:21:46,261 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:21:46,471 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:21:50,789 - Error executing tool Wi-Fi Data Metrics: no close frame received or sent
+2023-06-24 20:21:50,960 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:22:26,287 - Error executing tool Wi-Fi Data Metrics: no close frame received or sent
+2023-06-24 20:22:26,379 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:24:08,945 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:24:09,100 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:24:45,897 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:24:46,009 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:25:24,238 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:25:24,320 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:25:26,239 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:25:26,326 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:26:07,929 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:26:08,021 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:27:03,836 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:27:03,934 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:27:52,829 - Error executing tool Wi-Fi Data Metrics: no close frame received or sent
+2023-06-24 20:27:52,939 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:30:08,592 - Error executing tool Wi-Fi Data Metrics: no close frame received or sent
+2023-06-24 20:30:09,038 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:30:38,024 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:30:38,134 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:31:57,242 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:31:57,356 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:32:06,019 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:32:06,186 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:32:30,461 - Error executing tool Wi-Fi Data Metrics: no close frame received or sent
+2023-06-24 20:32:30,568 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:32:31,651 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:32:31,833 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:32:57,681 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:32:57,768 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:32:58,870 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:32:58,958 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:33:47,138 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:33:47,237 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:34:29,781 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:34:29,879 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:34:30,945 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:34:31,034 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:37:46,512 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:37:46,598 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:38:09,438 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:38:09,543 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:39:00,785 - Error executing tool Wi-Fi Data Metrics: received 1001 (going away); then sent 1001 (going away)
+2023-06-24 20:39:00,893 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 20:53:57,251 - Error executing tool AD Status: Command 'dsregcmd /status' returned non-zero exit status 3221225786.
+2023-06-24 20:54:10,391 - Error executing tool Wi-Fi Data Metrics: sent 1012 (service restart); no close frame received
+2023-06-24 20:54:10,483 - Error executing tool Wi-Fi Data Metrics: Cannot call "send" once a close message has been sent.
+2023-06-24 21:00:22,268 - Error executing tool AD Status: Command 'dsregcmd /status' returned non-zero exit status 3221225786.
+2023-06-24 21:02:16,958 - Error executing tool AD Status: 1006
+2023-06-24 21:02:17,084 - Error executing tool Wi-Fi Data Metrics: 1006
+2023-06-24 21:02:17,095 - Error executing tool Trusted Network Status: 1006
+2023-06-24 21:32:05,618 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-24 21:32:05,635 - Error executing tool Trusted Network Status: 1001
+2023-06-24 21:32:05,648 - Error executing tool AD Status: 1006
+2023-06-24 21:32:49,893 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-24 21:32:49,904 - Error executing tool AD Status: 1001
+2023-06-24 21:32:49,915 - Error executing tool Trusted Network Status: 1001
+2023-06-24 21:37:02,771 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-24 21:37:02,807 - Error executing tool AD Status: 1001
+2023-06-24 21:37:02,820 - Error executing tool Trusted Network Status: 1001
+2023-06-24 21:38:01,177 - Error executing tool Trusted Network Status: 1006
+2023-06-24 21:38:01,350 - Error executing tool AD Status: 1006
+2023-06-24 21:38:01,363 - Error executing tool Wi-Fi Data Metrics: 1006
+2023-06-24 21:40:26,977 - Error executing tool AD Status: name 'send_updates' is not defined
+2023-06-24 21:40:27,033 - Error executing tool Trusted Network Status: name 'send_updates' is not defined
+2023-06-24 21:40:27,056 - Error executing tool Wi-Fi Data Metrics: name 'send_updates' is not defined
+2023-06-24 21:57:43,218 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:57:43,234 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:57:43,247 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 21:57:48,239 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:57:48,239 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:57:53,249 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:57:53,249 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:57:54,757 - Error executing tool AD Status: 1006
+2023-06-24 21:57:54,784 - Error executing tool Trusted Network Status: 1006
+2023-06-24 21:57:54,793 - Error executing tool Wi-Fi Data Metrics: 1006
+2023-06-24 21:58:27,847 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:27,863 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:27,877 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:32,856 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:32,856 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:37,849 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:37,849 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:42,861 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:42,861 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:47,861 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:47,861 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:52,864 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:52,864 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:58:57,476 - Error executing tool AD Status: 1012
+2023-06-24 21:58:57,495 - Error executing tool Trusted Network Status: 1012
+2023-06-24 21:58:57,502 - Error executing tool Wi-Fi Data Metrics: 1012
+2023-06-24 21:59:01,117 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:59:01,132 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:59:01,145 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 21:59:01,171 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:59:01,187 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:59:01,206 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 21:59:58,413 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:59:58,428 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:59:58,443 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 21:59:58,493 - Error executing tool AD Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:59:58,507 - Error executing tool Trusted Network Status: 'Tool' object has no attribute 'execute'
+2023-06-24 21:59:58,517 - Error executing tool Wi-Fi Data Metrics: 'Tool' object has no attribute 'execute'
+2023-06-24 22:03:57,709 - Error executing tool Wi-Fi Data Metrics: 1012
+2023-06-24 22:03:57,719 - Error executing tool AD Status: 1012
+2023-06-24 22:03:57,727 - Error executing tool Trusted Network Status: 1012
+2023-06-24 22:10:10,150 - Error executing tool Wi-Fi Data Metrics: 1006
+2023-06-24 22:10:10,169 - Error executing tool Trusted Network Status: 1006
+2023-06-24 22:10:10,181 - Error executing tool AD Status: 1006
+2023-06-24 22:23:35,869 - Error executing tool Trusted Network Status: 1001
+2023-06-24 22:23:35,898 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-24 22:23:35,909 - Error executing tool AD Status: 1001
+2023-06-24 22:29:53,779 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-24 22:29:53,802 - Error executing tool Trusted Network Status: 1001
+2023-06-24 22:29:53,813 - Error executing tool AD Status: 1001
+2023-06-24 22:31:36,015 - Error executing tool Trusted Network Status: 1001
+2023-06-24 22:31:36,034 - Error executing tool AD Status: 1001
+2023-06-24 22:31:36,043 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-24 22:32:08,443 - Error executing tool AD Status: 1012
+2023-06-24 22:32:08,449 - Error executing tool Wi-Fi Data Metrics: 1012
+2023-06-24 22:32:08,457 - Error executing tool Trusted Network Status: 1012
+2023-06-24 22:34:37,878 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-24 22:34:37,959 - Error executing tool Trusted Network Status: 1001
+2023-06-24 22:34:37,967 - Error executing tool AD Status: 1001
+2023-06-24 22:35:17,283 - Error executing tool AD Status: 1001
+2023-06-24 22:35:17,291 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-24 22:35:17,301 - Error executing tool Trusted Network Status: 1001
+2023-06-24 22:35:50,190 - Error executing tool Trusted Network Status: 1006
+2023-06-24 22:35:50,201 - Error executing tool AD Status: 1006
+2023-06-24 22:35:50,210 - Error executing tool Wi-Fi Data Metrics: 1006
+2023-06-25 13:49:21,993 - Error executing tool AD Status: 1012
+2023-06-25 13:49:22,096 - Error executing tool Wi-Fi Data Metrics: 1012
+2023-06-25 13:49:22,103 - Error executing tool Trusted Network Status: 1012
+2023-06-25 14:41:46,194 - Error executing tool Trusted Network Status: 1001
+2023-06-25 14:41:46,220 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 14:41:46,233 - Error executing tool AD Status: 1001
+2023-06-25 14:41:58,200 - Error executing tool Wi-Fi Data Metrics: 1006
+2023-06-25 14:41:58,210 - Error executing tool Trusted Network Status: 1006
+2023-06-25 14:41:58,222 - Error executing tool AD Status: 1006
+2023-06-25 14:45:04,120 - Error executing tool Trusted Network Status: 1001
+2023-06-25 14:45:04,133 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 14:45:04,146 - Error executing tool AD Status: 1001
+2023-06-25 14:49:02,484 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 14:49:02,498 - Error executing tool Trusted Network Status: 1001
+2023-06-25 14:49:02,515 - Error executing tool AD Status: 1001
+2023-06-25 14:54:46,391 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 14:54:46,402 - Error executing tool AD Status: 1001
+2023-06-25 14:54:46,412 - Error executing tool Trusted Network Status: 1001
+2023-06-25 15:00:33,774 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 15:00:33,786 - Error executing tool AD Status: 1001
+2023-06-25 15:00:33,797 - Error executing tool Trusted Network Status: 1001
+2023-06-25 15:02:57,254 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 15:02:57,265 - Error executing tool Trusted Network Status: 1001
+2023-06-25 15:02:57,276 - Error executing tool AD Status: 1001
+2023-06-25 15:03:45,387 - Error executing tool AD Status: 1001
+2023-06-25 15:03:45,421 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 15:03:45,433 - Error executing tool Trusted Network Status: 1001
+2023-06-25 15:04:04,366 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 15:04:04,378 - Error executing tool AD Status: 1001
+2023-06-25 15:04:04,388 - Error executing tool Trusted Network Status: 1001
+2023-06-25 15:05:09,309 - Error executing tool AD Status: 1001
+2023-06-25 15:05:09,322 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 15:05:09,332 - Error executing tool Trusted Network Status: 1001
+2023-06-25 15:05:44,549 - Error executing tool Wi-Fi Data Metrics: 1006
+2023-06-25 15:05:44,557 - Error executing tool AD Status: 1006
+2023-06-25 15:05:44,563 - Error executing tool Trusted Network Status: 1006
+2023-06-25 15:14:18,680 - Error executing tool Trusted Network Status: 1001
+2023-06-25 15:14:18,700 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 15:14:18,710 - Error executing tool AD Status: 1001
+2023-06-25 15:14:32,980 - Error executing tool AD Status: 1001
+2023-06-25 15:14:32,991 - Error executing tool Trusted Network Status: 1001
+2023-06-25 15:14:33,002 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 15:14:48,604 - Error executing tool AD Status: 1006
+2023-06-25 15:14:48,642 - Error executing tool Trusted Network Status: 1006
+2023-06-25 15:14:48,654 - Error executing tool Wi-Fi Data Metrics: 1006
+2023-06-25 15:15:42,105 - Error executing tool AD Status: 1001
+2023-06-25 15:15:42,116 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 15:15:42,127 - Error executing tool Trusted Network Status: 1001
+2023-06-25 15:16:07,056 - Error executing tool AD Status: 1006
+2023-06-25 15:16:07,064 - Error executing tool Trusted Network Status: 1006
+2023-06-25 15:16:07,073 - Error executing tool Wi-Fi Data Metrics: 1006
+2023-06-25 15:32:32,999 - Error executing tool Trusted Network Status: 1006
+2023-06-25 15:32:33,013 - Error executing tool Wi-Fi Data Metrics: 1006
+2023-06-25 15:32:33,024 - Error executing tool AD Status: 1006
+2023-06-25 15:37:02,109 - Error executing tool Trusted Network Status: 1001
+2023-06-25 15:37:02,122 - Error executing tool Wi-Fi Data Metrics: 1001
+2023-06-25 15:37:02,133 - Error executing tool AD Status: 1001
+2023-06-25 17:42:38,009 - Error executing tool Wi-Fi Data Metrics: '802.11ac'
+2023-06-25 17:42:46,170 - Error executing tool Wi-Fi Data Metrics: '802.11ac'
+2023-06-26 17:33:23,172 - Error executing tool LADP Data: Command 'net user Sunny /domain | findstr /C:"Last logon"' returned non-zero exit status 1.
