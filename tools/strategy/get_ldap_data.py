@@ -29,11 +29,6 @@ class getLDAPData(ToolExecutionStrategy):
                 user = subprocess.check_output('whoami', shell=True).decode().strip()
                 last_logon = subprocess.check_output('last | grep %s | head -1' % user, shell=True).decode().strip()
                 password_expires = 'Not available'
-            else:
-                domain = 'example.com'
-                user = 'unknown'
-                last_logon = 'unknown'
-                password_expires = 'Not available'
 
             return {
                 "domain": domain,
