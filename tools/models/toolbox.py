@@ -26,6 +26,7 @@ class Toolbox:
             tool_data = {
                 "name": tool_instance.name,
                 "description": tool_instance.description,
+                "tool_type": tool_instance.type,
                 "tags": tool_instance.tags,
                 "icon": tool_instance.icon
             }

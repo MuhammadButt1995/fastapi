@@ -2,7 +2,7 @@ from enum import Enum
 
 class ToolType(Enum):
     ACTION = "Action"
-    REFRESH = "Refresh"
+    DATA = "Data"
     SWITCH = "Switch"
     WIDGET = "Widget"
     HIDDEN = "Hidden"

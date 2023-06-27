@@ -263,3 +263,25 @@
 2023-06-25 17:42:38,009 - Error executing tool Wi-Fi Data Metrics: '802.11ac'
 2023-06-25 17:42:46,170 - Error executing tool Wi-Fi Data Metrics: '802.11ac'
 2023-06-26 17:33:23,172 - Error executing tool LADP Data: Command 'net user Sunny /domain | findstr /C:"Last logon"' returned non-zero exit status 1.
+2023-06-26 18:17:53,179 - Error executing tool LADP Data: 'password'
+2023-06-26 18:17:53,179 - Error executing tool LADP Data: 
+2023-06-26 18:18:34,448 - Error executing tool LADP Data: 'dict' object is not callable
+2023-06-26 18:18:34,448 - Error executing tool LADP Data: 
+2023-06-26 18:19:32,497 - Error executing tool LADP Data: 'dict' object is not callable
+2023-06-26 18:20:05,483 - Error executing tool LADP Data: 'dict' object is not callable
+2023-06-27 01:18:18,059 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:18:19,251 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:18:21,391 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:18:25,535 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:19:26,537 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:19:27,679 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:19:29,806 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:19:33,909 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:23:54,605 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:23:55,755 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:23:57,885 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:24:02,049 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:25:02,273 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:25:03,400 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:25:05,546 - Error executing tool My Device Data: 'get_devive_data'
+2023-06-27 01:25:09,671 - Error executing tool My Device Data: 'get_devive_data'

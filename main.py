@@ -25,12 +25,17 @@ toolbox = Toolbox()
 
 # Define tools
 tools = {
-    "LDAPStatus": {"name": "LADP Data", "description": "Get LDAP details", "icon": "LDAP_icon", "type": ToolType.REFRESH, "tags": [Tag.IDS], "strategy": getLDAPData},
-    "DeviceData": {"name": "My Device Data", "description": "Get current details", "icon": "device_icon", "type": ToolType.REFRESH, "tags": [Tag.DEVICE], "strategy": getDeviceData},
-    "NetworkAdapters": {"name": "Network Adapters", "description": "Get Network Adapters", "icon": "adapters_icon", "type": ToolType.REFRESH, "tags": [Tag.NETWORK], "strategy": getNetworkAdapters},
-    "WifiData": {"name": "Wi-Fi Data Metrics", "description": "Get live Wi-Fi data metrics.", "icon": "wifi_icon", "type": ToolType.REFRESH, "tags": [Tag.NETWORK], "strategy": getWifiData},
-    "ADStatus": {"name": "AD Status", "description": "Get current status to AD/Azure AD", "icon": "AD_icon", "type": ToolType.REFRESH, "tags": [Tag.IDS], "strategy": getADStatus},
-    "TrustedNetworkStatus": {"name": "Trusted Network Status", "description": "Get current network ZPA/VPN status", "icon": "AD_icon", "type": ToolType.REFRESH, "tags": [Tag.IDS], "strategy": getTrustedNetworkStatus},
+    "LDAPStatus": {"name": "LADP Data", "description": "Get LDAP details", "icon": "LDAP_icon", "type": ToolType.DATA, "tags": [Tag.IDS], "strategy": getLDAPData},
+    "DeviceData": {"name": "My Device Data", "description": "Get current details", "icon": "device_icon", "type": ToolType.DATA, "tags": [Tag.DEVICE], "strategy": getDeviceData},
+    "NetworkAdapters": {"name": "Network Adapters", "description": "Get Network Adapters", "icon": "adapters_icon", "type": ToolType.DATA, "tags": [Tag.NETWORK], "strategy": getNetworkAdapters},
+    "WifiData": {"name": "Wi-Fi Data Metrics", "description": "Get live Wi-Fi data metrics.", "icon": "wifi_icon", "type": ToolType.DATA, "tags": [Tag.NETWORK], "strategy": getWifiData},
+    "ADStatus": {"name": "AD Status", "description": "Get current status to AD/Azure AD", "icon": "AD_icon", "type": ToolType.DATA, "tags": [Tag.IDS], "strategy": getADStatus},
+    "TrustedNetworkStatus": {"name": "Trusted Network Status", "description": "Get current network ZPA/VPN status", "icon": "AD_icon", "type": ToolType.DATA, "tags": [Tag.IDS], "strategy": getTrustedNetworkStatus},
+
+
+    "VPNHelper": {"name": "VPN Helper", "description": "Connect to captive portals", "icon": "AD_icon", "type": ToolType.WIDGET, "tags": [Tag.NETWORK], "strategy": getTrustedNetworkStatus},
+    "WifiNotifications": {"name": "Low Wi-Fi Notifications", "description": "Get send alerts when we detect you've been on an unstable wif-fi network.", "icon": "AD_icon", "type": ToolType.SWITCH, "tags": [Tag.NETWORK, Tag.INTERNET], "strategy": getTrustedNetworkStatus},
+    "AD-Rebind": {"name": "AD-Rebind", "description": "Automatically get rebound to AD", "icon": "AD_icon", "type": ToolType.ACTION, "tags": [Tag.NETWORK], "strategy": getTrustedNetworkStatus},
    
     
 }
@@ -51,7 +56,8 @@ async def execute_tool(tool_name: str, method: Optional[str] = None):
     if tool:
         try:
             if method:
-                return tool.execute_strategy(method)
+                strategy_instance = tool.strategy()
+                return strategy_instance.execute(method)
             else:
                 strategy_instance = tool.strategy()
                 return strategy_instance.execute()

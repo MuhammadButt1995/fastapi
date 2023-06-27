@@ -6,24 +6,37 @@ from tools.models.tool_execution_strategy import ToolExecutionStrategy
 
 class getDeviceData(ToolExecutionStrategy):
 
+    def get_disk_usage(self):
+        total_disk_size_gb = psutil.disk_usage('/').total / (1024 ** 3)
+        current_disk_usage_gb = psutil.disk_usage('/').used / (1024 ** 3)
+        remaining_space_gb = total_disk_size_gb - current_disk_usage_gb
+
+        if remaining_space_gb > 25:
+            disk_space_usage = "low"
+        elif 10 < remaining_space_gb <= 25:
+            disk_space_usage = "medium"
+        else:
+            disk_space_usage = "high"
+
+        return {  
+            "Total_disk_size": f"{total_disk_size_gb:.2f} GB",
+            "Current_disk_usage": f"{current_disk_usage_gb:.2f} GB",
+            "Remaining_disk_space": f"{remaining_space_gb:.2f} GB",
+            "Disk_space_usage": disk_space_usage.upper()
+            }
+
     def get_device_data(self):
         cpu_info = platform.processor() 
         ram_info = psutil.virtual_memory()
         boot_time = datetime.datetime.fromtimestamp(psutil.boot_time()).isoformat()
-        total_disk_size_gb = psutil.disk_usage('/').total / (1024 ** 3)
-        current_disk_usage_gb = psutil.disk_usage('/').used / (1024 ** 3)
 
         manufacturer, model, serial_number = self.get_device_identifiers()
 
         return {
             "Computer name": platform.node(),
-            "CPU details": cpu_info,
             "RAM": f"{round(float(ram_info.total) / (1024 ** 3), 2)} GB",
-            "Total disk size": f"{total_disk_size_gb:.2f} GB",
-            "Current disk usage": f"{current_disk_usage_gb:.2f} GB",
             "Manufacturer": manufacturer,
             "Model": model,
-            "CPU architecture": platform.machine(),
             "Last boot time": boot_time,
             "Serial number": serial_number,
         }
@@ -61,5 +74,10 @@ class getDeviceData(ToolExecutionStrategy):
 
         return manufacturer, model, serial_number
         
-    def execute(self):
-        return self.get_device_data()
+    def execute(self, method):
+        methods = {
+            "get_disk_usage": self.get_disk_usage(),
+            "get_device_data": self.get_device_data(),
+        }
+
+        return methods[method]
