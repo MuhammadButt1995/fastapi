@@ -250,6 +250,7 @@ tool_registry.register(
     )
 )
 
+
 tool_registry.register(
     ExecutableTool(
         id="password-data",
