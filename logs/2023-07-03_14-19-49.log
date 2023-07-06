@@ -1,0 +1,4 @@
+2023-07-03 14:19:52,690 - main2 - INFO - Request: GET http://localhost:8000/tools/password-data
+2023-07-03 14:19:52,713 - main2 - INFO - Response: 200
+2023-07-03 14:20:00,788 - main2 - INFO - Request: GET http://localhost:8000/tools/domain-data
+2023-07-03 14:20:00,788 - main2 - ERROR - Error: Tool not found

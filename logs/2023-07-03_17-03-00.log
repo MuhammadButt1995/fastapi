@@ -1,0 +1,36 @@
+2023-07-03 17:04:02,146 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:04:02,274 - main2 - INFO - Response: 200
+2023-07-03 17:04:13,844 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:04:13,970 - main2 - INFO - Response: 200
+2023-07-03 17:04:22,885 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:04:22,975 - main2 - INFO - Response: 200
+2023-07-03 17:06:01,210 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:06:01,307 - main2 - INFO - Response: 200
+2023-07-03 17:06:50,856 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:06:50,930 - main2 - INFO - Response: 200
+2023-07-03 17:07:00,327 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:07:00,433 - main2 - INFO - Response: 200
+2023-07-03 17:08:54,765 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:08:54,851 - main2 - INFO - Response: 200
+2023-07-03 17:13:55,384 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:13:55,465 - main2 - INFO - Response: 200
+2023-07-03 17:18:56,380 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:18:56,449 - main2 - INFO - Response: 200
+2023-07-03 17:23:57,375 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:23:57,440 - main2 - INFO - Response: 200
+2023-07-03 17:28:58,380 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:28:58,483 - main2 - INFO - Response: 200
+2023-07-03 17:32:46,766 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:32:46,840 - main2 - INFO - Response: 200
+2023-07-03 17:33:45,693 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:33:45,847 - main2 - INFO - Response: 200
+2023-07-03 17:35:29,079 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:35:29,180 - main2 - INFO - Response: 200
+2023-07-03 17:35:52,512 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:35:52,632 - main2 - INFO - Response: 200
+2023-07-03 17:36:42,284 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:36:42,379 - main2 - INFO - Response: 200
+2023-07-03 17:37:25,605 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:37:25,677 - main2 - INFO - Response: 200
+2023-07-03 17:37:33,651 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 17:37:33,754 - main2 - INFO - Response: 200

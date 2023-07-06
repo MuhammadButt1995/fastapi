@@ -1,0 +1,2 @@
+2023-07-02 20:10:06,696 - main2 - INFO - Request: GET http://localhost:8000/tools
+2023-07-02 20:10:06,700 - main2 - INFO - Response: 200

@@ -1,0 +1,2 @@
+2023-07-03 14:27:36,222 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 14:27:36,237 - main2 - INFO - Response: 200

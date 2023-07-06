@@ -1,0 +1,1600 @@
+2023-07-03 21:23:21,178 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:23:21,256 - main2 - INFO - Response: 200
+2023-07-03 21:25:54,388 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:25:54,389 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:25:54,458 - main2 - INFO - Response: 200
+2023-07-03 21:25:54,459 - main2 - INFO - Response: 200
+2023-07-03 21:26:07,079 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:26:07,184 - main2 - INFO - Response: 200
+2023-07-03 21:26:09,199 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:26:09,394 - main2 - INFO - Response: 200
+2023-07-03 21:26:10,802 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:26:10,925 - main2 - INFO - Response: 200
+2023-07-03 21:26:10,927 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:26:10,929 - main2 - INFO - Response: 200
+2023-07-03 21:26:10,932 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:26:11,020 - main2 - INFO - Response: 200
+2023-07-03 21:26:12,033 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:26:12,110 - main2 - INFO - Response: 200
+2023-07-03 21:26:14,121 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:26:14,198 - main2 - INFO - Response: 200
+2023-07-03 21:26:18,217 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:26:18,280 - main2 - INFO - Response: 200
+2023-07-03 21:29:46,615 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:29:46,616 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:29:46,617 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:29:46,842 - main2 - INFO - Response: 200
+2023-07-03 21:29:46,843 - main2 - INFO - Response: 200
+2023-07-03 21:29:46,843 - main2 - INFO - Response: 200
+2023-07-03 21:29:47,866 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:29:47,939 - main2 - INFO - Response: 200
+2023-07-03 21:29:49,943 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:29:50,004 - main2 - INFO - Response: 200
+2023-07-03 21:29:54,008 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:29:54,067 - main2 - INFO - Response: 200
+2023-07-03 21:30:40,662 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:30:40,805 - main2 - INFO - Response: 200
+2023-07-03 21:30:40,807 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:30:40,809 - main2 - INFO - Response: 200
+2023-07-03 21:30:40,812 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:30:40,900 - main2 - INFO - Response: 200
+2023-07-03 21:30:42,007 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:30:42,243 - main2 - INFO - Response: 200
+2023-07-03 21:30:44,260 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:30:44,334 - main2 - INFO - Response: 200
+2023-07-03 21:30:48,340 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:30:48,394 - main2 - INFO - Response: 200
+2023-07-03 21:31:20,357 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:31:20,423 - main2 - INFO - Response: 200
+2023-07-03 21:32:52,787 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:32:52,787 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:32:52,787 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:32:52,963 - main2 - INFO - Response: 200
+2023-07-03 21:32:52,963 - main2 - INFO - Response: 200
+2023-07-03 21:32:52,964 - main2 - INFO - Response: 200
+2023-07-03 21:32:53,989 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:32:54,063 - main2 - INFO - Response: 200
+2023-07-03 21:32:56,070 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:32:56,146 - main2 - INFO - Response: 200
+2023-07-03 21:33:00,150 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:33:00,210 - main2 - INFO - Response: 200
+2023-07-03 21:35:09,964 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:35:09,965 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:35:09,965 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:35:10,163 - main2 - INFO - Response: 200
+2023-07-03 21:35:10,163 - main2 - INFO - Response: 200
+2023-07-03 21:35:10,164 - main2 - INFO - Response: 200
+2023-07-03 21:37:32,492 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:37:32,492 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:37:32,493 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:37:32,713 - main2 - INFO - Response: 200
+2023-07-03 21:37:32,714 - main2 - INFO - Response: 200
+2023-07-03 21:37:32,717 - main2 - INFO - Response: 200
+2023-07-03 21:42:33,039 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:42:33,126 - main2 - INFO - Response: 200
+2023-07-03 21:42:33,127 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:42:33,129 - main2 - INFO - Response: 200
+2023-07-03 21:47:33,062 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:47:33,118 - main2 - INFO - Response: 200
+2023-07-03 21:47:33,131 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:47:33,205 - main2 - INFO - Response: 200
+2023-07-03 21:47:33,207 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:47:33,207 - main2 - INFO - Response: 200
+2023-07-03 21:52:33,518 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:52:33,602 - main2 - INFO - Response: 200
+2023-07-03 21:52:33,603 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:52:33,605 - main2 - INFO - Response: 200
+2023-07-03 21:55:38,629 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:55:38,629 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:55:38,630 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:55:38,796 - main2 - INFO - Response: 200
+2023-07-03 21:55:38,796 - main2 - INFO - Response: 200
+2023-07-03 21:55:38,798 - main2 - INFO - Response: 200
+2023-07-03 22:00:39,131 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:00:39,132 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:00:39,265 - main2 - INFO - Response: 200
+2023-07-03 22:00:39,265 - main2 - INFO - Response: 200
+2023-07-03 22:03:15,274 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:03:15,275 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 22:03:15,275 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:03:15,447 - main2 - INFO - Response: 200
+2023-07-03 22:03:15,448 - main2 - INFO - Response: 200
+2023-07-03 22:03:15,448 - main2 - INFO - Response: 200
+2023-07-03 22:03:22,800 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:03:22,889 - main2 - INFO - Response: 200
+2023-07-03 22:03:22,891 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:03:22,892 - main2 - INFO - Response: 200
+2023-07-03 22:03:22,895 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 22:03:22,967 - main2 - INFO - Response: 200
+2023-07-03 22:04:05,795 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:04:05,796 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:04:05,797 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 22:04:06,049 - main2 - INFO - Response: 200
+2023-07-03 22:04:06,049 - main2 - INFO - Response: 200
+2023-07-03 22:04:06,049 - main2 - INFO - Response: 200
+2023-07-03 22:09:06,378 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:09:06,379 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:09:06,451 - main2 - INFO - Response: 200
+2023-07-03 22:09:06,451 - main2 - INFO - Response: 200
+2023-07-03 22:14:06,387 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 22:14:06,448 - main2 - INFO - Response: 200
+2023-07-03 22:14:06,457 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:14:06,544 - main2 - INFO - Response: 200
+2023-07-03 22:14:06,547 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:14:06,548 - main2 - INFO - Response: 200
+2023-07-03 22:19:07,379 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:19:07,380 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:19:07,451 - main2 - INFO - Response: 200
+2023-07-03 22:19:07,451 - main2 - INFO - Response: 200
+2023-07-03 22:24:07,392 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 22:24:07,456 - main2 - INFO - Response: 200
+2023-07-03 22:24:08,073 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:24:08,073 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:24:08,137 - main2 - INFO - Response: 200
+2023-07-03 22:24:08,137 - main2 - INFO - Response: 200
+2023-07-03 22:29:09,387 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:29:09,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:29:09,482 - main2 - INFO - Response: 200
+2023-07-03 22:29:09,483 - main2 - INFO - Response: 200
+2023-07-03 22:34:08,392 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 22:34:08,456 - main2 - INFO - Response: 200
+2023-07-03 22:34:10,081 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:34:10,082 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:34:10,151 - main2 - INFO - Response: 200
+2023-07-03 22:34:10,151 - main2 - INFO - Response: 200
+2023-07-03 22:39:11,481 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:39:11,482 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:39:11,754 - main2 - INFO - Response: 200
+2023-07-03 22:39:11,754 - main2 - INFO - Response: 200
+2023-07-03 22:44:10,084 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 22:44:10,711 - main2 - INFO - Response: 200
+2023-07-03 22:44:12,286 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:44:12,286 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:44:13,230 - main2 - INFO - Response: 200
+2023-07-03 22:44:13,230 - main2 - INFO - Response: 200
+2023-07-03 22:49:14,393 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:49:14,395 - main2 - INFO - Response: 200
+2023-07-03 22:49:14,398 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:49:14,971 - main2 - INFO - Response: 200
+2023-07-03 22:54:11,382 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 22:54:11,447 - main2 - INFO - Response: 200
+2023-07-03 22:54:15,074 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:54:15,074 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:54:15,140 - main2 - INFO - Response: 200
+2023-07-03 22:54:15,140 - main2 - INFO - Response: 200
+2023-07-03 22:59:16,386 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 22:59:16,386 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 22:59:16,454 - main2 - INFO - Response: 200
+2023-07-03 22:59:16,454 - main2 - INFO - Response: 200
+2023-07-03 23:04:12,385 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 23:04:12,443 - main2 - INFO - Response: 200
+2023-07-03 23:04:17,080 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:04:17,080 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:04:17,148 - main2 - INFO - Response: 200
+2023-07-03 23:04:17,149 - main2 - INFO - Response: 200
+2023-07-03 23:09:18,376 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:09:18,377 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:09:18,443 - main2 - INFO - Response: 200
+2023-07-03 23:09:18,444 - main2 - INFO - Response: 200
+2023-07-03 23:14:13,378 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 23:14:13,433 - main2 - INFO - Response: 200
+2023-07-03 23:14:19,082 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:14:19,083 - main2 - INFO - Response: 200
+2023-07-03 23:14:19,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:14:19,159 - main2 - INFO - Response: 200
+2023-07-03 23:19:20,388 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:19:20,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:19:20,465 - main2 - INFO - Response: 200
+2023-07-03 23:19:20,466 - main2 - INFO - Response: 200
+2023-07-03 23:24:14,389 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 23:24:14,447 - main2 - INFO - Response: 200
+2023-07-03 23:24:21,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:24:21,150 - main2 - INFO - Response: 200
+2023-07-03 23:24:21,151 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:24:21,153 - main2 - INFO - Response: 200
+2023-07-03 23:29:22,379 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:29:22,380 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:29:22,451 - main2 - INFO - Response: 200
+2023-07-03 23:29:22,451 - main2 - INFO - Response: 200
+2023-07-03 23:34:15,390 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 23:34:15,443 - main2 - INFO - Response: 200
+2023-07-03 23:34:23,075 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:34:23,144 - main2 - INFO - Response: 200
+2023-07-03 23:34:23,146 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:34:23,147 - main2 - INFO - Response: 200
+2023-07-03 23:39:24,386 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:39:24,386 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:39:24,452 - main2 - INFO - Response: 200
+2023-07-03 23:39:24,452 - main2 - INFO - Response: 200
+2023-07-03 23:44:16,384 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 23:44:16,450 - main2 - INFO - Response: 200
+2023-07-03 23:44:25,076 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:44:25,170 - main2 - INFO - Response: 200
+2023-07-03 23:44:25,172 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:44:25,174 - main2 - INFO - Response: 200
+2023-07-03 23:49:26,384 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:49:26,384 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:49:26,465 - main2 - INFO - Response: 200
+2023-07-03 23:49:26,465 - main2 - INFO - Response: 200
+2023-07-03 23:54:17,379 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 23:54:17,444 - main2 - INFO - Response: 200
+2023-07-03 23:54:27,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:54:27,162 - main2 - INFO - Response: 200
+2023-07-03 23:54:27,165 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:54:27,166 - main2 - INFO - Response: 200
+2023-07-03 23:59:28,384 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 23:59:28,385 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 23:59:28,455 - main2 - INFO - Response: 200
+2023-07-03 23:59:28,455 - main2 - INFO - Response: 200
+2023-07-04 00:04:18,383 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 00:04:18,455 - main2 - INFO - Response: 200
+2023-07-04 00:04:29,077 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:04:29,148 - main2 - INFO - Response: 200
+2023-07-04 00:04:29,149 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:04:29,150 - main2 - INFO - Response: 200
+2023-07-04 00:09:30,415 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:09:30,416 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:09:30,502 - main2 - INFO - Response: 200
+2023-07-04 00:09:30,502 - main2 - INFO - Response: 200
+2023-07-04 00:14:19,386 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 00:14:19,452 - main2 - INFO - Response: 200
+2023-07-04 00:14:31,085 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:14:31,166 - main2 - INFO - Response: 200
+2023-07-04 00:14:31,168 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:14:31,170 - main2 - INFO - Response: 200
+2023-07-04 00:19:32,379 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:19:32,379 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:19:32,453 - main2 - INFO - Response: 200
+2023-07-04 00:19:32,453 - main2 - INFO - Response: 200
+2023-07-04 00:24:20,390 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 00:24:20,449 - main2 - INFO - Response: 200
+2023-07-04 00:24:33,074 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:24:33,145 - main2 - INFO - Response: 200
+2023-07-04 00:24:33,147 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:24:33,148 - main2 - INFO - Response: 200
+2023-07-04 00:29:34,381 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:29:34,381 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:29:34,468 - main2 - INFO - Response: 200
+2023-07-04 00:29:34,468 - main2 - INFO - Response: 200
+2023-07-04 00:34:21,387 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 00:34:21,440 - main2 - INFO - Response: 200
+2023-07-04 00:34:35,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:34:35,153 - main2 - INFO - Response: 200
+2023-07-04 00:34:35,154 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:34:35,156 - main2 - INFO - Response: 200
+2023-07-04 00:39:36,391 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:39:36,392 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:39:36,456 - main2 - INFO - Response: 200
+2023-07-04 00:39:36,456 - main2 - INFO - Response: 200
+2023-07-04 00:44:22,392 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 00:44:22,450 - main2 - INFO - Response: 200
+2023-07-04 00:44:37,080 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:44:37,081 - main2 - INFO - Response: 200
+2023-07-04 00:44:37,083 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:44:37,167 - main2 - INFO - Response: 200
+2023-07-04 00:49:38,379 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:49:38,380 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:49:38,464 - main2 - INFO - Response: 200
+2023-07-04 00:49:38,466 - main2 - INFO - Response: 200
+2023-07-04 00:54:23,379 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 00:54:23,434 - main2 - INFO - Response: 200
+2023-07-04 00:54:39,072 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:54:39,073 - main2 - INFO - Response: 200
+2023-07-04 00:54:39,075 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:54:39,148 - main2 - INFO - Response: 200
+2023-07-04 00:59:40,386 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 00:59:40,386 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 00:59:40,456 - main2 - INFO - Response: 200
+2023-07-04 00:59:40,456 - main2 - INFO - Response: 200
+2023-07-04 01:04:24,379 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 01:04:24,446 - main2 - INFO - Response: 200
+2023-07-04 01:04:41,081 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:04:41,083 - main2 - INFO - Response: 200
+2023-07-04 01:04:41,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:04:41,175 - main2 - INFO - Response: 200
+2023-07-04 01:09:42,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:09:42,388 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:09:42,468 - main2 - INFO - Response: 200
+2023-07-04 01:09:42,469 - main2 - INFO - Response: 200
+2023-07-04 01:14:25,384 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 01:14:25,437 - main2 - INFO - Response: 200
+2023-07-04 01:14:43,084 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:14:43,086 - main2 - INFO - Response: 200
+2023-07-04 01:14:43,088 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:14:43,162 - main2 - INFO - Response: 200
+2023-07-04 01:19:44,385 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:19:44,385 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:19:44,470 - main2 - INFO - Response: 200
+2023-07-04 01:19:44,470 - main2 - INFO - Response: 200
+2023-07-04 01:24:26,376 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 01:24:26,435 - main2 - INFO - Response: 200
+2023-07-04 01:24:45,080 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:24:45,081 - main2 - INFO - Response: 200
+2023-07-04 01:24:45,083 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:24:45,168 - main2 - INFO - Response: 200
+2023-07-04 01:29:46,391 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:29:46,392 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:29:46,460 - main2 - INFO - Response: 200
+2023-07-04 01:29:46,460 - main2 - INFO - Response: 200
+2023-07-04 01:34:27,388 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 01:34:27,440 - main2 - INFO - Response: 200
+2023-07-04 01:34:47,084 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:34:47,086 - main2 - INFO - Response: 200
+2023-07-04 01:34:47,088 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:34:47,160 - main2 - INFO - Response: 200
+2023-07-04 01:39:48,382 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:39:48,382 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:39:48,453 - main2 - INFO - Response: 200
+2023-07-04 01:39:48,453 - main2 - INFO - Response: 200
+2023-07-04 01:44:28,395 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 01:44:28,460 - main2 - INFO - Response: 200
+2023-07-04 01:44:49,076 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:44:49,077 - main2 - INFO - Response: 200
+2023-07-04 01:44:49,079 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:44:49,163 - main2 - INFO - Response: 200
+2023-07-04 01:49:50,378 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:49:50,378 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:49:50,457 - main2 - INFO - Response: 200
+2023-07-04 01:49:50,457 - main2 - INFO - Response: 200
+2023-07-04 01:54:29,389 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 01:54:29,446 - main2 - INFO - Response: 200
+2023-07-04 01:54:51,080 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:54:51,081 - main2 - INFO - Response: 200
+2023-07-04 01:54:51,083 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:54:51,152 - main2 - INFO - Response: 200
+2023-07-04 01:59:52,385 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 01:59:52,385 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 01:59:52,456 - main2 - INFO - Response: 200
+2023-07-04 01:59:52,456 - main2 - INFO - Response: 200
+2023-07-04 02:04:30,379 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 02:04:30,433 - main2 - INFO - Response: 200
+2023-07-04 02:04:53,081 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 02:04:53,082 - main2 - INFO - Response: 200
+2023-07-04 02:04:53,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 02:04:53,155 - main2 - INFO - Response: 200
+2023-07-04 02:09:54,383 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 02:09:54,383 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 02:09:54,457 - main2 - INFO - Response: 200
+2023-07-04 02:09:54,457 - main2 - INFO - Response: 200
+2023-07-04 02:14:31,379 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 02:14:31,438 - main2 - INFO - Response: 200
+2023-07-04 02:14:55,071 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 02:14:55,073 - main2 - INFO - Response: 200
+2023-07-04 02:14:55,075 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 02:14:55,177 - main2 - INFO - Response: 200
+2023-07-04 02:19:56,382 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 02:19:56,383 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 02:19:56,477 - main2 - INFO - Response: 200
+2023-07-04 02:19:56,477 - main2 - INFO - Response: 200
+2023-07-04 02:24:32,379 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 02:24:32,437 - main2 - INFO - Response: 200
+2023-07-04 02:24:57,085 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 02:24:57,086 - main2 - INFO - Response: 200
+2023-07-04 02:24:57,087 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 02:24:57,154 - main2 - INFO - Response: 200
+2023-07-04 02:29:58,389 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 02:29:58,389 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 02:29:58,463 - main2 - INFO - Response: 200
+2023-07-04 02:29:58,463 - main2 - INFO - Response: 200
+2023-07-04 02:34:33,384 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 02:34:33,446 - main2 - INFO - Response: 200
+2023-07-04 02:34:59,076 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 02:34:59,077 - main2 - INFO - Response: 200
+2023-07-04 02:34:59,078 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 02:34:59,155 - main2 - INFO - Response: 200
+2023-07-04 02:40:00,378 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 02:40:00,378 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 02:40:00,453 - main2 - INFO - Response: 200
+2023-07-04 02:40:00,453 - main2 - INFO - Response: 200
+2023-07-04 02:44:34,389 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 02:44:34,448 - main2 - INFO - Response: 200
+2023-07-04 02:45:01,074 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 02:45:01,075 - main2 - INFO - Response: 200
+2023-07-04 02:45:01,076 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 02:45:01,144 - main2 - INFO - Response: 200
+2023-07-04 02:50:02,385 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 02:50:02,385 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 02:50:02,451 - main2 - INFO - Response: 200
+2023-07-04 02:50:02,451 - main2 - INFO - Response: 200
+2023-07-04 02:54:35,390 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 02:54:35,443 - main2 - INFO - Response: 200
+2023-07-04 02:55:03,076 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 02:55:03,077 - main2 - INFO - Response: 200
+2023-07-04 02:55:03,078 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 02:55:03,167 - main2 - INFO - Response: 200
+2023-07-04 03:00:04,392 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:00:04,392 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:00:04,460 - main2 - INFO - Response: 200
+2023-07-04 03:00:04,460 - main2 - INFO - Response: 200
+2023-07-04 03:04:36,379 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 03:04:36,435 - main2 - INFO - Response: 200
+2023-07-04 03:05:05,073 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:05:05,074 - main2 - INFO - Response: 200
+2023-07-04 03:05:05,076 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:05:05,156 - main2 - INFO - Response: 200
+2023-07-04 03:10:06,381 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:10:06,382 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:10:06,464 - main2 - INFO - Response: 200
+2023-07-04 03:10:06,464 - main2 - INFO - Response: 200
+2023-07-04 03:14:37,455 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 03:14:37,512 - main2 - INFO - Response: 200
+2023-07-04 03:15:07,082 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:15:07,083 - main2 - INFO - Response: 200
+2023-07-04 03:15:07,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:15:07,197 - main2 - INFO - Response: 200
+2023-07-04 03:20:08,382 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:20:08,384 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:20:08,451 - main2 - INFO - Response: 200
+2023-07-04 03:20:08,452 - main2 - INFO - Response: 200
+2023-07-04 03:24:38,381 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 03:24:38,441 - main2 - INFO - Response: 200
+2023-07-04 03:25:09,085 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:25:09,086 - main2 - INFO - Response: 200
+2023-07-04 03:25:09,088 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:25:09,156 - main2 - INFO - Response: 200
+2023-07-04 03:30:10,386 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:30:10,387 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:30:10,469 - main2 - INFO - Response: 200
+2023-07-04 03:30:10,469 - main2 - INFO - Response: 200
+2023-07-04 03:34:39,390 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 03:34:39,454 - main2 - INFO - Response: 200
+2023-07-04 03:35:11,082 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:35:11,083 - main2 - INFO - Response: 200
+2023-07-04 03:35:11,085 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:35:11,151 - main2 - INFO - Response: 200
+2023-07-04 03:40:12,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:40:12,389 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:40:12,468 - main2 - INFO - Response: 200
+2023-07-04 03:40:12,468 - main2 - INFO - Response: 200
+2023-07-04 03:44:40,384 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 03:44:40,447 - main2 - INFO - Response: 200
+2023-07-04 03:45:13,083 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:45:13,085 - main2 - INFO - Response: 200
+2023-07-04 03:45:13,087 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:45:13,168 - main2 - INFO - Response: 200
+2023-07-04 03:50:14,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:50:14,398 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:50:14,465 - main2 - INFO - Response: 200
+2023-07-04 03:50:14,465 - main2 - INFO - Response: 200
+2023-07-04 03:54:41,388 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 03:54:41,451 - main2 - INFO - Response: 200
+2023-07-04 03:55:15,080 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 03:55:15,083 - main2 - INFO - Response: 200
+2023-07-04 03:55:15,085 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 03:55:15,151 - main2 - INFO - Response: 200
+2023-07-04 04:00:16,396 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:00:16,397 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:00:16,464 - main2 - INFO - Response: 200
+2023-07-04 04:00:16,464 - main2 - INFO - Response: 200
+2023-07-04 04:04:42,394 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 04:04:42,447 - main2 - INFO - Response: 200
+2023-07-04 04:05:17,079 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:05:17,081 - main2 - INFO - Response: 200
+2023-07-04 04:05:17,083 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:05:17,155 - main2 - INFO - Response: 200
+2023-07-04 04:10:18,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:10:18,392 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:10:18,470 - main2 - INFO - Response: 200
+2023-07-04 04:10:18,470 - main2 - INFO - Response: 200
+2023-07-04 04:14:43,394 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 04:14:43,450 - main2 - INFO - Response: 200
+2023-07-04 04:15:19,088 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:15:19,089 - main2 - INFO - Response: 200
+2023-07-04 04:15:19,091 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:15:19,159 - main2 - INFO - Response: 200
+2023-07-04 04:20:20,395 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:20:20,396 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:20:20,479 - main2 - INFO - Response: 200
+2023-07-04 04:20:20,479 - main2 - INFO - Response: 200
+2023-07-04 04:24:44,385 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 04:24:44,441 - main2 - INFO - Response: 200
+2023-07-04 04:25:21,083 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:25:21,085 - main2 - INFO - Response: 200
+2023-07-04 04:25:21,086 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:25:21,153 - main2 - INFO - Response: 200
+2023-07-04 04:30:22,383 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:30:22,384 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:30:22,452 - main2 - INFO - Response: 200
+2023-07-04 04:30:22,453 - main2 - INFO - Response: 200
+2023-07-04 04:34:45,386 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 04:34:45,441 - main2 - INFO - Response: 200
+2023-07-04 04:35:23,086 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:35:23,087 - main2 - INFO - Response: 200
+2023-07-04 04:35:23,089 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:35:23,169 - main2 - INFO - Response: 200
+2023-07-04 04:40:24,395 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:40:24,397 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:40:24,464 - main2 - INFO - Response: 200
+2023-07-04 04:40:24,464 - main2 - INFO - Response: 200
+2023-07-04 04:44:46,391 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 04:44:46,447 - main2 - INFO - Response: 200
+2023-07-04 04:45:25,081 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:45:25,083 - main2 - INFO - Response: 200
+2023-07-04 04:45:25,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:45:25,150 - main2 - INFO - Response: 200
+2023-07-04 04:50:26,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:50:26,390 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:50:26,467 - main2 - INFO - Response: 200
+2023-07-04 04:50:26,467 - main2 - INFO - Response: 200
+2023-07-04 04:54:47,399 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 04:54:47,478 - main2 - INFO - Response: 200
+2023-07-04 04:55:27,076 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 04:55:27,080 - main2 - INFO - Response: 200
+2023-07-04 04:55:27,086 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 04:55:27,174 - main2 - INFO - Response: 200
+2023-07-04 05:00:28,399 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:00:28,401 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:00:28,467 - main2 - INFO - Response: 200
+2023-07-04 05:00:28,467 - main2 - INFO - Response: 200
+2023-07-04 05:04:48,389 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 05:04:48,446 - main2 - INFO - Response: 200
+2023-07-04 05:05:29,087 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:05:29,088 - main2 - INFO - Response: 200
+2023-07-04 05:05:29,090 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:05:29,158 - main2 - INFO - Response: 200
+2023-07-04 05:10:30,383 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:10:30,384 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:10:30,456 - main2 - INFO - Response: 200
+2023-07-04 05:10:30,456 - main2 - INFO - Response: 200
+2023-07-04 05:14:49,385 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 05:14:49,440 - main2 - INFO - Response: 200
+2023-07-04 05:15:31,070 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:15:31,072 - main2 - INFO - Response: 200
+2023-07-04 05:15:31,074 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:15:31,147 - main2 - INFO - Response: 200
+2023-07-04 05:20:32,385 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:20:32,387 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:20:32,453 - main2 - INFO - Response: 200
+2023-07-04 05:20:32,453 - main2 - INFO - Response: 200
+2023-07-04 05:24:50,424 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 05:24:50,507 - main2 - INFO - Response: 200
+2023-07-04 05:25:33,081 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:25:33,082 - main2 - INFO - Response: 200
+2023-07-04 05:25:33,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:25:33,155 - main2 - INFO - Response: 200
+2023-07-04 05:30:34,392 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:30:34,394 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:30:34,470 - main2 - INFO - Response: 200
+2023-07-04 05:30:34,471 - main2 - INFO - Response: 200
+2023-07-04 05:34:51,395 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 05:34:51,458 - main2 - INFO - Response: 200
+2023-07-04 05:35:35,085 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:35:35,087 - main2 - INFO - Response: 200
+2023-07-04 05:35:35,088 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:35:35,159 - main2 - INFO - Response: 200
+2023-07-04 05:40:36,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:40:36,389 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:40:36,461 - main2 - INFO - Response: 200
+2023-07-04 05:40:36,462 - main2 - INFO - Response: 200
+2023-07-04 05:44:52,389 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 05:44:52,472 - main2 - INFO - Response: 200
+2023-07-04 05:45:37,085 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:45:37,086 - main2 - INFO - Response: 200
+2023-07-04 05:45:37,088 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:45:37,157 - main2 - INFO - Response: 200
+2023-07-04 05:50:38,386 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:50:38,388 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:50:38,463 - main2 - INFO - Response: 200
+2023-07-04 05:50:38,463 - main2 - INFO - Response: 200
+2023-07-04 05:54:53,396 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 05:54:53,473 - main2 - INFO - Response: 200
+2023-07-04 05:55:39,075 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 05:55:39,076 - main2 - INFO - Response: 200
+2023-07-04 05:55:39,078 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 05:55:39,146 - main2 - INFO - Response: 200
+2023-07-04 06:00:40,402 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:00:40,403 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:00:40,514 - main2 - INFO - Response: 200
+2023-07-04 06:00:40,514 - main2 - INFO - Response: 200
+2023-07-04 06:04:54,391 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 06:04:54,444 - main2 - INFO - Response: 200
+2023-07-04 06:05:41,083 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:05:41,084 - main2 - INFO - Response: 200
+2023-07-04 06:05:41,085 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:05:41,163 - main2 - INFO - Response: 200
+2023-07-04 06:10:42,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:10:42,390 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:10:42,461 - main2 - INFO - Response: 200
+2023-07-04 06:10:42,461 - main2 - INFO - Response: 200
+2023-07-04 06:14:55,399 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 06:14:55,458 - main2 - INFO - Response: 200
+2023-07-04 06:15:43,089 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:15:43,093 - main2 - INFO - Response: 200
+2023-07-04 06:15:43,094 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:15:43,162 - main2 - INFO - Response: 200
+2023-07-04 06:20:44,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:20:44,392 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:20:44,461 - main2 - INFO - Response: 200
+2023-07-04 06:20:44,461 - main2 - INFO - Response: 200
+2023-07-04 06:24:56,394 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 06:24:56,456 - main2 - INFO - Response: 200
+2023-07-04 06:25:45,082 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:25:45,083 - main2 - INFO - Response: 200
+2023-07-04 06:25:45,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:25:45,155 - main2 - INFO - Response: 200
+2023-07-04 06:30:46,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:30:46,388 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:30:46,458 - main2 - INFO - Response: 200
+2023-07-04 06:30:46,459 - main2 - INFO - Response: 200
+2023-07-04 06:34:57,388 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 06:34:57,442 - main2 - INFO - Response: 200
+2023-07-04 06:35:47,083 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:35:47,085 - main2 - INFO - Response: 200
+2023-07-04 06:35:47,087 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:35:47,158 - main2 - INFO - Response: 200
+2023-07-04 06:40:48,389 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:40:48,391 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:40:48,457 - main2 - INFO - Response: 200
+2023-07-04 06:40:48,458 - main2 - INFO - Response: 200
+2023-07-04 06:44:58,391 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 06:44:58,446 - main2 - INFO - Response: 200
+2023-07-04 06:45:49,085 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:45:49,086 - main2 - INFO - Response: 200
+2023-07-04 06:45:49,087 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:45:49,154 - main2 - INFO - Response: 200
+2023-07-04 06:50:50,392 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:50:50,394 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:50:50,470 - main2 - INFO - Response: 200
+2023-07-04 06:50:50,471 - main2 - INFO - Response: 200
+2023-07-04 06:54:59,392 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 06:54:59,456 - main2 - INFO - Response: 200
+2023-07-04 06:55:51,085 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 06:55:51,088 - main2 - INFO - Response: 200
+2023-07-04 06:55:51,091 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 06:55:51,161 - main2 - INFO - Response: 200
+2023-07-04 07:00:52,396 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:00:52,396 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:00:52,472 - main2 - INFO - Response: 200
+2023-07-04 07:00:52,472 - main2 - INFO - Response: 200
+2023-07-04 07:05:00,393 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 07:05:00,457 - main2 - INFO - Response: 200
+2023-07-04 07:05:53,077 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:05:53,079 - main2 - INFO - Response: 200
+2023-07-04 07:05:53,081 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:05:53,149 - main2 - INFO - Response: 200
+2023-07-04 07:10:54,385 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:10:54,386 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:10:54,454 - main2 - INFO - Response: 200
+2023-07-04 07:10:54,454 - main2 - INFO - Response: 200
+2023-07-04 07:15:01,387 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 07:15:01,450 - main2 - INFO - Response: 200
+2023-07-04 07:15:55,089 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:15:55,092 - main2 - INFO - Response: 200
+2023-07-04 07:15:55,094 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:15:55,164 - main2 - INFO - Response: 200
+2023-07-04 07:20:56,391 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:20:56,392 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:20:56,461 - main2 - INFO - Response: 200
+2023-07-04 07:20:56,462 - main2 - INFO - Response: 200
+2023-07-04 07:25:02,393 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 07:25:02,451 - main2 - INFO - Response: 200
+2023-07-04 07:25:57,076 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:25:57,077 - main2 - INFO - Response: 200
+2023-07-04 07:25:57,078 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:25:57,146 - main2 - INFO - Response: 200
+2023-07-04 07:30:58,384 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:30:58,386 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:30:58,464 - main2 - INFO - Response: 200
+2023-07-04 07:30:58,465 - main2 - INFO - Response: 200
+2023-07-04 07:35:03,400 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 07:35:03,455 - main2 - INFO - Response: 200
+2023-07-04 07:35:59,079 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:35:59,083 - main2 - INFO - Response: 200
+2023-07-04 07:35:59,089 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:35:59,197 - main2 - INFO - Response: 200
+2023-07-04 07:41:00,395 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:41:00,395 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:41:00,463 - main2 - INFO - Response: 200
+2023-07-04 07:41:00,463 - main2 - INFO - Response: 200
+2023-07-04 07:45:04,400 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 07:45:04,464 - main2 - INFO - Response: 200
+2023-07-04 07:46:01,090 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:46:01,185 - main2 - INFO - Response: 200
+2023-07-04 07:46:01,186 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:46:01,188 - main2 - INFO - Response: 200
+2023-07-04 07:51:02,393 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:51:02,394 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:51:02,462 - main2 - INFO - Response: 200
+2023-07-04 07:51:02,462 - main2 - INFO - Response: 200
+2023-07-04 07:55:05,385 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 07:55:05,467 - main2 - INFO - Response: 200
+2023-07-04 07:56:03,090 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 07:56:03,095 - main2 - INFO - Response: 200
+2023-07-04 07:56:03,099 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 07:56:03,171 - main2 - INFO - Response: 200
+2023-07-04 08:01:04,391 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:01:04,393 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:01:04,459 - main2 - INFO - Response: 200
+2023-07-04 08:01:04,459 - main2 - INFO - Response: 200
+2023-07-04 08:05:06,387 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 08:05:06,450 - main2 - INFO - Response: 200
+2023-07-04 08:06:05,083 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:06:05,084 - main2 - INFO - Response: 200
+2023-07-04 08:06:05,086 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:06:05,157 - main2 - INFO - Response: 200
+2023-07-04 08:11:06,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:11:06,390 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:11:06,484 - main2 - INFO - Response: 200
+2023-07-04 08:11:06,485 - main2 - INFO - Response: 200
+2023-07-04 08:15:07,386 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 08:15:07,471 - main2 - INFO - Response: 200
+2023-07-04 08:16:07,088 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:16:07,094 - main2 - INFO - Response: 200
+2023-07-04 08:16:07,100 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:16:07,181 - main2 - INFO - Response: 200
+2023-07-04 08:21:08,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:21:08,390 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:21:08,456 - main2 - INFO - Response: 200
+2023-07-04 08:21:08,456 - main2 - INFO - Response: 200
+2023-07-04 08:25:08,399 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 08:25:08,462 - main2 - INFO - Response: 200
+2023-07-04 08:26:09,398 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:26:09,400 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:26:09,466 - main2 - INFO - Response: 200
+2023-07-04 08:26:09,467 - main2 - INFO - Response: 200
+2023-07-04 08:31:10,395 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:31:10,397 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:31:10,496 - main2 - INFO - Response: 200
+2023-07-04 08:31:10,496 - main2 - INFO - Response: 200
+2023-07-04 08:35:09,382 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 08:35:09,435 - main2 - INFO - Response: 200
+2023-07-04 08:36:11,392 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:36:11,395 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:36:11,463 - main2 - INFO - Response: 200
+2023-07-04 08:36:11,463 - main2 - INFO - Response: 200
+2023-07-04 08:41:12,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:41:12,389 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:41:12,490 - main2 - INFO - Response: 200
+2023-07-04 08:41:12,490 - main2 - INFO - Response: 200
+2023-07-04 08:45:10,388 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 08:45:10,449 - main2 - INFO - Response: 200
+2023-07-04 08:46:13,392 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:46:13,394 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:46:13,460 - main2 - INFO - Response: 200
+2023-07-04 08:46:13,460 - main2 - INFO - Response: 200
+2023-07-04 08:51:14,389 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:51:14,391 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:51:14,458 - main2 - INFO - Response: 200
+2023-07-04 08:51:14,459 - main2 - INFO - Response: 200
+2023-07-04 08:55:11,394 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 08:55:11,458 - main2 - INFO - Response: 200
+2023-07-04 08:56:15,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 08:56:15,399 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 08:56:15,475 - main2 - INFO - Response: 200
+2023-07-04 08:56:15,475 - main2 - INFO - Response: 200
+2023-07-04 09:01:16,394 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:01:16,395 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:01:16,468 - main2 - INFO - Response: 200
+2023-07-04 09:01:16,468 - main2 - INFO - Response: 200
+2023-07-04 09:05:12,391 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 09:05:12,455 - main2 - INFO - Response: 200
+2023-07-04 09:06:17,392 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:06:17,394 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:06:17,463 - main2 - INFO - Response: 200
+2023-07-04 09:06:17,463 - main2 - INFO - Response: 200
+2023-07-04 09:11:18,394 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:11:18,395 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:11:18,462 - main2 - INFO - Response: 200
+2023-07-04 09:11:18,462 - main2 - INFO - Response: 200
+2023-07-04 09:15:13,399 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 09:15:13,481 - main2 - INFO - Response: 200
+2023-07-04 09:16:19,396 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:16:19,397 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:16:19,465 - main2 - INFO - Response: 200
+2023-07-04 09:16:19,465 - main2 - INFO - Response: 200
+2023-07-04 09:21:20,386 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:21:20,388 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:21:20,484 - main2 - INFO - Response: 200
+2023-07-04 09:21:20,484 - main2 - INFO - Response: 200
+2023-07-04 09:25:14,388 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 09:25:14,464 - main2 - INFO - Response: 200
+2023-07-04 09:26:21,393 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:26:21,394 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:26:21,461 - main2 - INFO - Response: 200
+2023-07-04 09:26:21,462 - main2 - INFO - Response: 200
+2023-07-04 09:31:22,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:31:22,399 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:31:22,465 - main2 - INFO - Response: 200
+2023-07-04 09:31:22,466 - main2 - INFO - Response: 200
+2023-07-04 09:35:15,396 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 09:35:15,470 - main2 - INFO - Response: 200
+2023-07-04 09:36:23,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:36:23,400 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:36:23,476 - main2 - INFO - Response: 200
+2023-07-04 09:36:23,476 - main2 - INFO - Response: 200
+2023-07-04 09:41:24,390 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:41:24,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:41:24,459 - main2 - INFO - Response: 200
+2023-07-04 09:41:24,459 - main2 - INFO - Response: 200
+2023-07-04 09:45:16,395 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 09:45:16,458 - main2 - INFO - Response: 200
+2023-07-04 09:46:25,384 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:46:25,384 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:46:25,464 - main2 - INFO - Response: 200
+2023-07-04 09:46:25,464 - main2 - INFO - Response: 200
+2023-07-04 09:51:26,385 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:51:26,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:51:26,453 - main2 - INFO - Response: 200
+2023-07-04 09:51:26,453 - main2 - INFO - Response: 200
+2023-07-04 09:55:17,399 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 09:55:17,454 - main2 - INFO - Response: 200
+2023-07-04 09:56:27,392 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 09:56:27,394 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 09:56:27,467 - main2 - INFO - Response: 200
+2023-07-04 09:56:27,468 - main2 - INFO - Response: 200
+2023-07-04 10:01:28,387 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:01:28,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:01:28,453 - main2 - INFO - Response: 200
+2023-07-04 10:01:28,454 - main2 - INFO - Response: 200
+2023-07-04 10:05:18,399 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 10:05:18,458 - main2 - INFO - Response: 200
+2023-07-04 10:06:29,387 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:06:29,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:06:29,463 - main2 - INFO - Response: 200
+2023-07-04 10:06:29,464 - main2 - INFO - Response: 200
+2023-07-04 10:11:30,390 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:11:30,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:11:30,461 - main2 - INFO - Response: 200
+2023-07-04 10:11:30,461 - main2 - INFO - Response: 200
+2023-07-04 10:15:19,388 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 10:15:19,446 - main2 - INFO - Response: 200
+2023-07-04 10:16:31,386 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:16:31,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:16:31,469 - main2 - INFO - Response: 200
+2023-07-04 10:16:31,469 - main2 - INFO - Response: 200
+2023-07-04 10:21:32,390 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:21:32,392 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:21:32,467 - main2 - INFO - Response: 200
+2023-07-04 10:21:32,468 - main2 - INFO - Response: 200
+2023-07-04 10:25:20,390 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 10:25:20,454 - main2 - INFO - Response: 200
+2023-07-04 10:26:33,393 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:26:33,394 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:26:33,462 - main2 - INFO - Response: 200
+2023-07-04 10:26:33,462 - main2 - INFO - Response: 200
+2023-07-04 10:31:34,391 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:31:34,393 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:31:34,459 - main2 - INFO - Response: 200
+2023-07-04 10:31:34,459 - main2 - INFO - Response: 200
+2023-07-04 10:35:21,385 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 10:35:21,453 - main2 - INFO - Response: 200
+2023-07-04 10:36:35,395 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:36:35,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:36:35,465 - main2 - INFO - Response: 200
+2023-07-04 10:36:35,465 - main2 - INFO - Response: 200
+2023-07-04 10:41:36,394 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:41:36,394 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:41:36,459 - main2 - INFO - Response: 200
+2023-07-04 10:41:36,460 - main2 - INFO - Response: 200
+2023-07-04 10:45:22,383 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 10:45:22,456 - main2 - INFO - Response: 200
+2023-07-04 10:46:37,397 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:46:37,400 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:46:37,466 - main2 - INFO - Response: 200
+2023-07-04 10:46:37,466 - main2 - INFO - Response: 200
+2023-07-04 10:51:38,394 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:51:38,396 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:51:38,464 - main2 - INFO - Response: 200
+2023-07-04 10:51:38,464 - main2 - INFO - Response: 200
+2023-07-04 10:55:23,394 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 10:55:23,467 - main2 - INFO - Response: 200
+2023-07-04 10:56:39,388 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 10:56:39,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 10:56:39,455 - main2 - INFO - Response: 200
+2023-07-04 10:56:39,455 - main2 - INFO - Response: 200
+2023-07-04 11:01:40,399 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:01:40,401 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:01:40,499 - main2 - INFO - Response: 200
+2023-07-04 11:01:40,499 - main2 - INFO - Response: 200
+2023-07-04 11:05:24,383 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 11:05:24,444 - main2 - INFO - Response: 200
+2023-07-04 11:06:41,386 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:06:41,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:06:41,469 - main2 - INFO - Response: 200
+2023-07-04 11:06:41,469 - main2 - INFO - Response: 200
+2023-07-04 11:11:42,385 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:11:42,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:11:42,453 - main2 - INFO - Response: 200
+2023-07-04 11:11:42,453 - main2 - INFO - Response: 200
+2023-07-04 11:15:25,381 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 11:15:25,434 - main2 - INFO - Response: 200
+2023-07-04 11:16:43,391 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:16:43,394 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:16:43,471 - main2 - INFO - Response: 200
+2023-07-04 11:16:43,471 - main2 - INFO - Response: 200
+2023-07-04 11:21:44,388 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:21:44,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:21:44,491 - main2 - INFO - Response: 200
+2023-07-04 11:21:44,491 - main2 - INFO - Response: 200
+2023-07-04 11:25:26,390 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 11:25:26,453 - main2 - INFO - Response: 200
+2023-07-04 11:26:45,383 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:26:45,384 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:26:45,453 - main2 - INFO - Response: 200
+2023-07-04 11:26:45,453 - main2 - INFO - Response: 200
+2023-07-04 11:31:46,390 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:31:46,391 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:31:46,481 - main2 - INFO - Response: 200
+2023-07-04 11:31:46,481 - main2 - INFO - Response: 200
+2023-07-04 11:35:27,392 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 11:35:27,448 - main2 - INFO - Response: 200
+2023-07-04 11:36:47,388 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:36:47,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:36:47,457 - main2 - INFO - Response: 200
+2023-07-04 11:36:47,458 - main2 - INFO - Response: 200
+2023-07-04 11:41:48,395 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:41:48,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:41:48,464 - main2 - INFO - Response: 200
+2023-07-04 11:41:48,465 - main2 - INFO - Response: 200
+2023-07-04 11:45:28,391 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 11:45:28,464 - main2 - INFO - Response: 200
+2023-07-04 11:46:49,386 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:46:49,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:46:49,481 - main2 - INFO - Response: 200
+2023-07-04 11:46:49,481 - main2 - INFO - Response: 200
+2023-07-04 11:51:50,395 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:51:50,396 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:51:50,468 - main2 - INFO - Response: 200
+2023-07-04 11:51:50,469 - main2 - INFO - Response: 200
+2023-07-04 11:55:29,390 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 11:55:29,445 - main2 - INFO - Response: 200
+2023-07-04 11:56:51,385 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 11:56:51,386 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 11:56:51,453 - main2 - INFO - Response: 200
+2023-07-04 11:56:51,453 - main2 - INFO - Response: 200
+2023-07-04 12:01:52,383 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:01:52,383 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:01:52,457 - main2 - INFO - Response: 200
+2023-07-04 12:01:52,457 - main2 - INFO - Response: 200
+2023-07-04 12:05:30,386 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 12:05:30,449 - main2 - INFO - Response: 200
+2023-07-04 12:06:53,398 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:06:53,400 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:06:53,467 - main2 - INFO - Response: 200
+2023-07-04 12:06:53,468 - main2 - INFO - Response: 200
+2023-07-04 12:11:54,382 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:11:54,382 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:11:54,452 - main2 - INFO - Response: 200
+2023-07-04 12:11:54,452 - main2 - INFO - Response: 200
+2023-07-04 12:15:31,394 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 12:15:31,450 - main2 - INFO - Response: 200
+2023-07-04 12:16:55,435 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:16:55,438 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:16:55,783 - main2 - INFO - Response: 200
+2023-07-04 12:16:55,783 - main2 - INFO - Response: 200
+2023-07-04 12:21:56,393 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:21:56,394 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:21:57,124 - main2 - INFO - Response: 200
+2023-07-04 12:21:57,124 - main2 - INFO - Response: 200
+2023-07-04 12:25:32,421 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 12:25:32,885 - main2 - INFO - Response: 200
+2023-07-04 12:26:58,393 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:26:58,394 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:26:58,475 - main2 - INFO - Response: 200
+2023-07-04 12:26:58,475 - main2 - INFO - Response: 200
+2023-07-04 12:31:59,696 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:31:59,697 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:31:59,858 - main2 - INFO - Response: 200
+2023-07-04 12:31:59,859 - main2 - INFO - Response: 200
+2023-07-04 12:35:33,414 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 12:35:33,584 - main2 - INFO - Response: 200
+2023-07-04 12:37:00,413 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:37:00,413 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:37:00,561 - main2 - INFO - Response: 200
+2023-07-04 12:37:00,561 - main2 - INFO - Response: 200
+2023-07-04 12:42:01,481 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:42:01,850 - main2 - INFO - Response: 200
+2023-07-04 12:42:01,852 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:42:01,855 - main2 - INFO - Response: 200
+2023-07-04 12:45:34,505 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 12:45:34,678 - main2 - INFO - Response: 200
+2023-07-04 12:47:02,528 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:47:02,530 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:47:02,670 - main2 - INFO - Response: 200
+2023-07-04 12:47:02,670 - main2 - INFO - Response: 200
+2023-07-04 12:52:03,391 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:52:03,393 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:52:03,979 - main2 - INFO - Response: 200
+2023-07-04 12:52:03,983 - main2 - INFO - Response: 200
+2023-07-04 12:55:35,396 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 12:55:35,488 - main2 - INFO - Response: 200
+2023-07-04 12:57:04,839 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 12:57:05,646 - main2 - INFO - Response: 200
+2023-07-04 12:57:05,657 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 12:57:05,661 - main2 - INFO - Response: 200
+2023-07-04 13:02:06,592 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:02:07,047 - main2 - INFO - Response: 200
+2023-07-04 13:02:07,060 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:02:07,066 - main2 - INFO - Response: 200
+2023-07-04 13:05:36,422 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 13:05:37,200 - main2 - INFO - Response: 200
+2023-07-04 13:07:08,392 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:07:08,396 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:07:08,911 - main2 - INFO - Response: 200
+2023-07-04 13:07:08,913 - main2 - INFO - Response: 200
+2023-07-04 13:12:09,462 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:12:09,463 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:12:09,688 - main2 - INFO - Response: 200
+2023-07-04 13:12:09,689 - main2 - INFO - Response: 200
+2023-07-04 13:15:38,992 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 13:15:39,288 - main2 - INFO - Response: 200
+2023-07-04 13:17:10,401 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:17:10,403 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:17:10,500 - main2 - INFO - Response: 200
+2023-07-04 13:17:10,501 - main2 - INFO - Response: 200
+2023-07-04 13:22:11,648 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:22:11,649 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:22:12,482 - main2 - INFO - Response: 200
+2023-07-04 13:22:12,484 - main2 - INFO - Response: 200
+2023-07-04 13:25:40,385 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 13:25:40,503 - main2 - INFO - Response: 200
+2023-07-04 13:27:13,402 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:27:13,402 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:27:13,535 - main2 - INFO - Response: 200
+2023-07-04 13:27:13,536 - main2 - INFO - Response: 200
+2023-07-04 13:32:14,466 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:32:14,467 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:32:15,202 - main2 - INFO - Response: 200
+2023-07-04 13:32:15,306 - main2 - INFO - Response: 200
+2023-07-04 13:35:41,595 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 13:35:41,861 - main2 - INFO - Response: 200
+2023-07-04 13:37:16,883 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:37:16,883 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:37:17,848 - main2 - INFO - Response: 200
+2023-07-04 13:37:17,849 - main2 - INFO - Response: 200
+2023-07-04 13:42:18,389 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:42:18,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:42:18,514 - main2 - INFO - Response: 200
+2023-07-04 13:42:18,515 - main2 - INFO - Response: 200
+2023-07-04 13:45:42,384 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 13:45:42,468 - main2 - INFO - Response: 200
+2023-07-04 13:47:19,395 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:47:19,611 - main2 - INFO - Response: 200
+2023-07-04 13:47:19,613 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:47:19,616 - main2 - INFO - Response: 200
+2023-07-04 13:52:20,714 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:52:20,716 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:52:21,421 - main2 - INFO - Response: 200
+2023-07-04 13:52:21,422 - main2 - INFO - Response: 200
+2023-07-04 13:55:44,271 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 13:55:44,561 - main2 - INFO - Response: 200
+2023-07-04 13:57:22,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 13:57:22,397 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 13:57:23,078 - main2 - INFO - Response: 200
+2023-07-04 13:57:23,079 - main2 - INFO - Response: 200
+2023-07-04 14:02:24,739 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:02:24,740 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:02:24,892 - main2 - INFO - Response: 200
+2023-07-04 14:02:24,893 - main2 - INFO - Response: 200
+2023-07-04 14:05:45,394 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 14:05:47,653 - main2 - INFO - Response: 200
+2023-07-04 14:07:25,398 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:07:25,400 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:07:25,632 - main2 - INFO - Response: 200
+2023-07-04 14:07:25,632 - main2 - INFO - Response: 200
+2023-07-04 14:12:26,482 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:12:26,484 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:12:26,669 - main2 - INFO - Response: 200
+2023-07-04 14:12:26,670 - main2 - INFO - Response: 200
+2023-07-04 14:15:48,462 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 14:15:48,993 - main2 - INFO - Response: 200
+2023-07-04 14:17:27,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:17:27,387 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:17:28,492 - main2 - INFO - Response: 200
+2023-07-04 14:17:28,495 - main2 - INFO - Response: 200
+2023-07-04 14:22:29,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:22:29,387 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:22:29,501 - main2 - INFO - Response: 200
+2023-07-04 14:22:29,501 - main2 - INFO - Response: 200
+2023-07-04 14:25:50,464 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 14:25:50,965 - main2 - INFO - Response: 200
+2023-07-04 14:27:30,442 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:27:30,442 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:27:30,538 - main2 - INFO - Response: 200
+2023-07-04 14:27:30,539 - main2 - INFO - Response: 200
+2023-07-04 14:32:31,412 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:32:31,413 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:32:31,537 - main2 - INFO - Response: 200
+2023-07-04 14:32:31,537 - main2 - INFO - Response: 200
+2023-07-04 14:35:51,388 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 14:35:52,020 - main2 - INFO - Response: 200
+2023-07-04 14:37:32,405 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:37:32,406 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:37:32,492 - main2 - INFO - Response: 200
+2023-07-04 14:37:32,493 - main2 - INFO - Response: 200
+2023-07-04 14:42:33,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:42:33,398 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:42:33,496 - main2 - INFO - Response: 200
+2023-07-04 14:42:33,497 - main2 - INFO - Response: 200
+2023-07-04 14:45:52,387 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 14:45:53,023 - main2 - INFO - Response: 200
+2023-07-04 14:47:34,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:47:34,389 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:47:34,478 - main2 - INFO - Response: 200
+2023-07-04 14:47:34,478 - main2 - INFO - Response: 200
+2023-07-04 14:52:35,384 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:52:35,385 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:52:35,492 - main2 - INFO - Response: 200
+2023-07-04 14:52:35,493 - main2 - INFO - Response: 200
+2023-07-04 14:55:53,575 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 14:55:53,746 - main2 - INFO - Response: 200
+2023-07-04 14:57:36,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 14:57:36,389 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 14:57:36,780 - main2 - INFO - Response: 200
+2023-07-04 14:57:36,782 - main2 - INFO - Response: 200
+2023-07-04 15:02:37,409 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:02:37,410 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:02:37,415 - main2 - INFO - Response: 200
+2023-07-04 15:02:37,781 - main2 - INFO - Response: 200
+2023-07-04 15:05:54,463 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 15:05:54,944 - main2 - INFO - Response: 200
+2023-07-04 15:07:38,454 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:07:38,456 - main2 - INFO - Response: 200
+2023-07-04 15:07:38,860 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:07:39,181 - main2 - INFO - Response: 200
+2023-07-04 15:12:39,612 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:12:39,614 - main2 - INFO - Response: 200
+2023-07-04 15:12:40,101 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:12:40,465 - main2 - INFO - Response: 200
+2023-07-04 15:15:55,415 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 15:15:55,629 - main2 - INFO - Response: 200
+2023-07-04 15:17:40,389 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:17:40,391 - main2 - INFO - Response: 200
+2023-07-04 15:17:41,357 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:17:41,764 - main2 - INFO - Response: 200
+2023-07-04 15:22:41,395 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:22:41,396 - main2 - INFO - Response: 200
+2023-07-04 15:22:42,076 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:22:42,542 - main2 - INFO - Response: 200
+2023-07-04 15:25:56,398 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 15:25:56,842 - main2 - INFO - Response: 200
+2023-07-04 15:27:42,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:27:42,388 - main2 - INFO - Response: 200
+2023-07-04 15:27:43,172 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:27:43,797 - main2 - INFO - Response: 200
+2023-07-04 15:32:43,410 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:32:43,411 - main2 - INFO - Response: 200
+2023-07-04 15:32:44,078 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:32:44,156 - main2 - INFO - Response: 200
+2023-07-04 15:35:57,379 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 15:35:57,484 - main2 - INFO - Response: 200
+2023-07-04 15:37:44,389 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:37:44,393 - main2 - INFO - Response: 200
+2023-07-04 15:37:45,128 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:37:45,319 - main2 - INFO - Response: 200
+2023-07-04 15:42:45,386 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:42:45,387 - main2 - INFO - Response: 200
+2023-07-04 15:42:46,083 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:42:47,051 - main2 - INFO - Response: 200
+2023-07-04 15:45:58,484 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 15:45:58,760 - main2 - INFO - Response: 200
+2023-07-04 15:47:46,383 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:47:46,385 - main2 - INFO - Response: 200
+2023-07-04 15:47:48,076 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:47:48,167 - main2 - INFO - Response: 200
+2023-07-04 15:52:47,795 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:52:47,799 - main2 - INFO - Response: 200
+2023-07-04 15:52:49,078 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:52:49,236 - main2 - INFO - Response: 200
+2023-07-04 15:55:59,390 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 15:55:59,504 - main2 - INFO - Response: 200
+2023-07-04 15:57:48,425 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 15:57:48,427 - main2 - INFO - Response: 200
+2023-07-04 15:57:50,170 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 15:57:51,154 - main2 - INFO - Response: 200
+2023-07-04 16:02:49,484 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:02:49,485 - main2 - INFO - Response: 200
+2023-07-04 16:02:52,083 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:02:52,155 - main2 - INFO - Response: 200
+2023-07-04 16:06:00,394 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 16:06:00,502 - main2 - INFO - Response: 200
+2023-07-04 16:07:50,386 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:07:50,387 - main2 - INFO - Response: 200
+2023-07-04 16:07:53,101 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:07:53,200 - main2 - INFO - Response: 200
+2023-07-04 16:12:51,473 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:12:51,474 - main2 - INFO - Response: 200
+2023-07-04 16:12:54,218 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:12:54,696 - main2 - INFO - Response: 200
+2023-07-04 16:16:01,402 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 16:16:01,562 - main2 - INFO - Response: 200
+2023-07-04 16:17:52,409 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:17:52,411 - main2 - INFO - Response: 200
+2023-07-04 16:17:55,074 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:17:55,164 - main2 - INFO - Response: 200
+2023-07-04 16:22:53,488 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:22:53,490 - main2 - INFO - Response: 200
+2023-07-04 16:22:56,081 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:22:56,255 - main2 - INFO - Response: 200
+2023-07-04 16:26:02,381 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 16:26:02,444 - main2 - INFO - Response: 200
+2023-07-04 16:27:54,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:27:54,390 - main2 - INFO - Response: 200
+2023-07-04 16:27:57,108 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:27:57,525 - main2 - INFO - Response: 200
+2023-07-04 16:32:55,386 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:32:55,386 - main2 - INFO - Response: 200
+2023-07-04 16:32:58,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:32:58,411 - main2 - INFO - Response: 200
+2023-07-04 16:36:03,389 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 16:36:03,469 - main2 - INFO - Response: 200
+2023-07-04 16:37:56,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:37:56,388 - main2 - INFO - Response: 200
+2023-07-04 16:37:59,079 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:37:59,224 - main2 - INFO - Response: 200
+2023-07-04 16:42:57,411 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:42:57,414 - main2 - INFO - Response: 200
+2023-07-04 16:43:00,077 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:43:00,232 - main2 - INFO - Response: 200
+2023-07-04 16:46:04,395 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 16:46:05,156 - main2 - INFO - Response: 200
+2023-07-04 16:47:58,395 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:47:58,397 - main2 - INFO - Response: 200
+2023-07-04 16:48:01,072 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:48:01,603 - main2 - INFO - Response: 200
+2023-07-04 16:52:59,575 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:52:59,577 - main2 - INFO - Response: 200
+2023-07-04 16:53:02,075 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:53:02,317 - main2 - INFO - Response: 200
+2023-07-04 16:56:06,535 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 16:56:06,715 - main2 - INFO - Response: 200
+2023-07-04 16:58:00,535 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 16:58:00,537 - main2 - INFO - Response: 200
+2023-07-04 16:58:03,082 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 16:58:03,229 - main2 - INFO - Response: 200
+2023-07-04 17:03:01,393 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:03:01,396 - main2 - INFO - Response: 200
+2023-07-04 17:03:04,080 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:03:04,220 - main2 - INFO - Response: 200
+2023-07-04 17:06:07,393 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 17:06:07,469 - main2 - INFO - Response: 200
+2023-07-04 17:08:02,671 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:08:02,673 - main2 - INFO - Response: 200
+2023-07-04 17:08:05,077 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:08:05,183 - main2 - INFO - Response: 200
+2023-07-04 17:13:03,408 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:13:03,410 - main2 - INFO - Response: 200
+2023-07-04 17:13:06,074 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:13:06,182 - main2 - INFO - Response: 200
+2023-07-04 17:16:08,387 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 17:16:08,463 - main2 - INFO - Response: 200
+2023-07-04 17:18:04,384 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:18:04,386 - main2 - INFO - Response: 200
+2023-07-04 17:18:07,107 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:18:07,482 - main2 - INFO - Response: 200
+2023-07-04 17:23:05,459 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:23:05,460 - main2 - INFO - Response: 200
+2023-07-04 17:23:08,072 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:23:08,199 - main2 - INFO - Response: 200
+2023-07-04 17:26:09,396 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 17:26:09,479 - main2 - INFO - Response: 200
+2023-07-04 17:28:06,376 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:28:06,377 - main2 - INFO - Response: 200
+2023-07-04 17:28:09,092 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:28:10,232 - main2 - INFO - Response: 200
+2023-07-04 17:33:07,398 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:33:07,400 - main2 - INFO - Response: 200
+2023-07-04 17:33:11,073 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:33:11,208 - main2 - INFO - Response: 200
+2023-07-04 17:36:10,419 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 17:36:10,853 - main2 - INFO - Response: 200
+2023-07-04 17:38:09,001 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:38:09,003 - main2 - INFO - Response: 200
+2023-07-04 17:38:12,095 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:38:12,556 - main2 - INFO - Response: 200
+2023-07-04 17:43:09,393 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:43:09,395 - main2 - INFO - Response: 200
+2023-07-04 17:43:13,116 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:43:13,335 - main2 - INFO - Response: 200
+2023-07-04 17:46:11,392 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 17:46:11,502 - main2 - INFO - Response: 200
+2023-07-04 17:48:10,385 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:48:10,387 - main2 - INFO - Response: 200
+2023-07-04 17:48:14,079 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:48:14,236 - main2 - INFO - Response: 200
+2023-07-04 17:53:11,384 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:53:11,385 - main2 - INFO - Response: 200
+2023-07-04 17:53:15,345 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:53:15,682 - main2 - INFO - Response: 200
+2023-07-04 17:56:12,467 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 17:56:12,609 - main2 - INFO - Response: 200
+2023-07-04 17:58:12,421 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 17:58:12,423 - main2 - INFO - Response: 200
+2023-07-04 17:58:16,081 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 17:58:16,223 - main2 - INFO - Response: 200
+2023-07-04 18:03:13,461 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:03:13,462 - main2 - INFO - Response: 200
+2023-07-04 18:03:17,199 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:03:18,096 - main2 - INFO - Response: 200
+2023-07-04 18:06:13,576 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 18:06:13,743 - main2 - INFO - Response: 200
+2023-07-04 18:08:14,453 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:08:14,455 - main2 - INFO - Response: 200
+2023-07-04 18:08:19,516 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:08:19,794 - main2 - INFO - Response: 200
+2023-07-04 18:13:15,785 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:13:15,786 - main2 - INFO - Response: 200
+2023-07-04 18:13:20,391 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:13:20,480 - main2 - INFO - Response: 200
+2023-07-04 18:16:14,403 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 18:16:14,516 - main2 - INFO - Response: 200
+2023-07-04 18:18:16,621 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:18:16,624 - main2 - INFO - Response: 200
+2023-07-04 18:18:21,090 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:18:21,226 - main2 - INFO - Response: 200
+2023-07-04 18:23:17,494 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:23:17,498 - main2 - INFO - Response: 200
+2023-07-04 18:23:22,077 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:23:22,212 - main2 - INFO - Response: 200
+2023-07-04 18:26:15,376 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 18:26:15,476 - main2 - INFO - Response: 200
+2023-07-04 18:28:18,450 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:28:18,451 - main2 - INFO - Response: 200
+2023-07-04 18:28:23,073 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:28:23,247 - main2 - INFO - Response: 200
+2023-07-04 18:33:19,466 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:33:19,469 - main2 - INFO - Response: 200
+2023-07-04 18:33:24,077 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:33:24,181 - main2 - INFO - Response: 200
+2023-07-04 18:36:16,407 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 18:36:16,480 - main2 - INFO - Response: 200
+2023-07-04 18:38:20,384 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:38:20,386 - main2 - INFO - Response: 200
+2023-07-04 18:38:25,383 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:38:26,029 - main2 - INFO - Response: 200
+2023-07-04 18:43:21,394 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:43:21,396 - main2 - INFO - Response: 200
+2023-07-04 18:43:26,594 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:43:27,425 - main2 - INFO - Response: 200
+2023-07-04 18:46:17,391 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 18:46:17,838 - main2 - INFO - Response: 200
+2023-07-04 18:48:22,399 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:48:22,400 - main2 - INFO - Response: 200
+2023-07-04 18:48:28,385 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:48:29,656 - main2 - INFO - Response: 200
+2023-07-04 18:53:23,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:53:23,398 - main2 - INFO - Response: 200
+2023-07-04 18:53:30,509 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:53:30,847 - main2 - INFO - Response: 200
+2023-07-04 18:56:18,398 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 18:56:18,815 - main2 - INFO - Response: 200
+2023-07-04 18:58:24,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 18:58:24,391 - main2 - INFO - Response: 200
+2023-07-04 18:58:31,969 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 18:58:32,507 - main2 - INFO - Response: 200
+2023-07-04 19:03:25,442 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:03:25,444 - main2 - INFO - Response: 200
+2023-07-04 19:03:33,083 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:03:33,259 - main2 - INFO - Response: 200
+2023-07-04 19:06:19,389 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 19:06:19,473 - main2 - INFO - Response: 200
+2023-07-04 19:08:26,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:08:26,391 - main2 - INFO - Response: 200
+2023-07-04 19:08:34,632 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:08:34,968 - main2 - INFO - Response: 200
+2023-07-04 19:13:27,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:13:27,398 - main2 - INFO - Response: 200
+2023-07-04 19:13:35,395 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:13:35,661 - main2 - INFO - Response: 200
+2023-07-04 19:16:20,466 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 19:16:20,597 - main2 - INFO - Response: 200
+2023-07-04 19:18:28,408 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:18:28,410 - main2 - INFO - Response: 200
+2023-07-04 19:18:36,079 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:18:36,199 - main2 - INFO - Response: 200
+2023-07-04 19:23:29,725 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:23:29,727 - main2 - INFO - Response: 200
+2023-07-04 19:23:37,413 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:23:37,658 - main2 - INFO - Response: 200
+2023-07-04 19:26:21,395 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 19:26:21,960 - main2 - INFO - Response: 200
+2023-07-04 19:28:30,401 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:28:30,403 - main2 - INFO - Response: 200
+2023-07-04 19:28:38,585 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:28:38,835 - main2 - INFO - Response: 200
+2023-07-04 19:33:31,484 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:33:31,485 - main2 - INFO - Response: 200
+2023-07-04 19:33:39,393 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:33:40,357 - main2 - INFO - Response: 200
+2023-07-04 19:36:22,405 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 19:36:22,807 - main2 - INFO - Response: 200
+2023-07-04 19:38:32,474 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:38:32,476 - main2 - INFO - Response: 200
+2023-07-04 19:38:41,488 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:38:41,713 - main2 - INFO - Response: 200
+2023-07-04 19:43:33,392 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:43:33,394 - main2 - INFO - Response: 200
+2023-07-04 19:43:42,198 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:43:43,104 - main2 - INFO - Response: 200
+2023-07-04 19:46:23,425 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 19:46:23,518 - main2 - INFO - Response: 200
+2023-07-04 19:48:34,388 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:48:34,390 - main2 - INFO - Response: 200
+2023-07-04 19:48:44,081 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:48:44,293 - main2 - INFO - Response: 200
+2023-07-04 19:53:35,565 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:53:35,567 - main2 - INFO - Response: 200
+2023-07-04 19:53:45,079 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:53:45,188 - main2 - INFO - Response: 200
+2023-07-04 19:56:24,447 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 19:56:24,600 - main2 - INFO - Response: 200
+2023-07-04 19:58:36,391 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 19:58:36,393 - main2 - INFO - Response: 200
+2023-07-04 19:58:46,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 19:58:46,247 - main2 - INFO - Response: 200
+2023-07-04 20:03:37,395 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:03:37,398 - main2 - INFO - Response: 200
+2023-07-04 20:03:47,082 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:03:47,168 - main2 - INFO - Response: 200
+2023-07-04 20:06:25,445 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 20:06:25,778 - main2 - INFO - Response: 200
+2023-07-04 20:08:38,387 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:08:38,389 - main2 - INFO - Response: 200
+2023-07-04 20:08:48,395 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:08:48,557 - main2 - INFO - Response: 200
+2023-07-04 20:13:39,475 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:13:39,477 - main2 - INFO - Response: 200
+2023-07-04 20:13:49,533 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:13:49,967 - main2 - INFO - Response: 200
+2023-07-04 20:16:26,428 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 20:16:26,521 - main2 - INFO - Response: 200
+2023-07-04 20:18:40,400 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:18:40,402 - main2 - INFO - Response: 200
+2023-07-04 20:18:50,391 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:18:51,349 - main2 - INFO - Response: 200
+2023-07-04 20:23:41,398 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:23:41,399 - main2 - INFO - Response: 200
+2023-07-04 20:23:52,534 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:23:52,788 - main2 - INFO - Response: 200
+2023-07-04 20:26:27,547 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 20:26:28,088 - main2 - INFO - Response: 200
+2023-07-04 20:28:42,394 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:28:42,396 - main2 - INFO - Response: 200
+2023-07-04 20:28:53,471 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:28:53,705 - main2 - INFO - Response: 200
+2023-07-04 20:33:43,430 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:33:43,432 - main2 - INFO - Response: 200
+2023-07-04 20:33:54,775 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:33:55,203 - main2 - INFO - Response: 200
+2023-07-04 20:36:29,388 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 20:36:29,474 - main2 - INFO - Response: 200
+2023-07-04 20:38:44,389 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:38:44,390 - main2 - INFO - Response: 200
+2023-07-04 20:38:56,397 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:38:57,620 - main2 - INFO - Response: 200
+2023-07-04 20:43:45,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:43:45,398 - main2 - INFO - Response: 200
+2023-07-04 20:43:58,512 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:43:58,689 - main2 - INFO - Response: 200
+2023-07-04 20:46:30,459 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 20:46:30,791 - main2 - INFO - Response: 200
+2023-07-04 20:48:46,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:48:46,392 - main2 - INFO - Response: 200
+2023-07-04 20:48:59,389 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:48:59,481 - main2 - INFO - Response: 200
+2023-07-04 20:53:47,393 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:53:47,394 - main2 - INFO - Response: 200
+2023-07-04 20:54:00,510 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:54:00,712 - main2 - INFO - Response: 200
+2023-07-04 20:56:31,381 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 20:56:31,786 - main2 - INFO - Response: 200
+2023-07-04 20:58:48,425 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 20:58:48,427 - main2 - INFO - Response: 200
+2023-07-04 20:59:01,387 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 20:59:01,506 - main2 - INFO - Response: 200
+2023-07-04 21:03:49,398 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:03:49,400 - main2 - INFO - Response: 200
+2023-07-04 21:04:02,088 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:04:02,347 - main2 - INFO - Response: 200
+2023-07-04 21:06:32,454 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 21:06:32,744 - main2 - INFO - Response: 200
+2023-07-04 21:08:50,643 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:08:50,646 - main2 - INFO - Response: 200
+2023-07-04 21:09:03,322 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:09:03,560 - main2 - INFO - Response: 200
+2023-07-04 21:13:51,395 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:13:51,396 - main2 - INFO - Response: 200
+2023-07-04 21:14:04,693 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:14:05,282 - main2 - INFO - Response: 200
+2023-07-04 21:16:33,668 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 21:16:33,864 - main2 - INFO - Response: 200
+2023-07-04 21:18:52,495 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:18:52,496 - main2 - INFO - Response: 200
+2023-07-04 21:19:06,106 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:19:06,251 - main2 - INFO - Response: 200
+2023-07-04 21:23:53,396 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:23:53,397 - main2 - INFO - Response: 200
+2023-07-04 21:24:07,257 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:24:07,542 - main2 - INFO - Response: 200
+2023-07-04 21:26:34,461 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 21:26:34,583 - main2 - INFO - Response: 200
+2023-07-04 21:28:54,383 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:28:54,384 - main2 - INFO - Response: 200
+2023-07-04 21:29:08,082 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:29:08,234 - main2 - INFO - Response: 200
+2023-07-04 21:33:55,470 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:33:55,473 - main2 - INFO - Response: 200
+2023-07-04 21:34:09,387 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:34:09,821 - main2 - INFO - Response: 200
+2023-07-04 21:36:35,608 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 21:36:36,304 - main2 - INFO - Response: 200
+2023-07-04 21:38:56,539 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:38:56,540 - main2 - INFO - Response: 200
+2023-07-04 21:39:10,248 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:39:10,415 - main2 - INFO - Response: 200
+2023-07-04 21:43:57,390 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:43:57,392 - main2 - INFO - Response: 200
+2023-07-04 21:44:11,101 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:44:11,277 - main2 - INFO - Response: 200
+2023-07-04 21:46:37,393 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 21:46:37,610 - main2 - INFO - Response: 200
+2023-07-04 21:48:58,383 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:48:58,384 - main2 - INFO - Response: 200
+2023-07-04 21:49:12,082 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:49:12,182 - main2 - INFO - Response: 200
+2023-07-04 21:53:59,535 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:53:59,538 - main2 - INFO - Response: 200
+2023-07-04 21:54:13,074 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:54:13,228 - main2 - INFO - Response: 200
+2023-07-04 21:56:38,392 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 21:56:38,486 - main2 - INFO - Response: 200
+2023-07-04 21:59:01,118 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 21:59:01,120 - main2 - INFO - Response: 200
+2023-07-04 21:59:14,141 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 21:59:14,498 - main2 - INFO - Response: 200
+2023-07-04 22:04:02,477 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 22:04:02,479 - main2 - INFO - Response: 200
+2023-07-04 22:04:15,084 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 22:04:15,197 - main2 - INFO - Response: 200
+2023-07-04 22:06:39,417 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 22:06:39,660 - main2 - INFO - Response: 200
+2023-07-04 22:09:03,384 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 22:09:03,385 - main2 - INFO - Response: 200
+2023-07-04 22:09:16,132 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 22:09:16,346 - main2 - INFO - Response: 200
+2023-07-04 22:14:04,563 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 22:14:04,564 - main2 - INFO - Response: 200
+2023-07-04 22:14:17,275 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 22:14:17,452 - main2 - INFO - Response: 200
+2023-07-04 22:16:40,946 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 22:16:41,387 - main2 - INFO - Response: 200
+2023-07-04 22:19:05,591 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 22:19:05,594 - main2 - INFO - Response: 200
+2023-07-04 22:19:18,103 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 22:19:18,394 - main2 - INFO - Response: 200
+2023-07-04 22:24:06,392 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 22:24:06,394 - main2 - INFO - Response: 200
+2023-07-04 22:24:19,079 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 22:24:19,248 - main2 - INFO - Response: 200
+2023-07-04 22:26:42,466 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 22:26:42,924 - main2 - INFO - Response: 200
+2023-07-04 22:29:07,437 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 22:29:07,439 - main2 - INFO - Response: 200
+2023-07-04 22:29:20,072 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 22:29:20,183 - main2 - INFO - Response: 200
+2023-07-04 22:34:08,379 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 22:34:08,381 - main2 - INFO - Response: 200
+2023-07-04 22:34:21,088 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 22:34:21,267 - main2 - INFO - Response: 200
+2023-07-04 22:36:43,391 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 22:36:43,988 - main2 - INFO - Response: 200
+2023-07-04 22:39:09,407 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 22:39:09,414 - main2 - INFO - Response: 200
+2023-07-04 22:39:22,071 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 22:39:22,169 - main2 - INFO - Response: 200
+2023-07-04 22:44:10,486 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 22:44:10,489 - main2 - INFO - Response: 200
+2023-07-04 22:44:23,392 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 22:44:23,586 - main2 - INFO - Response: 200
+2023-07-04 22:46:45,391 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-04 22:46:46,291 - main2 - INFO - Response: 200
+2023-07-04 22:49:11,463 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-04 22:49:11,465 - main2 - INFO - Response: 200
+2023-07-04 22:49:24,073 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-04 22:49:24,177 - main2 - INFO - Response: 200
+2023-07-05 15:21:46,217 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-05 15:21:46,218 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-05 15:21:46,219 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-05 15:21:46,879 - main2 - INFO - Response: 200
+2023-07-05 15:21:46,882 - main2 - INFO - Response: 200
+2023-07-05 15:21:46,882 - main2 - INFO - Response: 200

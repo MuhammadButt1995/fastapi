@@ -1,0 +1,54 @@
+2023-07-03 20:57:20,397 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 20:57:20,398 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 20:57:20,399 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 20:57:20,674 - main2 - INFO - Response: 200
+2023-07-03 20:57:20,675 - main2 - INFO - Response: 200
+2023-07-03 20:57:20,676 - main2 - INFO - Response: 200
+2023-07-03 20:57:21,716 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 20:57:21,795 - main2 - INFO - Response: 200
+2023-07-03 20:57:23,819 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 20:57:23,993 - main2 - INFO - Response: 200
+2023-07-03 20:57:28,010 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 20:57:28,070 - main2 - INFO - Response: 200
+2023-07-03 20:59:05,869 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 20:59:05,870 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 20:59:05,870 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 20:59:06,055 - main2 - INFO - Response: 200
+2023-07-03 20:59:06,056 - main2 - INFO - Response: 200
+2023-07-03 20:59:06,056 - main2 - INFO - Response: 200
+2023-07-03 20:59:07,077 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 20:59:07,155 - main2 - INFO - Response: 200
+2023-07-03 20:59:09,162 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 20:59:09,231 - main2 - INFO - Response: 200
+2023-07-03 20:59:13,237 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 20:59:13,297 - main2 - INFO - Response: 200
+2023-07-03 21:00:49,533 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:00:49,534 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:00:49,535 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:00:49,751 - main2 - INFO - Response: 200
+2023-07-03 21:00:49,752 - main2 - INFO - Response: 200
+2023-07-03 21:00:49,753 - main2 - INFO - Response: 200
+2023-07-03 21:00:50,781 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:00:50,849 - main2 - INFO - Response: 200
+2023-07-03 21:00:52,863 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:00:52,922 - main2 - INFO - Response: 200
+2023-07-03 21:00:56,932 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:00:56,993 - main2 - INFO - Response: 200
+2023-07-03 21:05:50,379 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:05:50,381 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:05:50,485 - main2 - INFO - Response: 200
+2023-07-03 21:05:50,487 - main2 - INFO - Response: 200
+2023-07-03 21:10:51,386 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:10:51,386 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:10:51,492 - main2 - INFO - Response: 200
+2023-07-03 21:10:51,493 - main2 - INFO - Response: 200
+2023-07-03 21:10:57,077 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-03 21:10:57,146 - main2 - INFO - Response: 200
+2023-07-03 21:15:52,393 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:15:52,394 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:15:52,533 - main2 - INFO - Response: 200
+2023-07-03 21:15:52,534 - main2 - INFO - Response: 200
+2023-07-03 21:20:53,415 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-03 21:20:53,415 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-03 21:20:53,639 - main2 - INFO - Response: 200
+2023-07-03 21:20:53,639 - main2 - INFO - Response: 200

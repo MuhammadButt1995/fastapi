@@ -1,0 +1,17 @@
+2023-07-05 20:54:55,194 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-05 20:54:55,195 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-05 20:54:55,195 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
+2023-07-05 20:54:55,450 - main2 - INFO - Response: 200
+2023-07-05 20:54:55,451 - main2 - INFO - Response: 200
+2023-07-05 20:54:55,453 - main2 - INFO - Response: 200
+2023-07-05 20:56:23,332 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi_signal/execute
+2023-07-05 20:56:23,334 - main2 - INFO - Response: 404
+2023-07-05 20:56:23,884 - main2 - INFO - Request: GET http://localhost:8000/favicon.ico
+2023-07-05 20:56:23,884 - main2 - INFO - Response: 404
+2023-07-05 20:57:07,680 - main2 - INFO - Request: GET http://localhost:8000/tools/get-password-data
+2023-07-05 20:57:07,681 - main2 - ERROR - Error: Tool not found
+2023-07-05 20:57:11,330 - main2 - INFO - Request: GET http://localhost:8000/tools/password-data
+2023-07-05 20:57:16,563 - main2 - INFO - Request: GET http://localhost:8000/tools/password-data
+2023-07-05 20:57:32,977 - main2 - INFO - Request: GET http://localhost:8000/tools/domain-data
+2023-07-05 20:57:33,029 - main2 - INFO - Response: 200
+2023-07-05 20:57:41,435 - main2 - INFO - Request: GET http://localhost:8000/tools/password-data

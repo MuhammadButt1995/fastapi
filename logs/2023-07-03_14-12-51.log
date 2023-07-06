@@ -1,0 +1,2 @@
+2023-07-03 14:12:53,014 - main2 - INFO - Request: GET http://localhost:8000/tools/disk-usage
+2023-07-03 14:12:53,018 - main2 - INFO - Response: 200

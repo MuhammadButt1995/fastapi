@@ -1,0 +1,5 @@
+2023-07-05 20:59:56,396 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
+2023-07-05 20:59:56,397 - main2 - INFO - Request: GET http://localhost:8000/tools/trusted-network-status
+2023-07-05 20:59:56,521 - main2 - INFO - Response: 200
+2023-07-05 20:59:56,521 - main2 - INFO - Response: 200
+2023-07-05 20:59:57,364 - main2 - INFO - Request: GET http://localhost:8000/tools/password-data
