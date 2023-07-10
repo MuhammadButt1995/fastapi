@@ -6,7 +6,6 @@ from typing import Any, Optional, Dict
 
 
 async def get_password_data(params: Optional[Dict[str, Any]] = None):
-    
     try:
         if platform.system() == "Windows":
             password_expires_output = (
@@ -62,5 +61,5 @@ async def get_password_data(params: Optional[Dict[str, Any]] = None):
             else f"{days_left}",
             "datetime": "test_datetime",
             "description": f"You have until {datetime.now().strftime('%a, %b %d, %Y %I:%M %p')} to change your password",
-            "rating": 'ok'
+            "rating": "ok",
         }

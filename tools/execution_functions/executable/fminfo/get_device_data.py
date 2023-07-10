@@ -11,12 +11,12 @@ async def get_device_data(params: Optional[Dict[str, Any]] = None):
     manufacturer, model, serial_number = __get_device_identifiers()
 
     return {
-        "Computer name": platform.node(),
-        "RAM": f"{round(float(ram_info.total) / (1024 ** 3), 2)} GB",
-        "Manufacturer": manufacturer,
-        "Model": model,
-        "Last boot time": boot_time,
-        "Serial number": serial_number,
+        "computer_name": platform.node(),
+        "ram": f"{round(float(ram_info.total) / (1024 ** 3), 2)} GB",
+        "manufacturer": manufacturer,
+        "model": model,
+        "last_boot_time": boot_time,
+        "serial_number": serial_number,
     }
 
 

@@ -1,1 +1,0 @@
-{"wifi_notification": {"name": "wifi_notification", "description": "Sends a notification when wifi signal is low", "icon": "notification_icon", "visible": true, "save_results": false, "state": true, "reexecute_interval": 5000}}

@@ -1,4 +1,0 @@
-2023-07-03 18:21:17,295 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
-2023-07-03 18:21:17,388 - main2 - INFO - Response: 200
-2023-07-03 18:21:23,585 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
-2023-07-03 18:21:23,658 - main2 - INFO - Response: 200

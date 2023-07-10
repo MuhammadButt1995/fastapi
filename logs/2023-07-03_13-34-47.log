@@ -1,4 +1,0 @@
-2023-07-03 13:34:50,509 - main2 - INFO - Request: GET http://localhost:8000/tools/device-data
-2023-07-03 13:34:50,838 - main2 - INFO - Response: 200
-2023-07-03 13:35:01,127 - main2 - INFO - Request: GET http://localhost:8000/tools/disk-usage
-2023-07-03 13:35:01,131 - main2 - INFO - Response: 200

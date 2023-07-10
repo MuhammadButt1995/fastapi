@@ -1,2 +1,0 @@
-2023-07-03 14:20:39,438 - main2 - INFO - Request: GET http://localhost:8000/tools/domain-data
-2023-07-03 14:20:39,501 - main2 - INFO - Response: 200

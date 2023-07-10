@@ -1,3 +1,0 @@
-2023-07-02 19:24:01,335 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi_signal/execute
-2023-07-02 19:24:02,206 - main2 - INFO - Request: GET http://localhost:8000/favicon.ico
-2023-07-02 19:24:02,207 - main2 - INFO - Response: 404

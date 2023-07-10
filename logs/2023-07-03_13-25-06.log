@@ -1,4 +1,0 @@
-2023-07-03 13:25:10,396 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
-2023-07-03 13:25:10,469 - main2 - INFO - Response: 200
-2023-07-03 13:25:16,521 - main2 - INFO - Request: GET http://localhost:8000/tools/ad-status
-2023-07-03 13:25:16,575 - main2 - INFO - Response: 200

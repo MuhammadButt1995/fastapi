@@ -1,3 +1,4 @@
+import asyncio
 import subprocess
 import platform
 from typing import Optional, Dict, Any
@@ -60,6 +61,20 @@ def __assess_overall_quality(signal_quality, radio_type, channel_quality):
         return "decent"
     else:
         return "slow"
+    
+async def async_check_output(*args):
+    process = await asyncio.create_subprocess_exec(
+        *args,
+        stdout=asyncio.subprocess.PIPE,
+        stderr=asyncio.subprocess.PIPE,
+    )
+
+    stdout, stderr = await process.communicate()
+
+    if process.returncode != 0:
+        raise subprocess.CalledProcessError(process.returncode, args, output=stdout, stderr=stderr)
+
+    return stdout.decode()
 
 
 async def get_wifi_data(params: Optional[Dict[str, Any]] = None):
@@ -92,21 +107,18 @@ async def get_wifi_data(params: Optional[Dict[str, Any]] = None):
         }[overall_quality]
 
         return {
-            "success": True,
-            "data": {
-                "signal": {
-                    "quality": signal_quality,
-                    "value": signal_strength,
-                },
-                "radio_type": {
-                    "quality": radio_type_quality,
-                    "value": radio_type,
-                },
-                "channel": {"quality": channel_quality, "value": channel},
-                "overall": overall_quality.upper(),
-                "description": description,
-                "rating": rating,
+            "signal": {
+                "quality": signal_quality,
+                "value": signal_strength,
             },
+            "radio_type": {
+                "quality": radio_type_quality,
+                "value": radio_type,
+            },
+            "channel": {"quality": channel_quality, "value": channel},
+            "overall": overall_quality.upper(),
+            "description": description,
+            "rating": rating,
         }
 
     elif platform.system() == "Darwin":

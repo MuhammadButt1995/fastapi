@@ -1,8 +1,0 @@
-2023-07-02 00:34:07,472 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi_signal/execute
-2023-07-02 00:34:07,476 - main2 - INFO - Response: 200
-2023-07-02 00:34:08,845 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi_signal/execute
-2023-07-02 00:34:08,847 - main2 - INFO - Response: 200
-2023-07-02 00:34:10,004 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi_signal/execute
-2023-07-02 00:34:10,005 - main2 - INFO - Response: 200
-2023-07-02 00:34:44,907 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi_notification/toggle
-2023-07-02 00:34:44,916 - main2 - INFO - Response: 200

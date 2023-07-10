@@ -1,4 +1,0 @@
-2023-07-03 13:19:52,904 - main2 - INFO - Request: GET http://localhost:8000/tools
-2023-07-03 13:19:52,907 - main2 - INFO - Response: 200
-2023-07-03 13:20:27,373 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi-details
-2023-07-03 13:20:27,486 - main2 - INFO - Response: 200

@@ -1,2 +1,0 @@
-2023-07-03 14:25:04,273 - main2 - INFO - Request: GET http://localhost:8000/tools/network-adapters
-2023-07-03 14:25:04,348 - main2 - INFO - Response: 200

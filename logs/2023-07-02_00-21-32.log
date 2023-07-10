@@ -1,2 +1,0 @@
-2023-07-02 00:21:38,688 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi_notification/toggle
-2023-07-02 00:21:38,690 - main2 - INFO - Response: 200

@@ -1,6 +1,0 @@
-2023-07-02 00:13:51,573 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi_signal/execute
-2023-07-02 00:13:51,576 - main2 - INFO - Response: 200
-2023-07-02 00:14:05,547 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi_signal/execute
-2023-07-02 00:14:05,549 - main2 - INFO - Response: 200
-2023-07-02 00:14:06,945 - main2 - INFO - Request: GET http://localhost:8000/tools/wifi_signal/execute
-2023-07-02 00:14:06,947 - main2 - INFO - Response: 200

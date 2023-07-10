@@ -21,7 +21,11 @@ async def get_ad_status(params: Optional[Dict[str, Any]] = None):
             else False,
         }
 
-        status["is_bound"] = "BOUND" if status["azure_ad_joined"] and status["domain_joined"] else "NOT BOUND"
+        status["is_bound"] = (
+            "BOUND"
+            if status["azure_ad_joined"] and status["domain_joined"]
+            else "NOT BOUND"
+        )
         status["description"] = (
             "Your machine is domain joined and bound to Azure AD."
             if status["is_bound"] == "BOUND"
