@@ -32,3 +32,5 @@
 2023-07-18 10:09:11,105 - root - INFO - {"event": "add_tool", "message": "Adding tool last-boottime"}
 2023-07-18 10:09:11,105 - root - INFO - {"event": "add_tool", "message": "Tool last-boottime added successfully"}
 2023-07-18 10:09:11,620 - root - INFO - {"event": "execute_tool", "message": "Executing tool disk-usage"}
+2023-07-18 10:09:13,954 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-18 10:09:16,836 - root - INFO - {"event": "get_tools", "message": "Returned 1 tools"}
