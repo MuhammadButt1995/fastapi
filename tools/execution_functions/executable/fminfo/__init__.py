@@ -12,3 +12,7 @@ from tools.execution_functions.executable.fminfo.get_network_adapters import (
 from tools.execution_functions.executable.fminfo.get_trusted_network_status import (
     get_trusted_network_status,
 )
+
+from tools.execution_functions.executable.fminfo.get_last_boottime import (
+    get_last_boottime,
+)

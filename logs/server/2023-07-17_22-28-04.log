@@ -1,0 +1,35 @@
+2023-07-17 22:28:04,080 - root - INFO - {"event": "startup", "message": "Loading tool states"}
+2023-07-17 22:28:04,080 - root - INFO - {"event": "load_states", "message": "Loading states"}
+2023-07-17 22:28:04,087 - root - INFO - {"event": "load_states", "message": "States loaded successfully"}
+2023-07-17 22:28:04,088 - root - INFO - {"event": "startup", "message": "Adding wifi-details tool"}
+2023-07-17 22:28:04,088 - root - INFO - {"event": "add_tool", "message": "Adding tool wifi-details"}
+2023-07-17 22:28:04,088 - root - INFO - {"event": "add_tool", "message": "Tool wifi-details added successfully"}
+2023-07-17 22:28:04,089 - root - INFO - {"event": "startup", "message": "Adding network adapters tool"}
+2023-07-17 22:28:04,089 - root - INFO - {"event": "add_tool", "message": "Adding tool network-adapters"}
+2023-07-17 22:28:04,089 - root - INFO - {"event": "add_tool", "message": "Tool network-adapters added successfully"}
+2023-07-17 22:28:04,089 - root - INFO - {"event": "startup", "message": "Adding trusted network status tool"}
+2023-07-17 22:28:04,090 - root - INFO - {"event": "add_tool", "message": "Adding tool trusted-network-status"}
+2023-07-17 22:28:04,090 - root - INFO - {"event": "add_tool", "message": "Tool trusted-network-status added successfully"}
+2023-07-17 22:28:04,090 - root - INFO - {"event": "startup", "message": "Adding ad status tool"}
+2023-07-17 22:28:04,090 - root - INFO - {"event": "add_tool", "message": "Adding tool ad-status"}
+2023-07-17 22:28:04,090 - root - INFO - {"event": "add_tool", "message": "Tool ad-status added successfully"}
+2023-07-17 22:28:04,090 - root - INFO - {"event": "startup", "message": "Adding device data tool"}
+2023-07-17 22:28:04,090 - root - INFO - {"event": "add_tool", "message": "Adding tool device-data"}
+2023-07-17 22:28:04,091 - root - INFO - {"event": "add_tool", "message": "Tool device-data added successfully"}
+2023-07-17 22:28:04,091 - root - INFO - {"event": "startup", "message": "Adding domain data tool"}
+2023-07-17 22:28:04,091 - root - INFO - {"event": "add_tool", "message": "Adding tool domain-data"}
+2023-07-17 22:28:04,091 - root - INFO - {"event": "add_tool", "message": "Tool domain-data added successfully"}
+2023-07-17 22:28:04,091 - root - INFO - {"event": "startup", "message": "Adding password data tool"}
+2023-07-17 22:28:04,091 - root - INFO - {"event": "add_tool", "message": "Adding tool password-data"}
+2023-07-17 22:28:04,091 - root - INFO - {"event": "add_tool", "message": "Tool password-data added successfully"}
+2023-07-17 22:28:04,092 - root - INFO - {"event": "startup", "message": "Adding disk usage tool"}
+2023-07-17 22:28:04,092 - root - INFO - {"event": "add_tool", "message": "Adding tool disk-usage"}
+2023-07-17 22:28:04,092 - root - INFO - {"event": "add_tool", "message": "Tool disk-usage added successfully"}
+2023-07-17 22:28:04,092 - root - INFO - {"event": "startup", "message": "Adding toggle low Wi-Fi notifications tool"}
+2023-07-17 22:28:04,092 - root - INFO - {"event": "add_tool", "message": "Adding tool low-wifi-notifs"}
+2023-07-17 22:28:04,092 - root - INFO - {"event": "add_tool", "message": "Tool low-wifi-notifs added successfully"}
+2023-07-17 22:28:04,092 - root - INFO - {"event": "startup", "message": "Adding get last boottime tool"}
+2023-07-17 22:28:04,092 - root - INFO - {"event": "add_tool", "message": "Adding tool last-boottime"}
+2023-07-17 22:28:04,093 - root - INFO - {"event": "add_tool", "message": "Tool last-boottime added successfully"}
+2023-07-17 22:28:04,094 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:28:04,262 - root - ERROR - {"event": "error", "message": "Error executing tool wifi-details", "error": "Command '['netsh', 'wlan', 'show', 'interfaces']' returned non-zero exit status 3221225786."}

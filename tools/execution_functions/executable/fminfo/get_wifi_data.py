@@ -61,7 +61,8 @@ def __assess_overall_quality(signal_quality, radio_type, channel_quality):
         return "decent"
     else:
         return "slow"
-    
+
+
 async def async_check_output(*args):
     process = await asyncio.create_subprocess_exec(
         *args,
@@ -72,7 +73,9 @@ async def async_check_output(*args):
     stdout, stderr = await process.communicate()
 
     if process.returncode != 0:
-        raise subprocess.CalledProcessError(process.returncode, args, output=stdout, stderr=stderr)
+        raise subprocess.CalledProcessError(
+            process.returncode, args, output=stdout, stderr=stderr
+        )
 
     return stdout.decode()
 

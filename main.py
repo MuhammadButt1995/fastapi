@@ -13,6 +13,8 @@ import logging
 import time
 from pathlib import Path
 from enum import Enum
+import arrow
+
 
 from tools.execution_functions import (
     get_wifi_data,
@@ -23,6 +25,7 @@ from tools.execution_functions import (
     get_disk_usage,
     get_network_adapters,
     get_password_data,
+    get_last_boottime,
 )
 
 
@@ -107,11 +110,11 @@ class ExecutableTool(Tool):
     result_mapping: dict = Field(default_factory=dict)
     tags: Optional[List[Tag]] = []
 
-    @validator('name', 'description', 'icon', 'tags', always=True)
+    @validator("name", "description", "icon", "tags", always=True)
     def check_required_fields(cls, v, values):
-        if 'visible' in values and values['visible'] is True:
+        if "visible" in values and values["visible"] is True:
             if v is None:
-                raise ValueError('value must be defined when visible is True')
+                raise ValueError("value must be defined when visible is True")
         return v
 
     async def execute(self, **kwargs):
@@ -271,6 +274,10 @@ json_file_manager = JsonFileManager()
 tool_registry = ToolRegistry("tool_states.json", json_file_manager)
 
 
+def get_current_timestamp():
+    return arrow.now().format("MM/DD/YY hh:mm:ss A")
+
+
 @app.on_event("startup")
 async def startup_event() -> None:
     try:
@@ -346,6 +353,13 @@ async def startup_event() -> None:
                 icon="toggle_icon.png",
             )
         )
+
+        json_log("info", "startup", "Adding get last boottime tool")
+        await tool_registry.add_tool(
+            ExecutableTool(
+                id="last-boottime", visible=False, execute_func=get_last_boottime
+            )
+        )
     except Exception as e:
         json_log("error", "error", "Error during startup", str(e))
         raise e
@@ -362,10 +376,10 @@ async def get_tools() -> Dict[str, Any]:
             or isinstance(tool, (ToggleTool, RouteTool))
         ]
         json_log("info", "get_tools", f"Returned {len(tools)} tools")
-        return {"success": True, "data": tools}
+        return {"success": True, "data": tools, "timestamp": get_current_timestamp()}
     except Exception as e:
         json_log("error", "error", "Error getting tools", str(e))
-        return {"success": False, "error": str(e)}
+        return {"success": False, "error": str(e), "timestamp": get_current_timestamp()}
 
 
 @app.get("/tools/{tool_id}")
@@ -388,7 +402,7 @@ async def execute_tool(tool_id: str) -> Dict[str, Any]:
             }
             await json_file_manager.write_json(f"logs/data/{tool.id}.json", json_result)
 
-        return {"success": True, "data": result}
+        return {"success": True, "data": result, "timestamp": get_current_timestamp()}
     except Exception as e:
         json_log("error", "error", f"Error executing tool {tool_id}", str(e))
-        return {"success": False, "error": str(e)}
+        return {"success": False, "error": str(e), "timestamp": get_current_timestamp()}

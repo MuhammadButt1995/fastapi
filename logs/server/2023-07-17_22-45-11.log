@@ -1,0 +1,171 @@
+2023-07-17 22:45:11,399 - root - INFO - {"event": "startup", "message": "Loading tool states"}
+2023-07-17 22:45:11,400 - root - INFO - {"event": "load_states", "message": "Loading states"}
+2023-07-17 22:45:11,402 - root - INFO - {"event": "load_states", "message": "States loaded successfully"}
+2023-07-17 22:45:11,402 - root - INFO - {"event": "startup", "message": "Adding wifi-details tool"}
+2023-07-17 22:45:11,403 - root - INFO - {"event": "add_tool", "message": "Adding tool wifi-details"}
+2023-07-17 22:45:11,403 - root - INFO - {"event": "add_tool", "message": "Tool wifi-details added successfully"}
+2023-07-17 22:45:11,403 - root - INFO - {"event": "startup", "message": "Adding network adapters tool"}
+2023-07-17 22:45:11,403 - root - INFO - {"event": "add_tool", "message": "Adding tool network-adapters"}
+2023-07-17 22:45:11,403 - root - INFO - {"event": "add_tool", "message": "Tool network-adapters added successfully"}
+2023-07-17 22:45:11,403 - root - INFO - {"event": "startup", "message": "Adding trusted network status tool"}
+2023-07-17 22:45:11,404 - root - INFO - {"event": "add_tool", "message": "Adding tool trusted-network-status"}
+2023-07-17 22:45:11,404 - root - INFO - {"event": "add_tool", "message": "Tool trusted-network-status added successfully"}
+2023-07-17 22:45:11,404 - root - INFO - {"event": "startup", "message": "Adding ad status tool"}
+2023-07-17 22:45:11,404 - root - INFO - {"event": "add_tool", "message": "Adding tool ad-status"}
+2023-07-17 22:45:11,404 - root - INFO - {"event": "add_tool", "message": "Tool ad-status added successfully"}
+2023-07-17 22:45:11,404 - root - INFO - {"event": "startup", "message": "Adding device data tool"}
+2023-07-17 22:45:11,404 - root - INFO - {"event": "add_tool", "message": "Adding tool device-data"}
+2023-07-17 22:45:11,404 - root - INFO - {"event": "add_tool", "message": "Tool device-data added successfully"}
+2023-07-17 22:45:11,404 - root - INFO - {"event": "startup", "message": "Adding domain data tool"}
+2023-07-17 22:45:11,405 - root - INFO - {"event": "add_tool", "message": "Adding tool domain-data"}
+2023-07-17 22:45:11,405 - root - INFO - {"event": "add_tool", "message": "Tool domain-data added successfully"}
+2023-07-17 22:45:11,405 - root - INFO - {"event": "startup", "message": "Adding password data tool"}
+2023-07-17 22:45:11,405 - root - INFO - {"event": "add_tool", "message": "Adding tool password-data"}
+2023-07-17 22:45:11,405 - root - INFO - {"event": "add_tool", "message": "Tool password-data added successfully"}
+2023-07-17 22:45:11,405 - root - INFO - {"event": "startup", "message": "Adding disk usage tool"}
+2023-07-17 22:45:11,405 - root - INFO - {"event": "add_tool", "message": "Adding tool disk-usage"}
+2023-07-17 22:45:11,405 - root - INFO - {"event": "add_tool", "message": "Tool disk-usage added successfully"}
+2023-07-17 22:45:11,405 - root - INFO - {"event": "startup", "message": "Adding toggle low Wi-Fi notifications tool"}
+2023-07-17 22:45:11,405 - root - INFO - {"event": "add_tool", "message": "Adding tool low-wifi-notifs"}
+2023-07-17 22:45:11,406 - root - INFO - {"event": "add_tool", "message": "Tool low-wifi-notifs added successfully"}
+2023-07-17 22:45:11,406 - root - INFO - {"event": "startup", "message": "Adding get last boottime tool"}
+2023-07-17 22:45:11,406 - root - INFO - {"event": "add_tool", "message": "Adding tool last-boottime"}
+2023-07-17 22:45:11,406 - root - INFO - {"event": "add_tool", "message": "Tool last-boottime added successfully"}
+2023-07-17 22:45:12,032 - root - INFO - {"event": "execute_tool", "message": "Executing tool trusted-network-status"}
+2023-07-17 22:45:13,095 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:45:13,211 - root - INFO - {"event": "execute_tool", "message": "Executing tool trusted-network-status"}
+2023-07-17 22:45:13,221 - root - INFO - {"event": "execute_tool", "message": "Executing tool ad-status"}
+2023-07-17 22:45:13,355 - root - INFO - {"event": "execute_tool", "message": "Executing tool password-data"}
+2023-07-17 22:45:13,358 - root - INFO - {"event": "execute_tool", "message": "Executing tool disk-usage"}
+2023-07-17 22:45:18,233 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:45:18,578 - root - INFO - {"event": "execute_tool", "message": "Executing tool last-boottime"}
+2023-07-17 22:45:23,328 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:45:28,421 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:45:33,581 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:45:38,664 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:45:43,734 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:45:48,815 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:45:53,899 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:45:54,961 - root - INFO - {"event": "execute_tool", "message": "Executing tool trusted-network-status"}
+2023-07-17 22:45:57,142 - root - INFO - {"event": "execute_tool", "message": "Executing tool network-adapters"}
+2023-07-17 22:45:58,988 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:46:00,636 - root - INFO - {"event": "execute_tool", "message": "Executing tool trusted-network-status"}
+2023-07-17 22:46:04,060 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:46:09,132 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:46:14,220 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:46:19,598 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:46:24,684 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:46:29,767 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:46:35,169 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:46:40,287 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:46:45,690 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:46:50,773 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:46:56,190 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:01,292 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:06,721 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:11,805 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:16,933 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:22,340 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:27,416 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:32,512 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:37,608 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:42,678 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:48,066 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:53,159 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:47:58,568 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:48:03,662 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:48:08,741 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:48:14,137 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:48:19,238 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:48:24,318 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:48:29,706 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:48:34,819 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:48:40,211 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:48:45,312 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:48:50,737 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:48:55,816 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:00,930 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:06,341 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:11,430 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:16,814 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:21,889 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:27,302 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:32,415 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:37,842 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:42,926 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:48,030 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:53,426 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:49:58,518 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:50:03,901 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:50:08,980 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:50:14,061 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:50:19,448 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:50:24,526 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:50:29,953 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:50:35,054 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:50:40,155 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:50:45,541 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:50:50,627 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:50:56,051 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:00,655 - root - INFO - {"event": "execute_tool", "message": "Executing tool trusted-network-status"}
+2023-07-17 22:51:01,129 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:06,238 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:11,333 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:16,723 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:21,836 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:27,253 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:32,358 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:37,425 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:42,836 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:47,934 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:53,355 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:51:58,446 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:52:03,523 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:52:08,928 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:52:14,029 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:52:19,437 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:52:24,524 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:52:29,909 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:52:35,023 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:52:40,411 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:52:45,496 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:52:50,582 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:52:55,986 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:01,087 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:06,191 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:11,579 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:16,684 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:22,078 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:27,156 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:32,566 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:37,658 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:43,068 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:48,146 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:53,225 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:53:58,641 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:54:03,743 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:54:09,141 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:54:14,217 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:54:19,630 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:54:24,730 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:54:29,830 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:54:35,235 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:54:40,339 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:54:45,739 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:54:50,833 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:54:56,007 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:01,428 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:06,505 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:11,618 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:13,365 - root - INFO - {"event": "execute_tool", "message": "Executing tool ad-status"}
+2023-07-17 22:55:16,753 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:21,844 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:27,310 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:32,393 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:37,786 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:42,856 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:48,256 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:53,354 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:55:58,760 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
+2023-07-17 22:56:00,662 - root - INFO - {"event": "execute_tool", "message": "Executing tool trusted-network-status"}
+2023-07-17 22:56:03,845 - root - INFO - {"event": "execute_tool", "message": "Executing tool wifi-details"}
