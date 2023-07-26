@@ -16,3 +16,7 @@ from tools.execution_functions.executable.fminfo.get_trusted_network_status impo
 from tools.execution_functions.executable.fminfo.get_last_boottime import (
     get_last_boottime,
 )
+
+from tools.execution_functions.executable.fminfo.get_battery_health import (
+    get_battery_health,
+)

@@ -1,10 +1,10 @@
 import subprocess
 import platform
 import re
-from typing import Any, Optional, Dict
+from typing import Any
 
 
-async def get_ad_status(params: Optional[Dict[str, Any]] = None):
+async def get_ad_status(**params: Any):
     system = platform.system()
 
     if system == "Windows":

@@ -1,9 +1,9 @@
 import psutil
 import socket
-from typing import Any, Optional, Dict
+from typing import Any
 
 
-async def get_network_adapters(params: Optional[Dict[str, Any]] = None):
+async def get_network_adapters(**params: Any):
     try:
         active_adapters = {}
         inactive_adapters = {}

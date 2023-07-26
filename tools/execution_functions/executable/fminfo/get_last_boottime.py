@@ -1,9 +1,9 @@
 import psutil
 import arrow
-from typing import Any, Optional, Dict
+from typing import Any
 
 
-async def get_last_boottime(params: Optional[Dict[str, Any]] = None):
+async def get_last_boottime(**params: Any):
     try:
         boot_time = arrow.get(psutil.boot_time())
         boot_time_str = boot_time.format("MM/DD/YY hh:mm:ss A")
@@ -28,9 +28,7 @@ async def get_last_boottime(params: Optional[Dict[str, Any]] = None):
         else:
             rating = "error"
 
-        description = (
-            f"Your machine was last rebooted on {boot_time_str}. "
-        )
+        description = f"Your machine was last rebooted on {boot_time_str}. "
 
         return {
             "last_boot_time": boot_time_str,

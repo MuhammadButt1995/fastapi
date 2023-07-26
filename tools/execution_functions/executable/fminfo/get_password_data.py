@@ -2,11 +2,13 @@ import subprocess
 import platform
 from datetime import datetime
 import re
-from typing import Any, Optional, Dict
+from typing import Any
+import getpass
 
 
-async def get_password_data(params: Optional[Dict[str, Any]] = None):
+async def get_password_data(**params: Any):
     try:
+        user = getpass.getuser()
         if platform.system() == "Windows":
             password_expires_output = (
                 subprocess.check_output(

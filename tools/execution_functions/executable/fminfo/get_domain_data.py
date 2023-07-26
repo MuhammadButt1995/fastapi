@@ -3,10 +3,10 @@ import subprocess
 import platform
 from datetime import datetime
 import re
-from typing import Any, Optional, Dict
+from typing import Any
 
 
-async def get_domain_data(params: Optional[Dict[str, Any]] = None):
+async def get_domain_data(**params: Any):
     try:
         if platform.system() == "Windows":
             domain = os.environ.get("USERDOMAIN")

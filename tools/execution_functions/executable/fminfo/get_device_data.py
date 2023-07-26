@@ -1,10 +1,10 @@
 import platform
 import psutil
 import datetime
-from typing import Any, Optional, Dict
+from typing import Any
 
 
-async def get_device_data(params: Optional[Dict[str, Any]] = None):
+async def get_device_data(**params: Any):
     ram_info = psutil.virtual_memory()
     boot_time = datetime.datetime.fromtimestamp(psutil.boot_time()).isoformat()
 

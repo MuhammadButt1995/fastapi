@@ -1,8 +1,8 @@
 import psutil
-from typing import Any, Optional, Dict
+from typing import Any
 
 
-async def get_disk_usage(params: Optional[Dict[str, Any]] = None):
+async def get_disk_usage(**params: Any):
     total_disk_size_gb = psutil.disk_usage("/").total / (1024**3)
     current_disk_usage_gb = psutil.disk_usage("/").used / (1024**3)
     remaining_space_gb = total_disk_size_gb - current_disk_usage_gb

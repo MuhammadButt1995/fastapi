@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field, validator
 from abc import ABC, abstractmethod
 from typing import Callable, Any, Optional, Dict, List
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 import json
 import aiofiles.os
@@ -26,6 +26,7 @@ from tools.execution_functions import (
     get_network_adapters,
     get_password_data,
     get_last_boottime,
+    get_battery_health,
 )
 
 
@@ -344,6 +345,13 @@ async def startup_event() -> None:
             ExecutableTool(id="disk-usage", visible=False, execute_func=get_disk_usage)
         )
 
+        json_log("info", "startup", "Adding battery health tool")
+        await tool_registry.add_tool(
+            ExecutableTool(
+                id="battery-health", visible=False, execute_func=get_battery_health
+            )
+        )
+
         json_log("info", "startup", "Adding toggle low Wi-Fi notifications tool")
         await tool_registry.add_tool(
             ToggleTool(
@@ -383,15 +391,18 @@ async def get_tools() -> Dict[str, Any]:
 
 
 @app.get("/tools/{tool_id}")
-async def execute_tool(tool_id: str) -> Dict[str, Any]:
+async def execute_tool(tool_id: str, request: Request) -> Dict[str, Any]:
     try:
+        params = dict(request.query_params)
+
         json_log("info", "execute_tool", f"Executing tool {tool_id}")
         tool = tool_registry.get_tool(tool_id)
         if not tool:
             json_log("warning", "warning", f"Tool {tool_id} not found")
             return {"success": False, "error": "Tool not found"}
 
-        result = await tool.execute()
+        # Pass the query parameters to the execute function
+        result = await tool.execute(**params)
         if isinstance(result, dict):
             result = JsonFileManager.convert_dict_keys_to_camel(result)
 
