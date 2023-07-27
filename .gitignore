@@ -1,4 +1,6 @@
 venv
+logs/data
+logs/server
 
 *.py[cod]
 *.pyo
