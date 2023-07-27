@@ -40,6 +40,8 @@ class Tag(Enum):
 LOG_EXPIRY_SECONDS = 30 * 86400
 LOG_DIR = "logs/server"
 
+os.makedirs(os.path.join(os.getcwd(), "logs"), exist_ok=True)
+
 
 def json_log(level: str, event: str, message: str, error: Optional[str] = None):
     log_obj = {"event": event, "message": message}
