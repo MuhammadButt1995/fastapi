@@ -1,6 +1,8 @@
 venv
 logs/*
 
+tools_state.json
+
 *.py[cod]
 *.pyo
 *.pyc
