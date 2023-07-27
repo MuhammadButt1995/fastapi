@@ -1,5 +1,5 @@
 venv
-logs/
+logs/data
 
 *.py[cod]
 *.pyo
