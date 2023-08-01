@@ -20,3 +20,11 @@ from tools.execution_functions.executable.fminfo.get_last_boottime import (
 from tools.execution_functions.executable.fminfo.get_battery_health import (
     get_battery_health,
 )
+
+from tools.execution_functions.executable.fminfo.get_ssd_health import (
+    get_ssd_health,
+)
+
+from tools.execution_functions.executable.fminfo.get_network_speed import (
+    get_network_speed,
+)

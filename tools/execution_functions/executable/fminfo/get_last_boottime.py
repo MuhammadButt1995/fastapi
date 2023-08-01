@@ -11,19 +11,24 @@ async def get_last_boottime(**params: Any):
         days_since_boot = (arrow.now() - boot_time).days
 
         if days_since_boot == 0:
-            days_since_boot = "TODAY"
+            days_since_boot_str = "0 days since reboot"
+            health_status = "HEALTHY"
         elif days_since_boot == 1:
-            days_since_boot = "1 day ago"
+            days_since_boot_str = "1 day since reboot"
+            health_status = "HEALTHY"
+        elif days_since_boot <= 7:
+            days_since_boot_str = f"{days_since_boot} days since reboot"
+            health_status = "HEALTHY"
+        elif days_since_boot <= 10:
+            days_since_boot_str = f"{days_since_boot} days since reboot"
+            health_status = "AT RISK"
         else:
-            days_since_boot = f"{days_since_boot} days ago"
+            days_since_boot_str = f"{days_since_boot} days since reboot"
+            health_status = "UNHEALTHY"
 
-        if (
-            days_since_boot == "TODAY"
-            or days_since_boot == "1 day ago"
-            or int(days_since_boot.split()[0]) <= 7
-        ):
+        if health_status == "HEALTHY":
             rating = "ok"
-        elif "1 day ago" < days_since_boot < "10 days ago":
+        elif health_status == "AT RISK":
             rating = "warn"
         else:
             rating = "error"
@@ -32,7 +37,8 @@ async def get_last_boottime(**params: Any):
 
         return {
             "last_boot_time": boot_time_str,
-            "days_since_boot": days_since_boot,
+            "days_since_boot": days_since_boot_str,
+            "health_status": health_status,
             "rating": rating,
             "description": description,
         }

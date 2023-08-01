@@ -27,6 +27,8 @@ from tools.execution_functions import (
     get_password_data,
     get_last_boottime,
     get_battery_health,
+    get_ssd_health,
+    get_network_speed,
 )
 
 
@@ -354,6 +356,18 @@ async def startup_event() -> None:
             )
         )
 
+        json_log("info", "startup", "Adding SSD Health tool")
+        await tool_registry.add_tool(
+            ExecutableTool(id="ssd-health", visible=False, execute_func=get_ssd_health)
+        )
+
+        json_log("info", "startup", "Adding Network Speed tool")
+        await tool_registry.add_tool(
+            ExecutableTool(
+                id="network-speed", visible=False, execute_func=get_network_speed
+            )
+        )
+
         json_log("info", "startup", "Adding toggle low Wi-Fi notifications tool")
         await tool_registry.add_tool(
             ToggleTool(
@@ -405,7 +419,7 @@ async def execute_tool(tool_id: str, request: Request) -> Dict[str, Any]:
 
         # Pass the query parameters to the execute function
         result = await tool.execute(**params)
-        if isinstance(result, dict):
+        if isinstance(result, dict) and tool_id != "network-adapters":
             result = JsonFileManager.convert_dict_keys_to_camel(result)
 
         if isinstance(tool, ExecutableTool) and tool.result_mapping:

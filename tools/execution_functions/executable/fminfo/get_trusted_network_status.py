@@ -6,7 +6,7 @@ from typing import Any, Optional, Dict
 status = {
     "ZPA": "You are connected to ZPA.",
     "VPN": "You are connected to VPN.",
-    "NOT CONNECTED": "Please connect to either ZScaler ZPA or Citrix VPN to get onto a trusted network.",
+    "DISCONNECTED": "Please connect to either ZScaler ZPA or Citrix VPN to get onto a trusted network.",
 }
 
 
@@ -28,15 +28,15 @@ async def get_trusted_network_status(params: Optional[Dict[str, Any]] = None):
                 return {"status": "VPN", "description": status["VPN"], "rating": "ok"}
             else:
                 return {
-                    "status": "NOT CONNECTED",
-                    "description": status["NOT CONNECTED"],
+                    "status": "DISCONNECTED",
+                    "description": status["DISCONNECTED"],
                     "rating": "warn",
                 }
 
         except FileNotFoundError:
             return {
-                "status": "NOT CONNECTED",
-                "description": status["NOT CONNECTED"],
+                "status": "DISCONNECTED",
+                "description": status["DISCONNECTED"],
                 "rating": "warn",
             }
 
@@ -59,7 +59,7 @@ async def get_trusted_network_status(params: Optional[Dict[str, Any]] = None):
                 return {"status": "VPN", "description": status["VPN"], "rating": "ok"}
             else:
                 return {
-                    "status": "NOT CONNECTED",
-                    "description": status["NOT CONNECTED"],
+                    "status": "DISCONNECTED",
+                    "description": status["DISCONNECTED"],
                     "rating": "warn",
                 }

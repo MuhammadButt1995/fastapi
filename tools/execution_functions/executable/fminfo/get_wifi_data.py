@@ -81,6 +81,8 @@ async def async_check_output(*args):
 
 
 async def get_wifi_data(**params: Any):
+    param1 = params.get("type")
+    print(param1)
     if platform.system() == "Windows":
         cmd_output = subprocess.check_output(
             ["netsh", "wlan", "show", "interfaces"]
