@@ -48,10 +48,10 @@ async def get_password_data(**params: Any):
                 "rating": rating,
             }
 
-            return {password_expires}
+            return password_expires
 
         elif platform.system() == "Darwin":  # Mac
-            return {password_expires}
+            return password_expires
 
     except Exception as e:
         print(e)
