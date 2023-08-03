@@ -1,12 +1,10 @@
 import platform
 import psutil
-import datetime
 from typing import Any
 
 
 async def get_device_data(**params: Any):
     ram_info = psutil.virtual_memory()
-    boot_time = datetime.datetime.fromtimestamp(psutil.boot_time()).isoformat()
 
     manufacturer, model, serial_number = __get_device_identifiers()
 
@@ -15,7 +13,6 @@ async def get_device_data(**params: Any):
         "ram": f"{round(float(ram_info.total) / (1024 ** 3), 2)} GB",
         "manufacturer": manufacturer,
         "model": model,
-        "last_boot_time": boot_time,
         "serial_number": serial_number,
     }
 

@@ -11,15 +11,15 @@ async def get_disk_usage(**params: Any):
     if remaining_space_percent > 25:
         disk_utilization_health = "healthy"
     elif 15 < remaining_space_percent <= 25:
-        disk_utilization_health = "suboptimal"
-    else:
         disk_utilization_health = "at risk"
+    else:
+        disk_utilization_health = "unhealthy"
 
     description = f"You are using {current_disk_usage_gb:.2f} GB out of {total_disk_size_gb:.2f} GB. You have {remaining_space_gb:.2f} GB ({remaining_space_percent:.2f}%) of disk space remaining."
     rating = {
         "healthy": "ok",
-        "suboptimal": "warn",
-        "at risk": "error",
+        "at risk": "warn",
+        "unhealthy": "error",
     }[disk_utilization_health]
 
     return {
