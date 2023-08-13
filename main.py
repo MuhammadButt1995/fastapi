@@ -29,11 +29,13 @@ from tools.execution_functions import (
     get_battery_health,
     get_ssd_health,
     get_network_speed,
+    ad_rebind,
 )
 
 
 class Tag(Enum):
     NETWORK = "Network"
+    WIFI = "WI-FI"
     IDENTITY_SERVICES = "Identity Services"
     DEVICE = "Device"
     CONFIGURATION = "Configuration"
@@ -102,10 +104,15 @@ class Tool(BaseModel, ABC):
     async def execute(self, **kwargs: Any) -> Any:
         pass
 
+    def serialize(self) -> dict:
+        data = self.dict(by_alias=True)
+        data.pop("execute_func", None)
+        return data
+
 
 class ExecutableTool(Tool):
     def __init__(self, **data):
-        super().__init__(**data, type="Executable")
+        super().__init__(**data, type="Command")
 
     name: Optional[str] = Field(alias="name", default=None)
     description: Optional[str] = Field(alias="description", default=None)
@@ -125,6 +132,12 @@ class ExecutableTool(Tool):
     async def execute(self, **kwargs):
         return await self.execute_func(**kwargs)
 
+    def serialize(self) -> dict:
+        data = super().serialize()
+        data.pop("visible", None)
+        data.pop("result_mapping", None)
+        return data
+
 
 class ToggleTool(Tool):
     def __init__(self, **data):
@@ -142,9 +155,9 @@ class ToggleTool(Tool):
         return self.state
 
 
-class RouteTool(Tool):
+class UtilityTool(Tool):
     def __init__(self, **data):
-        super().__init__(**data, type="Route")
+        super().__init__(**data, type="Utility")
 
     name: str = Field(alias="name")
     description: str = Field(alias="description")
@@ -373,8 +386,34 @@ async def startup_event() -> None:
             ToggleTool(
                 id="low-wifi-notifs",
                 name="Low Wi-Fi Notifications",
-                description="Receive push notifications when we detect an unreliable Wi-Fi connection for an extended period of time.",
-                icon="toggle_icon.png",
+                description="Receive notifications if your Wi-Fi is slow for over 15 minutes. Turn on to stay informed.",
+                icon="/wifi-notifs.png",
+                tags=[Tag.WIFI, Tag.NETWORK],
+            )
+        )
+
+        json_log("info", "startup", "Adding toggle AD Rebind tool")
+        await tool_registry.add_tool(
+            ExecutableTool(
+                id="ad-rebind",
+                visible=True,
+                name="AD Rebind",
+                description="If your Mac device is out of sync with our on-prem Active Directory, use this to quickly get your device back on track.",
+                icon="/aad.png",
+                tags=[Tag.IDENTITY_SERVICES],
+                execute_func=ad_rebind,
+            )
+        )
+
+        json_log("info", "startup", "Adding VPN Helper tool")
+        await tool_registry.add_tool(
+            UtilityTool(
+                id="vpn-helper",
+                name="VPN Helper",
+                route="/toolbox/vpn-helper",
+                description="Use VPN Helper when you connect your device to a public Wi-Fi network such as networks in coffee shops, airports, hotels, and other locations.",
+                icon="/vpn.png",
+                tags=[Tag.NETWORK, Tag.WIFI],
             )
         )
 
@@ -393,11 +432,11 @@ async def startup_event() -> None:
 async def get_tools() -> Dict[str, Any]:
     try:
         tools = [
-            tool.dict(by_alias=True)
+            tool.serialize()  # Use the new serialize method here
             for tool in tool_registry.tools.values()
             if isinstance(tool, ExecutableTool)
             and tool.visible
-            or isinstance(tool, (ToggleTool, RouteTool))
+            or isinstance(tool, (ToggleTool, UtilityTool))
         ]
         json_log("info", "get_tools", f"Returned {len(tools)} tools")
         return {"success": True, "data": tools, "timestamp": get_current_timestamp()}
