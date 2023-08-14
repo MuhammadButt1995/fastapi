@@ -30,15 +30,19 @@ from tools.execution_functions import (
     get_ssd_health,
     get_network_speed,
     ad_rebind,
+    import_bookmarks,
+    export_bookmarks
 )
 
 
 class Tag(Enum):
+    BROWSER = "Browser"
+    NEW_MACHINE = "New Machine"
     NETWORK = "Network"
     WIFI = "WI-FI"
     IDENTITY_SERVICES = "Identity Services"
     DEVICE = "Device"
-    CONFIGURATION = "Configuration"
+    CONFIGURATION = "Configuration",
 
 
 LOG_EXPIRY_SECONDS = 30 * 86400
@@ -381,6 +385,20 @@ async def startup_event() -> None:
             )
         )
 
+        json_log("info", "startup", "Adding Export Bookmarks tool")
+        await tool_registry.add_tool(
+            ExecutableTool(
+                id="export-bookmarks", visible=False, execute_func=export_bookmarks
+            )
+        )
+
+        json_log("info", "startup", "Adding Import Bookmarks tool")
+        await tool_registry.add_tool(
+            ExecutableTool(
+                id="import-bookmarks", visible=False, execute_func=import_bookmarks
+            )
+        )
+
         json_log("info", "startup", "Adding toggle low Wi-Fi notifications tool")
         await tool_registry.add_tool(
             ToggleTool(
@@ -417,6 +435,18 @@ async def startup_event() -> None:
             )
         )
 
+        json_log("info", "startup", "Adding Import/Export Bookmarks tool")
+        await tool_registry.add_tool(
+            UtilityTool(
+                id="bookmarks",
+                name="Bookmarks Manager",
+                route="/toolbox/bookmarks",
+                description="Save your current bookmarks to easily import them on a new machine for Chrome or Safari; Edge bookmarks are auto-synced with the cloud.",
+                icon="/bookmark.png",
+                tags=[Tag.NEW_MACHINE, Tag.BROWSER],
+            )
+        )
+
         json_log("info", "startup", "Adding get last boottime tool")
         await tool_registry.add_tool(
             ExecutableTool(
@@ -431,15 +461,22 @@ async def startup_event() -> None:
 @app.get("/tools")
 async def get_tools() -> Dict[str, Any]:
     try:
-        tools = [
-            tool.serialize()  # Use the new serialize method here
+        # First, filter the tools
+        filtered_tools = [
+            tool
             for tool in tool_registry.tools.values()
-            if isinstance(tool, ExecutableTool)
-            and tool.visible
+            if isinstance(tool, ExecutableTool) and tool.visible
             or isinstance(tool, (ToggleTool, UtilityTool))
         ]
-        json_log("info", "get_tools", f"Returned {len(tools)} tools")
-        return {"success": True, "data": tools, "timestamp": get_current_timestamp()}
+        
+        # Now, sort the tools alphabetically by their name
+        sorted_tools = sorted(filtered_tools, key=lambda tool: tool.name)
+
+        # Serialize the sorted tools
+        tools_serialized = [tool.serialize() for tool in sorted_tools]
+
+        json_log("info", "get_tools", f"Returned {len(tools_serialized)} tools")
+        return {"success": True, "data": tools_serialized, "timestamp": get_current_timestamp()}
     except Exception as e:
         json_log("error", "error", "Error getting tools", str(e))
         return {"success": False, "error": str(e), "timestamp": get_current_timestamp()}

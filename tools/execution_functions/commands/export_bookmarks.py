@@ -1,3 +1,4 @@
+from typing import Any
 import os
 import json
 import plistlib
@@ -5,19 +6,14 @@ import asyncio
 from pathlib import Path
 
 
-async def export_bookmarks(browsers=["chrome", "safari"]):
+async def export_bookmarks(**params: Any):
     """
     Exports bookmarks for the specified browsers.
-
-    Args:
-        browsers (list): A list of browser names for which to export bookmarks.
-            Supported values: 'chrome', 'safari'. Defaults to both.
-
-    Note:
-        The function determines the current OS and browser's data path accordingly.
-        For Chrome, it will look for all profiles and export bookmarks for each.
-        The bookmarks are saved in the user's home directory with relevant names.
     """
+
+    # Retrieve browsers from params or set default value to Chrome
+    browser_param = params.get("browser", params.get("browsers", "chrome"))
+    browsers = browser_param.split(",")
 
     # Determine the current platform (Windows or macOS)
     platform = "windows" if os.name == "nt" else "macos"
@@ -43,7 +39,7 @@ async def export_bookmarks(browsers=["chrome", "safari"]):
         "safari": {"macos": user_home / "Library" / "Safari" / "Bookmarks.plist"},
     }
 
-    def get_profile_name_from_preferences(profile_dir):
+    def get_profile_name_from_preferences(profile_dir: Path) -> str:
         """
         Retrieves the profile name from Chrome's Preferences file.
         """
@@ -58,21 +54,21 @@ async def export_bookmarks(browsers=["chrome", "safari"]):
                         or profile_dir.stem
                     )
             except Exception as e:
-                print(f"Error reading Preferences for profile in {profile_dir}: {e}")
+                raise ValueError(
+                    f"Error reading Preferences for profile in {profile_dir}: {e}"
+                )
         return profile_dir.stem
 
-    async def read_and_export(browser, src, dest):
+    async def read_and_export(browser: str, src: Path, dest: Path):
         """
         Reads and exports the bookmarks asynchronously.
         """
-        print(f"Attempting to export bookmarks for {browser} from {src} to {dest}")
         try:
             src.rename(src)
         except PermissionError:
-            print(
+            raise PermissionError(
                 f"Cannot access {browser} bookmarks. The file might be in use or you lack the necessary permissions."
             )
-            return
 
         if browser == "chrome":
             try:
@@ -81,7 +77,7 @@ async def export_bookmarks(browsers=["chrome", "safari"]):
                 with dest.open("w", encoding="utf-8") as f:
                     json.dump(bookmarks, f, indent=4)
             except Exception as e:
-                print(f"Error exporting bookmarks for {browser}: {e}")
+                raise ValueError(f"Error exporting bookmarks for {browser}: {e}")
 
         elif browser == "safari":
             try:
@@ -90,19 +86,16 @@ async def export_bookmarks(browsers=["chrome", "safari"]):
                 with dest.open("wb") as f:
                     plistlib.dump(bookmarks, f)
             except Exception as e:
-                print(f"Error exporting bookmarks for {browser}: {e}")
+                raise ValueError(f"Error exporting bookmarks for {browser}: {e}")
 
     tasks = []
 
     for browser in browsers:
-        print(f"Processing {browser} on {platform}")
         if browser not in paths or platform not in paths[browser]:
-            print(f"Cannot export bookmarks for {browser} on {platform}.")
-            continue
+            raise ValueError(f"Cannot export bookmarks for {browser} on {platform}.")
 
         if browser == "chrome":
             browser_data_path = paths[browser][platform]
-            print(f"Searching for profiles in {browser_data_path}")
             profiles = [browser_data_path / "Default"] + list(
                 browser_data_path.glob("Profile*")
             )
@@ -110,7 +103,6 @@ async def export_bookmarks(browsers=["chrome", "safari"]):
             for profile in profiles:
                 source_path = profile / "Bookmarks"
                 if source_path.exists():
-                    print(f"Found bookmarks for profile {profile}")
                     profile_name = get_profile_name_from_preferences(profile)
                     valid_name = "".join(i for i in profile_name if i not in "\/:*?<>|")
                     destination_path = (
@@ -120,7 +112,7 @@ async def export_bookmarks(browsers=["chrome", "safari"]):
                         read_and_export(browser, source_path, destination_path)
                     )
                 else:
-                    print(f"No bookmarks found for profile {profile}")
+                    raise ValueError(f"No bookmarks found for profile {profile}")
 
         elif browser == "safari":
             source_path = paths[browser][platform]
@@ -128,7 +120,3 @@ async def export_bookmarks(browsers=["chrome", "safari"]):
             tasks.append(read_and_export(browser, source_path, destination_path))
 
     await asyncio.gather(*tasks)
-
-
-# Calling the function
-asyncio.run(export_bookmarks(browsers=["chrome"]))

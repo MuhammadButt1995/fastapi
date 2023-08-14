@@ -1,3 +1,4 @@
+from typing import Any
 import os
 import json
 import plistlib
@@ -5,14 +6,20 @@ import asyncio
 from pathlib import Path
 
 
-async def import_bookmarks(browsers=["chrome", "safari"]):
+async def import_bookmarks(**params: Any):
     """
     Imports bookmarks for the specified browsers based on the current OS.
 
     Args:
-        browsers (list): List of browser names for which to import bookmarks.
-            Supported values: 'chrome', 'safari'. Defaults to both.
+        params: A dictionary containing various parameters.
+            Supported keys:
+                - 'browsers' (list): A list of browser names for which to import bookmarks.
+                                    Supported values: 'chrome', 'safari'. Defaults to Chrome.
     """
+
+    # Retrieve browsers from params or set default value to Chrome
+    browser_param = params.get("browser", params.get("browsers", "chrome"))
+    browsers = browser_param.split(",")
 
     # Determine the current platform
     platform = "windows" if os.name == "nt" else "macos"
@@ -38,9 +45,6 @@ async def import_bookmarks(browsers=["chrome", "safari"]):
 
     async def restore_backup(browser, backup_file, dest):
         """Restores the bookmarks from a backup file to the destination."""
-        print(
-            f"Attempting to import bookmarks for {browser} from {backup_file} to {dest}"
-        )
         try:
             if dest.parent.exists():
                 if browser == "chrome":
@@ -54,9 +58,9 @@ async def import_bookmarks(browsers=["chrome", "safari"]):
                     with dest.open("wb") as f:
                         plistlib.dump(bookmarks, f)
             else:
-                print(f"Profile directory {dest.parent} does not exist. Skipping...")
+                raise ValueError(f"Profile directory {dest.parent} does not exist.")
         except Exception as e:
-            print(f"Error importing bookmarks for {browser}: {e}")
+            raise ValueError(f"Error importing bookmarks for {browser}: {e}")
 
     def get_existing_profile_name(profile_dir):
         """Retrieves the profile name from Chrome's Preferences file."""
@@ -71,16 +75,16 @@ async def import_bookmarks(browsers=["chrome", "safari"]):
                     or profile_dir.stem
                 )
             except Exception as e:
-                print(f"Error reading Preferences for profile in {profile_dir}: {e}")
+                raise ValueError(
+                    f"Error reading Preferences for profile in {profile_dir}: {e}"
+                )
         return profile_dir.stem
 
     tasks = []
 
     for browser in browsers:
-        print(f"Processing {browser} on {platform}")
         if browser not in paths or platform not in paths[browser]:
-            print(f"Cannot import bookmarks for {browser} on {platform}.")
-            continue
+            raise ValueError(f"Cannot import bookmarks for {browser} on {platform}.")
 
         if browser == "chrome":
             browser_data_path = paths[browser][platform]
@@ -101,8 +105,8 @@ async def import_bookmarks(browsers=["chrome", "safari"]):
                     dest_path = profile_folder / "Bookmarks"
                     tasks.append(restore_backup(browser, backup, dest_path))
                 else:
-                    print(
-                        f"Profile {profile_name_from_backup} not found in {browser} installation. Skipping..."
+                    raise ValueError(
+                        f"Profile {profile_name_from_backup} not found in {browser} installation."
                     )
 
         elif browser == "safari":
@@ -111,7 +115,3 @@ async def import_bookmarks(browsers=["chrome", "safari"]):
             tasks.append(restore_backup(browser, backup_file, dest_path))
 
     await asyncio.gather(*tasks)
-
-
-# Run the main function for importing bookmarks
-asyncio.run(import_bookmarks(browsers=["chrome"]))
