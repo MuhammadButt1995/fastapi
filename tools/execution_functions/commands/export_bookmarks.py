@@ -6,22 +6,21 @@ import asyncio
 from pathlib import Path
 import aiofiles
 
-
 async def export_bookmarks(**params: Any):
     """
     Exports bookmarks for the specified browsers.
     """
-
+    
     # Retrieve browsers from params or set default value to Chrome
     browser_param = params.get("browser", params.get("browsers", "chrome"))
     browsers = browser_param.split(",")
-
+    
     # Determine the current platform (Windows or macOS)
     platform = "windows" if os.name == "nt" else "macos"
-
+    
     # Determine the user's home directory
     user_home = Path.home()
-
+    
     # Determine the user's OneDrive directory for saving exported bookmarks
     user_onedrive = user_home / "OneDrive - Fannie Mae"
 
@@ -95,9 +94,10 @@ async def export_bookmarks(**params: Any):
 
         if browser == "chrome":
             browser_data_path = paths[browser][platform]
-            profiles = [browser_data_path / "Default"] + list(
-                browser_data_path.glob("Profile*")
-            )
+            # Dynamically detect all profile directories
+            profiles = list(browser_data_path.glob("Profile*"))
+            if (browser_data_path / "Default").exists():
+                profiles.append(browser_data_path / "Default")
 
             for profile in profiles:
                 source_path = profile / "Bookmarks"

@@ -5,18 +5,10 @@ import plistlib
 import asyncio
 from pathlib import Path
 
-
 async def import_bookmarks(**params: Any):
     """
     Imports bookmarks for the specified browsers based on the current OS.
-
-    Args:
-        params: A dictionary containing various parameters.
-            Supported keys:
-                - 'browsers' (list): A list of browser names for which to import bookmarks.
-                                    Supported values: 'chrome', 'safari'. Defaults to Chrome.
     """
-
     # Retrieve browsers from params or set default value to Chrome
     browser_param = params.get("browser", params.get("browsers", "chrome"))
     browsers = browser_param.split(",")
@@ -25,6 +17,7 @@ async def import_bookmarks(**params: Any):
     platform = "windows" if os.name == "nt" else "macos"
     user_home = Path.home()
     user_onedrive = user_home / "OneDrive - Fannie Mae"  # OneDrive directory
+
 
     # Define bookmark paths based on the browser and platform
     paths = {
@@ -89,9 +82,12 @@ async def import_bookmarks(**params: Any):
 
         if browser == "chrome":
             browser_data_path = paths[browser][platform]
-            existing_profiles = [browser_data_path / "Default"] + list(
-                browser_data_path.glob("Profile*")
-            )
+            
+            # Dynamically detect all profile directories
+            existing_profiles = list(browser_data_path.glob("Profile*"))
+            if (browser_data_path / "Default").exists():
+                existing_profiles.append(browser_data_path / "Default")
+
             existing_profile_names = {
                 get_existing_profile_name(profile): profile
                 for profile in existing_profiles
