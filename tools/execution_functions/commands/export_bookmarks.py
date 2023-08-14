@@ -4,6 +4,7 @@ import json
 import plistlib
 import asyncio
 from pathlib import Path
+import aiofiles
 
 
 async def export_bookmarks(**params: Any):
@@ -21,7 +22,10 @@ async def export_bookmarks(**params: Any):
     # Determine the user's home directory
     user_home = Path.home()
 
-    # Define bookmark file paths for each browser on each supported platform.
+    # Determine the user's OneDrive directory for saving exported bookmarks
+    user_onedrive = user_home / "OneDrive - Fannie Mae"
+
+    # Define bookmark source file paths for each browser on each supported platform.
     paths = {
         "chrome": {
             "windows": user_home
@@ -46,13 +50,13 @@ async def export_bookmarks(**params: Any):
         preferences_path = profile_dir / "Preferences"
         if preferences_path.exists():
             try:
-                with preferences_path.open("r", encoding="utf-8") as f:
+                with open(preferences_path, "r", encoding="utf-8") as f:
                     data = json.load(f)
-                    return (
-                        data.get("profile", {}).get("name")
-                        or data.get("account_info", [{}])[0].get("full_name")
-                        or profile_dir.stem
-                    )
+                return (
+                    data.get("profile", {}).get("name")
+                    or data.get("account_info", [{}])[0].get("full_name")
+                    or profile_dir.stem
+                )
             except Exception as e:
                 raise ValueError(
                     f"Error reading Preferences for profile in {profile_dir}: {e}"
@@ -61,30 +65,25 @@ async def export_bookmarks(**params: Any):
 
     async def read_and_export(browser: str, src: Path, dest: Path):
         """
-        Reads and exports the bookmarks asynchronously.
+        Reads and exports the bookmarks asynchronously using aiofiles.
         """
-        try:
-            src.rename(src)
-        except PermissionError:
-            raise PermissionError(
-                f"Cannot access {browser} bookmarks. The file might be in use or you lack the necessary permissions."
-            )
-
         if browser == "chrome":
             try:
-                with src.open("r", encoding="utf-8") as f:
-                    bookmarks = json.load(f)
-                with dest.open("w", encoding="utf-8") as f:
-                    json.dump(bookmarks, f, indent=4)
+                async with aiofiles.open(src, mode="r", encoding="utf-8") as f:
+                    bookmarks = await f.read()
+                bookmarks_json = json.loads(bookmarks)
+                async with aiofiles.open(dest, mode="w", encoding="utf-8") as f:
+                    await f.write(json.dumps(bookmarks_json, indent=4))
             except Exception as e:
                 raise ValueError(f"Error exporting bookmarks for {browser}: {e}")
 
         elif browser == "safari":
             try:
-                with src.open("rb") as f:
-                    bookmarks = plistlib.load(f)
-                with dest.open("wb") as f:
-                    plistlib.dump(bookmarks, f)
+                async with aiofiles.open(src, mode="rb") as f:
+                    bookmarks = await f.read()
+                bookmarks_plist = plistlib.loads(bookmarks)
+                async with aiofiles.open(dest, mode="wb") as f:
+                    await f.write(plistlib.dumps(bookmarks_plist))
             except Exception as e:
                 raise ValueError(f"Error exporting bookmarks for {browser}: {e}")
 
@@ -106,7 +105,7 @@ async def export_bookmarks(**params: Any):
                     profile_name = get_profile_name_from_preferences(profile)
                     valid_name = "".join(i for i in profile_name if i not in "\/:*?<>|")
                     destination_path = (
-                        user_home / f"{browser}_bookmarks_backup_{valid_name}"
+                        user_onedrive / f"{browser}_bookmarks_backup_{valid_name}.json"
                     )
                     tasks.append(
                         read_and_export(browser, source_path, destination_path)
@@ -116,7 +115,7 @@ async def export_bookmarks(**params: Any):
 
         elif browser == "safari":
             source_path = paths[browser][platform]
-            destination_path = user_home / f"{browser}_bookmarks_backup"
+            destination_path = user_onedrive / f"{browser}_bookmarks_backup.plist"
             tasks.append(read_and_export(browser, source_path, destination_path))
 
     await asyncio.gather(*tasks)
