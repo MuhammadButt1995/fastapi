@@ -31,7 +31,8 @@ from tools.execution_functions import (
     get_network_speed,
     ad_rebind,
     import_bookmarks,
-    export_bookmarks
+    export_bookmarks,
+    restart_zscaler
 )
 
 
@@ -420,6 +421,19 @@ async def startup_event() -> None:
                 icon="/aad.png",
                 tags=[Tag.IDENTITY_SERVICES],
                 execute_func=ad_rebind,
+            )
+        )
+
+        json_log("info", "startup", "Adding restart ZScaler tool")
+        await tool_registry.add_tool(
+            ExecutableTool(
+                id="restart-zscaler",
+                visible=True,
+                name="Restart ZScaler",
+                description="Refreshes the ZScaler security services on your device. Use this if you experience connectivity issues or irregularities with ZScaler",
+                icon="/zscaler.png",
+                tags=[Tag.NETWORK],
+                execute_func=restart_zscaler,
             )
         )
 
