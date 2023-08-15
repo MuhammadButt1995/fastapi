@@ -22,7 +22,7 @@ async def export_bookmarks(**params: Any):
     user_home = Path.home()
     
     # Determine the user's OneDrive directory for saving exported bookmarks
-    user_onedrive = user_home / "OneDrive - Fannie Mae"
+    user_onedrive = user_home / "Fannie Mae" / "OneDrive - Fannie Mae"
 
     # Define bookmark source file paths for each browser on each supported platform.
     paths = {

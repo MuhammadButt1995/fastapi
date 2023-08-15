@@ -32,7 +32,8 @@ from tools.execution_functions import (
     ad_rebind,
     import_bookmarks,
     export_bookmarks,
-    restart_zscaler
+    restart_zscaler,
+    reset_dns
 )
 
 
@@ -397,6 +398,13 @@ async def startup_event() -> None:
         await tool_registry.add_tool(
             ExecutableTool(
                 id="import-bookmarks", visible=False, execute_func=import_bookmarks
+            )
+        )
+
+        json_log("info", "startup", "Adding Reset DNS tool")
+        await tool_registry.add_tool(
+            ExecutableTool(
+                id="reset-dns", visible=False, execute_func=reset_dns
             )
         )
 

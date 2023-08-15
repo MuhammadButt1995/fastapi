@@ -2,3 +2,4 @@ from tools.execution_functions.commands.ad_rebind import ad_rebind
 from tools.execution_functions.commands.export_bookmarks import export_bookmarks
 from tools.execution_functions.commands.import_bookmarks import import_bookmarks
 from tools.execution_functions.commands.restart_zscaler import restart_zscaler
+from tools.execution_functions.commands.reset_dns import reset_dns
