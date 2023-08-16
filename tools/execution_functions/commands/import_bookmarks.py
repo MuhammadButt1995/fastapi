@@ -5,6 +5,7 @@ import plistlib
 import asyncio
 from pathlib import Path
 
+
 async def import_bookmarks(**params: Any):
     """
     Imports bookmarks for the specified browsers based on the current OS.
@@ -17,7 +18,6 @@ async def import_bookmarks(**params: Any):
     platform = "windows" if os.name == "nt" else "macos"
     user_home = Path.home()
     user_onedrive = user_home / "OneDrive - Fannie Mae"  # OneDrive directory
-
 
     # Define bookmark paths based on the browser and platform
     paths = {
@@ -41,7 +41,9 @@ async def import_bookmarks(**params: Any):
         """Restores the bookmarks from a backup file to the destination."""
         try:
             if not dest.parent.exists():
-                raise ValueError(f"Profile directory {dest.parent} does not exist for {browser}.")
+                raise ValueError(
+                    f"Profile directory {dest.parent} does not exist for {browser}."
+                )
 
             if browser == "chrome":
                 with backup_file.open("r", encoding="utf-8") as f:
@@ -82,7 +84,7 @@ async def import_bookmarks(**params: Any):
 
         if browser == "chrome":
             browser_data_path = paths[browser][platform]
-            
+
             # Dynamically detect all profile directories
             existing_profiles = list(browser_data_path.glob("Profile*"))
             if (browser_data_path / "Default").exists():
@@ -96,7 +98,9 @@ async def import_bookmarks(**params: Any):
             # Search for backup files in OneDrive
             backup_files = list(user_onedrive.glob(f"{browser}_bookmarks_backup_*"))
             if not backup_files:
-                raise FileNotFoundError(f"No backup files found in OneDrive for {browser}!")
+                raise FileNotFoundError(
+                    f"No backup files found in OneDrive for {browser}!"
+                )
 
             for backup in backup_files:
                 profile_name_from_backup = backup.stem.split("_")[-1]
@@ -113,7 +117,9 @@ async def import_bookmarks(**params: Any):
         elif browser == "safari":
             backup_file = user_onedrive / f"{browser}_bookmarks_backup"
             if not backup_file.exists():
-                raise FileNotFoundError(f"No backup file found in OneDrive for {browser}!")
+                raise FileNotFoundError(
+                    f"No backup file found in OneDrive for {browser}!"
+                )
 
             dest_path = paths[browser][platform]
             tasks.append(restore_backup(browser, backup_file, dest_path))

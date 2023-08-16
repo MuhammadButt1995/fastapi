@@ -2,6 +2,7 @@ import asyncio
 import os
 import subprocess
 
+
 async def restart_zscaler():
     """
     Stops and then restarts the ZScaler related processes on the endpoint.
@@ -15,13 +16,13 @@ async def restart_zscaler():
         "windows": {
             "stop": "sc stop ZSAService",
             "start": "sc start ZSAService",
-            "check": "sc query ZSAService | find \"RUNNING\""
+            "check": 'sc query ZSAService | find "RUNNING"',
         },
         "macos": {
             "stop": "sudo launchctl stop com.zscaler.zscalerGUI",
             "start": "sudo launchctl start com.zscaler.zscalerGUI",
-            "check": "sudo launchctl list | grep com.zscaler.zscalerGUI"
-        }
+            "check": "sudo launchctl list | grep com.zscaler.zscalerGUI",
+        },
     }
 
     async def execute_command(cmd: str) -> str:
@@ -29,9 +30,7 @@ async def restart_zscaler():
         Asynchronously executes the given command.
         """
         process = await asyncio.create_subprocess_shell(
-            cmd,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE
+            cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE
         )
         stdout, stderr = await process.communicate()
 
@@ -56,7 +55,9 @@ async def restart_zscaler():
         if await validate_service_stopped():
             break
         elif i == max_retries - 1:  # Last retry
-            raise Exception("Failed to validate that ZScaler service has stopped after maximum retries.")
+            raise Exception(
+                "Failed to validate that ZScaler service has stopped after maximum retries."
+            )
         await asyncio.sleep(2)  # Wait 2 seconds before retrying
 
     # Start the service
