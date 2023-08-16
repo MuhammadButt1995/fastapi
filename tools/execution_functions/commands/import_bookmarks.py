@@ -17,7 +17,11 @@ async def import_bookmarks(**params: Any):
     # Determine the current platform
     platform = "windows" if os.name == "nt" else "macos"
     user_home = Path.home()
-    user_onedrive = user_home / "OneDrive - Fannie Mae"  # OneDrive directory
+    user_onedrive = (
+        user_home / "Fannie Mae" / "OneDrive - Fannie Mae"
+        if platform == "windows"
+        else user_home / "OneDrive - Fannie Mae"
+    )
 
     # Define bookmark paths based on the browser and platform
     paths = {
