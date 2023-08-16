@@ -61,9 +61,18 @@ def order_interfaces_by_priority(interfaces: Dict[str, str]) -> Dict[str, str]:
     primary_interface_labels = [
         get_intuitive_interface_name(name) for name in ["Wi-Fi", "Ethernet"]
     ]
-    return {
-        key: interfaces[key] for key in primary_interface_labels if key in interfaces
-    } | interfaces
+    
+    ordered_dict = {}
+    for key in primary_interface_labels:
+        if key in interfaces:
+            ordered_dict[key] = interfaces[key]
+
+    # Append remaining interfaces
+    for key, value in interfaces.items():
+        if key not in ordered_dict:
+            ordered_dict[key] = value
+
+    return ordered_dict
 
 
 async def get_network_adapters(**params: Any) -> Dict[str, Dict[str, str]]:
