@@ -57,9 +57,9 @@ def get_active_interfaces_with_ips() -> Dict[str, str]:
 
 
 def order_interfaces_by_priority(interfaces: Dict[str, str]) -> Dict[str, str]:
-    """Reorder the interfaces, prioritizing common user interfaces like Wi-Fi and Ethernet."""
+    """Reorder the interfaces, prioritizing common user interfaces like Wi-Fi, Ethernet, and en0."""
     primary_interface_labels = [
-        get_intuitive_interface_name(name) for name in ["Wi-Fi", "Ethernet"]
+        get_intuitive_interface_name(name) for name in ["Wi-Fi", "Ethernet", "en0"]
     ]
     
     ordered_dict = {}
