@@ -16,17 +16,26 @@ async def get_disk_usage() -> Dict[str, Any]:
         cmd = ["df", "-h", "/"]
         try:
             stdout = subprocess.check_output(cmd)
-            result = stdout.decode("utf-8").splitlines()[1].split()
+            lines = stdout.decode("utf-8").splitlines()
             
-            if len(result) < 2:
+            if len(lines) < 2:
                 raise Exception("Unexpected output format from `df` command")
             
-            size = result[-5]  # The second last value is typically the total size
-            used = result[-4]  # The last value is typically the used space
-            
-            total_disk_size_gb = convert_to_gb(size)
-            current_disk_usage_gb = convert_to_gb(used)
-            remaining_space_gb = total_disk_size_gb - current_disk_usage_gb
+            headers = lines[0].split()
+            values = lines[1].split()
+
+            if "Used" in headers and "Size" in headers:
+                size_index = headers.index("Size")
+                used_index = headers.index("Used")
+
+                size = values[size_index]
+                used = values[used_index]
+                
+                total_disk_size_gb = convert_to_gb(size)
+                current_disk_usage_gb = convert_to_gb(used)
+                remaining_space_gb = total_disk_size_gb - current_disk_usage_gb
+            else:
+                raise Exception("Unexpected column headers in `df` command output")
         except subprocess.CalledProcessError as e:
             return {
                 "error": f"An error occurred while fetching disk usage for macOS: {str(e)}"
