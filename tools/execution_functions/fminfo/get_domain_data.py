@@ -5,7 +5,6 @@ from datetime import datetime
 import re
 from typing import Any
 
-
 async def get_domain_data(**params: Any):
     try:
         if platform.system() == "Windows":
@@ -40,10 +39,15 @@ async def get_domain_data(**params: Any):
                 .decode()
                 .strip()
             )
-            # Assuming the last_logon_output is in the format 'Mon Sep 24 13:35' - adjust if necessary
-            last_logon = datetime.strptime(
-                last_logon_output, "%a %b %d %H:%M"
-            ).strftime("%a, %b %d, %Y %I:%M %p")
+            # Extracting required data using regex
+            match = re.search(r'(\w{3} \w{3} \d{2} \d{2}:\d{2})', last_logon_output)
+            if match:
+                last_logon_str = match.group(1)
+                last_logon = datetime.strptime(
+                    last_logon_str, "%a %b %d %H:%M"
+                ).strftime("%a, %b %d, %Y %I:%M %p")
+            else:
+                raise ValueError("Unexpected format for 'last' command output")
 
         return {
             "Logged_on_Domain": domain,
