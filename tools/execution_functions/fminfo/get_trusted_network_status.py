@@ -4,6 +4,7 @@ from typing import Any, Optional, Dict
 from pathlib import Path
 import plistlib
 
+# Global status dictionary for connection states
 status = {
     "ZPA": "You are connected to ZPA.",
     "VPN": "You are connected to VPN.",
@@ -15,11 +16,13 @@ if platform.system() == "Windows":
     import winreg
 
 
+# Windows-specific function to determine connection status
 async def windows_connection_status() -> Dict[str, Any]:
     RETRY_COUNT = 3
 
     for _ in range(RETRY_COUNT):
         try:
+            # Connecting to the registry and querying for Zscaler's state
             registry = winreg.ConnectRegistry(None, winreg.HKEY_CURRENT_USER)
             zscaler_key = winreg.OpenKey(registry, r"SOFTWARE\Zscaler\App")
             zpa_state, _ = winreg.QueryValueEx(zscaler_key, "ZPA_State")
@@ -27,6 +30,7 @@ async def windows_connection_status() -> Dict[str, Any]:
             winreg.CloseKey(zscaler_key)
             winreg.CloseKey(registry)
 
+            # Checking the Zscaler's state and returning the appropriate status
             if zpa_state == "TUNNEL_FORWARDING":
                 return {"status": "ZPA", "description": status["ZPA"], "rating": "ok"}
             elif znw_state == "TRUSTED":
@@ -48,6 +52,7 @@ async def windows_connection_status() -> Dict[str, Any]:
     }
 
 
+# macOS-specific function to determine connection status
 async def macos_connection_status() -> Dict[str, Any]:
     RETRY_COUNT = 3
     SLEEP_TIME = 0.2
@@ -55,30 +60,39 @@ async def macos_connection_status() -> Dict[str, Any]:
 
     for _ in range(RETRY_COUNT):
         try:
-            # Find files that match the pattern
+            # Reading the ztstatus log file
             log_files = list(log_dir.glob("ztstatus_*.log"))
             if not log_files:
                 raise FileNotFoundError("No Zscaler log files found.")
-            
-            # Since there's only one ztstatus file, we can directly take the first match
+
             with log_files[0].open("rb") as f:
                 plist_content = plistlib.load(f)
 
-            zpn_val = plist_content.get("zpn")
+            # Checking the zpn value and returning the appropriate status
+            zpn_val = int(plist_content.get("zpn"))
             if zpn_val == 4:
                 return {"status": "ZPA", "description": status["ZPA"], "rating": "ok"}
             elif zpn_val == 3:
                 return {"status": "VPN", "description": status["VPN"], "rating": "ok"}
             else:
-                return {"status": "DISCONNECTED", "description": status["DISCONNECTED"], "rating": "warn"}
+                return {
+                    "status": "DISCONNECTED",
+                    "description": status["DISCONNECTED"],
+                    "rating": "warn",
+                }
 
-        except (FileNotFoundError, OSError, plistlib.InvalidFileException):
+        except (FileNotFoundError, OSError, plistlib.InvalidFileException, ValueError):
             time.sleep(SLEEP_TIME)
             continue
 
-    return {"status": "DISCONNECTED", "description": status["DISCONNECTED"], "rating": "warn"}
+    return {
+        "status": "DISCONNECTED",
+        "description": status["DISCONNECTED"],
+        "rating": "warn",
+    }
 
 
+# Main function to determine the trusted network status based on the operating system
 async def get_trusted_network_status(
     params: Optional[Dict[str, Any]] = None
 ) -> Dict[str, Any]:
@@ -86,7 +100,5 @@ async def get_trusted_network_status(
 
     if system == "Windows":
         return await windows_connection_status()
-    elif system == "Darwin":
-        return await macos_connection_status()
     else:
-        raise Exception("Could not determine network status")
+        return await macos_connection_status()
