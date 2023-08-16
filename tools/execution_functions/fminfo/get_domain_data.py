@@ -26,13 +26,14 @@ async def get_domain_data(**params: Any):
             ).strftime("%a, %b %d, %Y %I:%M %p")
 
         elif platform.system() == "Darwin":  # Mac
-            domain = (
+            domain_output = (
                 subprocess.check_output(
                     'dsconfigad -show | grep "Active Directory Domain"', shell=True
                 )
                 .decode()
                 .strip()
             )
+            domain = domain_output.split('=')[-1].strip()
             user = subprocess.check_output("whoami", shell=True).decode().strip()
             last_logon_output = (
                 subprocess.check_output("last | grep %s | head -1" % user, shell=True)
