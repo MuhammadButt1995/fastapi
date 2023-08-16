@@ -1,5 +1,6 @@
 import os
 import platform
+import plistlib
 import psutil
 import subprocess
 from bs4 import BeautifulSoup
@@ -83,31 +84,24 @@ def is_mac_arm(architecture: str) -> bool:
 
 
 def get_mac_battery_health(architecture: str) -> Tuple[Union[int, str], str]:
-    """Return battery health metrics for Mac systems."""
+    """Return battery health metrics for Mac systems using plistlib."""
     battery_condition_cmd = subprocess.check_output(
         "system_profiler SPPowerDataType | grep Condition", shell=True
     )
     battery_condition = battery_condition_cmd.decode().split(":")[1].strip()
     battery_health_status = "healthy" if battery_condition == "Normal" else "unhealthy"
 
-    # Different commands for Intel and ARM based Macs
-    if is_mac_intel(architecture):
-        max_cap_command = subprocess.check_output(
-            'ioreg -l | grep MaxCapacity | awk -F"=" \'{print $2}\' | awk \'{print $1}\' | head -n 1', shell=True
-        )
-        max_cap = int(max_cap_command.decode().strip())
+    # Fetch plist XML data from ioreg
+    xml_data = subprocess.check_output(
+        "ioreg -l -a -r -c AppleSmartBattery", shell=True
+    )
+    battery_data = plistlib.loads(xml_data)
 
-        design_cap_cmd = subprocess.check_output(
-            'ioreg -l | grep DesignCapacity | awk -F"=" \'{print $2}\' | awk \'{print $1}\' | head -n 1', shell=True
-        )
-        design_cap = int(design_cap_cmd.decode().strip())
+    # Extract battery details
+    max_cap = battery_data["MaxCapacity"]
+    design_cap = battery_data["DesignCapacity"]
 
-        battery_health = round(max_cap / design_cap, 2) * 100
-    elif is_mac_arm(architecture):
-        battery_health_cmd = subprocess.check_output(
-            'system_profiler SPPowerDataType | grep "Capacity" | head -n 1', shell=True
-        )
-        battery_health = int(battery_health_cmd.decode().split(":")[1].strip())
+    battery_health = round(max_cap / design_cap, 2) * 100
 
     return battery_health, battery_health_status
 
