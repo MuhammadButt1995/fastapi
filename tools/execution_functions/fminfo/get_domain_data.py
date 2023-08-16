@@ -5,6 +5,7 @@ from datetime import datetime
 import re
 from typing import Any
 
+
 async def get_domain_data(**params: Any):
     try:
         if platform.system() == "Windows":
@@ -33,7 +34,7 @@ async def get_domain_data(**params: Any):
                 .decode()
                 .strip()
             )
-            domain = domain_output.split('=')[-1].strip()
+            domain = domain_output.split("=")[-1].strip()
             user = subprocess.check_output("whoami", shell=True).decode().strip()
             last_logon_output = (
                 subprocess.check_output("last | grep %s | head -1" % user, shell=True)
@@ -41,7 +42,7 @@ async def get_domain_data(**params: Any):
                 .strip()
             )
             # Extracting required data using regex
-            match = re.search(r'(\w{3} \w{3} \d{2} \d{2}:\d{2})', last_logon_output)
+            match = re.search(r"(\w{3} \w{3} \d{2} \d{2}:\d{2})", last_logon_output)
             if match:
                 last_logon_str = match.group(1)
                 last_logon = datetime.strptime(
