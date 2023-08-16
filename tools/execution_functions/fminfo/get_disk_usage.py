@@ -71,7 +71,7 @@ async def get_disk_usage() -> Dict[str, Any]:
     }
 
 def convert_to_gb(size_str: str) -> float:
-    """Convert sizes from string with possible 'G', 'M', 'K' suffixes to float GB."""
+    """Convert sizes from string with possible 'G', 'M', 'K', 'I' suffixes to float GB."""
     size_str = size_str.upper()
     if 'G' in size_str:
         return float(size_str.replace('G', ''))
@@ -79,4 +79,6 @@ def convert_to_gb(size_str: str) -> float:
         return float(size_str.replace('M', '')) / 1024
     if 'K' in size_str:
         return float(size_str.replace('K', '')) / (1024**2)
+    if 'I' in size_str:  # Removing the 'I' and assuming it's in bytes for now.
+        return float(size_str.replace('I', '')) / (1024**3)
     return float(size_str) / (1024**3)  # assume bytes if no suffix
