@@ -84,7 +84,7 @@ def is_mac_arm(architecture: str) -> bool:
 
 
 def get_mac_battery_health(architecture: str) -> Tuple[Union[int, str], str]:
-    """Return battery health metrics for Mac systems using plistlib."""
+    """Return battery health metrics for Mac systems using plistlib (adjusted for data structure)."""
     battery_condition_cmd = subprocess.check_output(
         "system_profiler SPPowerDataType | grep Condition", shell=True
     )
@@ -95,12 +95,22 @@ def get_mac_battery_health(architecture: str) -> Tuple[Union[int, str], str]:
     xml_data = subprocess.check_output(
         "ioreg -l -a -r -c AppleSmartBattery", shell=True
     )
-    battery_data = plistlib.loads(xml_data)
+    battery_data_list = plistlib.loads(xml_data)
 
+    # Assuming the desired data is in the first entry of the list
+    if not battery_data_list or not isinstance(battery_data_list, list):
+        raise ValueError("Unexpected battery data structure.")
+
+    battery_data = battery_data_list[0]
+    
     # Extract battery details
-    max_cap = battery_data["MaxCapacity"]
-    design_cap = battery_data["DesignCapacity"]
+    max_cap = battery_data.get("MaxCapacity", 0)
+    design_cap = battery_data.get("DesignCapacity", 0)
 
+    # Calculate battery health
+    if design_cap == 0:
+        raise ValueError("Design capacity is zero, cannot calculate battery health.")
+    
     battery_health = round(max_cap / design_cap, 2) * 100
 
     return battery_health, battery_health_status
