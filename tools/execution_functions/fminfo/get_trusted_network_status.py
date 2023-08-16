@@ -51,11 +51,17 @@ async def windows_connection_status() -> Dict[str, Any]:
 async def macos_connection_status() -> Dict[str, Any]:
     RETRY_COUNT = 3
     SLEEP_TIME = 0.2
+    log_dir = Path("/Library/Application Support/Zscaler")
 
     for _ in range(RETRY_COUNT):
         try:
-            log_path = Path("/Library/Application Support/Zscaler/ztstatus_*.log")
-            with log_path.open("rb") as f:
+            # Find files that match the pattern
+            log_files = list(log_dir.glob("ztstatus_*.log"))
+            if not log_files:
+                raise FileNotFoundError("No Zscaler log files found.")
+            
+            # Since there's only one ztstatus file, we can directly take the first match
+            with log_files[0].open("rb") as f:
                 plist_content = plistlib.load(f)
 
             zpn_val = plist_content.get("zpn")
@@ -64,21 +70,13 @@ async def macos_connection_status() -> Dict[str, Any]:
             elif zpn_val == 3:
                 return {"status": "VPN", "description": status["VPN"], "rating": "ok"}
             else:
-                return {
-                    "status": "DISCONNECTED",
-                    "description": status["DISCONNECTED"],
-                    "rating": "warn",
-                }
+                return {"status": "DISCONNECTED", "description": status["DISCONNECTED"], "rating": "warn"}
 
         except (FileNotFoundError, OSError, plistlib.InvalidFileException):
             time.sleep(SLEEP_TIME)
             continue
 
-    return {
-        "status": "DISCONNECTED",
-        "description": status["DISCONNECTED"],
-        "rating": "warn",
-    }
+    return {"status": "DISCONNECTED", "description": status["DISCONNECTED"], "rating": "warn"}
 
 
 async def get_trusted_network_status(
