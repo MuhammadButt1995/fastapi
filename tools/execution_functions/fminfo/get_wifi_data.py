@@ -90,7 +90,10 @@ def fetch_macos_wifi_data() -> Dict[str, Any]:
         
         signal_strength = int(parsed_output.get("agrCtlRSSI", "-100"))
         last_tx_rate = int(parsed_output.get("lastTxRate", "0"))
-        channel = int(parsed_output.get("channel", "0"))
+        channel_str = parsed_output.get("channel", "0")
+        
+        # Split the channel string and consider only the first channel
+        channel = int(channel_str.split(',')[0])
 
         radio_type = get_transmission_type_by_rate(last_tx_rate)
 
