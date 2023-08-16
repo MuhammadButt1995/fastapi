@@ -102,7 +102,7 @@ def get_mac_battery_health(architecture: str) -> Tuple[Union[int, str], str]:
         raise ValueError("Unexpected battery data structure.")
 
     battery_data = battery_data_list[0]
-    
+
     # Extract battery details
     max_cap = battery_data.get("MaxCapacity", 0)
     design_cap = battery_data.get("DesignCapacity", 0)
@@ -110,7 +110,7 @@ def get_mac_battery_health(architecture: str) -> Tuple[Union[int, str], str]:
     # Calculate battery health
     if design_cap == 0:
         raise ValueError("Design capacity is zero, cannot calculate battery health.")
-    
+
     battery_health = round(max_cap / design_cap, 2) * 100
 
     return battery_health, battery_health_status
