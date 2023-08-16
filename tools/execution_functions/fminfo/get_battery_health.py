@@ -93,19 +93,19 @@ def get_mac_battery_health(architecture: str) -> Tuple[Union[int, str], str]:
     # Different commands for Intel and ARM based Macs
     if is_mac_intel(architecture):
         max_cap_command = subprocess.check_output(
-            "ioreg -l | grep MaxCapacity | awk '{print $5}'", shell=True
+            'ioreg -l | grep MaxCapacity | awk \'{print $5}\' | head -n 1', shell=True
         )
         max_cap = int(max_cap_command.decode().strip())
 
         design_cap_cmd = subprocess.check_output(
-            "ioreg -l | grep DesignCapacity | awk '{print $5}'", shell=True
+            'ioreg -l | grep DesignCapacity | awk \'{print $5}\' | head -n 1', shell=True
         )
         design_cap = int(design_cap_cmd.decode().strip())
 
         battery_health = round(max_cap / design_cap, 2) * 100
     elif is_mac_arm(architecture):
         battery_health_cmd = subprocess.check_output(
-            'system_profiler SPPowerDataType | grep "Capacity"', shell=True
+            'system_profiler SPPowerDataType | grep "Capacity" | head -n 1', shell=True
         )
         battery_health = int(battery_health_cmd.decode().split(":")[1].strip())
 
