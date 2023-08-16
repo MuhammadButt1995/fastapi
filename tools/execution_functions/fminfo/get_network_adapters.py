@@ -61,7 +61,7 @@ def order_interfaces_by_priority(interfaces: Dict[str, str]) -> Dict[str, str]:
     primary_interface_labels = [
         get_intuitive_interface_name(name) for name in ["Wi-Fi", "Ethernet", "en0"]
     ]
-    
+
     ordered_dict = {}
     for key in primary_interface_labels:
         if key in interfaces:

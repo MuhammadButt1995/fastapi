@@ -1,7 +1,8 @@
-import subprocess
 import platform
-import winreg
+import time
 from typing import Any, Optional, Dict
+from pathlib import Path
+import plistlib
 
 status = {
     "ZPA": "You are connected to ZPA.",
@@ -9,11 +10,15 @@ status = {
     "DISCONNECTED": "Please connect to either ZScaler ZPA or Citrix VPN to get onto a trusted network.",
 }
 
+# Conditionally import winreg if on Windows
+if platform.system() == "Windows":
+    import winreg
 
-async def get_trusted_network_status(params: Optional[Dict[str, Any]] = None):
-    system = platform.system()
 
-    if system == "Windows":
+async def windows_connection_status() -> Dict[str, Any]:
+    RETRY_COUNT = 3
+
+    for _ in range(RETRY_COUNT):
         try:
             registry = winreg.ConnectRegistry(None, winreg.HKEY_CURRENT_USER)
             zscaler_key = winreg.OpenKey(registry, r"SOFTWARE\Zscaler\App")
@@ -33,29 +38,30 @@ async def get_trusted_network_status(params: Optional[Dict[str, Any]] = None):
                     "rating": "warn",
                 }
 
-        except FileNotFoundError:
-            return {
-                "status": "DISCONNECTED",
-                "description": status["DISCONNECTED"],
-                "rating": "warn",
-            }
+        except (FileNotFoundError, OSError, winreg.error):
+            continue
 
-    elif system == "Darwin":
-        target_url = "zsproxy.company.com"
-        output = subprocess.check_output(
-            "dscl /Search -read /Users/$(whoami)", shell=True, text=True
-        )
+    return {
+        "status": "DISCONNECTED",
+        "description": status["DISCONNECTED"],
+        "rating": "warn",
+    }
 
-        if "OriginalNodeName" in output:
-            return {"status": "ZPA", "description": status["ZPA"], "rating": "ok"}
-        else:
-            flush_command = "sudo killall -HUP mDNSResponder > /dev/null"
-            ping_command = (
-                f"ping -c 1 {target_url} > /dev/null && echo True || echo False"
-            )
-            command = f"{flush_command} && {ping_command}"
-            output = subprocess.check_output(command, shell=True, text=True).strip()
-            if output.lower() == "true":
+
+async def macos_connection_status() -> Dict[str, Any]:
+    RETRY_COUNT = 3
+    SLEEP_TIME = 0.2
+
+    for _ in range(RETRY_COUNT):
+        try:
+            log_path = Path("/Library/Application Support/Zscaler/ztstatus_*.log")
+            with log_path.open("rb") as f:
+                plist_content = plistlib.load(f)
+
+            zpn_val = plist_content.get("zpn")
+            if zpn_val == 4:
+                return {"status": "ZPA", "description": status["ZPA"], "rating": "ok"}
+            elif zpn_val == 3:
                 return {"status": "VPN", "description": status["VPN"], "rating": "ok"}
             else:
                 return {
@@ -63,3 +69,26 @@ async def get_trusted_network_status(params: Optional[Dict[str, Any]] = None):
                     "description": status["DISCONNECTED"],
                     "rating": "warn",
                 }
+
+        except (FileNotFoundError, OSError, plistlib.InvalidFileException):
+            time.sleep(SLEEP_TIME)
+            continue
+
+    return {
+        "status": "DISCONNECTED",
+        "description": status["DISCONNECTED"],
+        "rating": "warn",
+    }
+
+
+async def get_trusted_network_status(
+    params: Optional[Dict[str, Any]] = None
+) -> Dict[str, Any]:
+    system = platform.system()
+
+    if system == "Windows":
+        return await windows_connection_status()
+    elif system == "Darwin":
+        return await macos_connection_status()
+    else:
+        raise Exception("Could not determine network status")
