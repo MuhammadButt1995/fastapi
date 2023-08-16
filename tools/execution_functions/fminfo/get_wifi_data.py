@@ -84,16 +84,20 @@ def fetch_windows_wifi_data() -> Dict[str, Any]:
 def fetch_macos_wifi_data() -> Dict[str, Any]:
     SIGNAL_QUALITY_THRESHOLDS_DBM = {"reliable": -60, "decent": -70}
     cmd = ["/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport", "-I"]
+    
     try:
         cmd_output = subprocess.check_output(cmd).decode("utf-8")
         parsed_output = extract_key_value_pairs(cmd_output)
         
         signal_strength = int(parsed_output.get("agrCtlRSSI", "-100"))
         last_tx_rate = int(parsed_output.get("lastTxRate", "0"))
-        channel_str = parsed_output.get("channel", "0")
         
-        # Split the channel string and consider only the first channel
-        channel = int(channel_str.split(',')[0])
+        # If the channel contains a comma, split it and consider only the first part
+        channel_str = parsed_output.get("channel", "0")
+        if ',' in channel_str:
+            channel_str = channel_str.split(',')[0]
+        
+        channel = int(channel_str)
 
         radio_type = get_transmission_type_by_rate(last_tx_rate)
 
