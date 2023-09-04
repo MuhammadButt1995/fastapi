@@ -43,5 +43,6 @@ async def get_ad_status(**params: Any):
             if status["is_bound"] == "BOUND"
             else "Your machine is not bound to On-Prem Active Directory."
         )
+        status["rating"] = "ok" if status["is_bound"] == "BOUND" else "error"
 
         return status
