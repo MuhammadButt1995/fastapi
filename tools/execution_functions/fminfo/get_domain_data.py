@@ -41,8 +41,9 @@ async def get_domain_data(**params: Any):
                 .decode()
                 .strip()
             )
+            print(f"Debug: last_logon_output='{last_logon_output}'")  # Debugging statement
             # Extracting required data using regex
-            match = re.search(r"(\w{3} \w{3} \d{2} \d{2}:\d{2})", last_logon_output)
+            match = re.search(r"(\w{3}\s+\w{3}\s+\d{1,2}\s+\d{2}:\d{2})", last_logon_output)
             if match:
                 last_logon_str = match.group(1)
                 last_logon = datetime.strptime(
