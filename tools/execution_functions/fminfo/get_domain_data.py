@@ -41,14 +41,26 @@ async def get_domain_data(**params: Any):
                 .decode()
                 .strip()
             )
-            print(f"Debug: last_logon_output='{last_logon_output}'")  # Debugging statement
+            print(
+                f"Debug: last_logon_output='{last_logon_output}'"
+            )  # Debugging statement
             # Extracting required data using regex
-            match = re.search(r"(\w{3}\s+\w{3}\s+\d{1,2}\s+\d{2}:\d{2})", last_logon_output)
+            match = re.search(
+                r"(\w{3}\s+\w{3}\s+\d{1,2}\s+\d{2}:\d{2})", last_logon_output
+            )
             if match:
                 last_logon_str = match.group(1)
-                last_logon = datetime.strptime(
+                # Parse the datetime but without year information
+                last_logon_datetime = datetime.strptime(
                     last_logon_str, "%a %b %d %H:%M"
-                ).strftime("%a, %b %d, %Y %I:%M %p")
+                )
+
+                # Set the year to the current year
+                current_year = datetime.now().year
+                last_logon_datetime = last_logon_datetime.replace(year=current_year)
+
+                # Format it as a string
+                last_logon = last_logon_datetime.strftime("%a, %b %d, %Y %I:%M %p")
             else:
                 raise ValueError("Unexpected format for 'last' command output")
 
