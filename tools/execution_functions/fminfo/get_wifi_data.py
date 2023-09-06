@@ -145,7 +145,7 @@ def fetch_macos_wifi_data() -> Dict[str, Any]:
             "signal": {"quality": scores["signal"], "value": signal_strength},
             "radio_type": {
                 "quality": scores["radio_type"],
-                "value": {"lastTxRate": last_tx_rate},
+                "value": last_tx_rate,
             },
             "channel": {"quality": scores["channel"], "value": channel},
             "overall": overall_quality.upper(),
