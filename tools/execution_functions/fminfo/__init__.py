@@ -28,3 +28,7 @@ from tools.execution_functions.fminfo.get_ssd_health import (
 from tools.execution_functions.fminfo.get_network_speed import (
     get_network_speed,
 )
+
+from tools.execution_functions.fminfo.get_daas_status import (
+    get_daas_status
+)

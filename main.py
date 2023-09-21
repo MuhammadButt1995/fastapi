@@ -17,6 +17,7 @@ import arrow
 
 
 from tools.execution_functions import (
+    get_daas_status,
     get_wifi_data,
     get_trusted_network_status,
     get_ad_status,
@@ -321,6 +322,13 @@ async def startup_event() -> None:
             )
         )
 
+        json_log("info", "startup", "Adding daas status tool")
+        await tool_registry.add_tool(
+            ExecutableTool(
+                id="daas-status", visible=False, execute_func=get_daas_status
+            )
+        )
+
         json_log("info", "startup", "Adding network adapters tool")
         await tool_registry.add_tool(
             ExecutableTool(
@@ -406,66 +414,66 @@ async def startup_event() -> None:
             ExecutableTool(id="reset-dns", visible=False, execute_func=reset_dns)
         )
 
-        json_log("info", "startup", "Adding toggle low Wi-Fi notifications tool")
-        await tool_registry.add_tool(
-            ToggleTool(
-                id="low-wifi-notifs",
-                name="Low Wi-Fi Notifications",
-                description="Receive notifications if your Wi-Fi is slow for over 15 minutes. Turn on to stay informed.",
-                icon="/wifi-notifs.png",
-                tags=[Tag.WIFI, Tag.NETWORK],
-            )
-        )
+        # json_log("info", "startup", "Adding toggle low Wi-Fi notifications tool")
+        # await tool_registry.add_tool(
+        #     ToggleTool(
+        #         id="low-wifi-notifs",
+        #         name="Low Wi-Fi Notifications",
+        #         description="Receive notifications if your Wi-Fi is slow for over 15 minutes. Turn on to stay informed.",
+        #         icon="/wifi-notifs.png",
+        #         tags=[Tag.WIFI, Tag.NETWORK],
+        #     )
+        # )
 
-        json_log("info", "startup", "Adding toggle AD Rebind tool")
-        await tool_registry.add_tool(
-            ExecutableTool(
-                id="ad-rebind",
-                visible=True,
-                name="AD Rebind",
-                description="If your Mac device is out of sync with our on-prem Active Directory, use this to quickly get your device back on track.",
-                icon="/aad.png",
-                tags=[Tag.IDENTITY_SERVICES],
-                execute_func=ad_rebind,
-            )
-        )
+        # json_log("info", "startup", "Adding toggle AD Rebind tool")
+        # await tool_registry.add_tool(
+        #     ExecutableTool(
+        #         id="ad-rebind",
+        #         visible=True,
+        #         name="AD Rebind",
+        #         description="If your Mac device is out of sync with our on-prem Active Directory, use this to quickly get your device back on track.",
+        #         icon="/aad.png",
+        #         tags=[Tag.IDENTITY_SERVICES],
+        #         execute_func=ad_rebind,
+        #     )
+        # )
 
-        json_log("info", "startup", "Adding restart ZScaler tool")
-        await tool_registry.add_tool(
-            ExecutableTool(
-                id="restart-zscaler",
-                visible=True,
-                name="Restart ZScaler",
-                description="Refreshes the ZScaler security services on your device. Use this if you experience connectivity issues or irregularities with ZScaler",
-                icon="/zscaler.png",
-                tags=[Tag.NETWORK],
-                execute_func=restart_zscaler,
-            )
-        )
+        # json_log("info", "startup", "Adding restart ZScaler tool")
+        # await tool_registry.add_tool(
+        #     ExecutableTool(
+        #         id="restart-zscaler",
+        #         visible=True,
+        #         name="Restart ZScaler",
+        #         description="Refreshes the ZScaler security services on your device. Use this if you experience connectivity issues or irregularities with ZScaler",
+        #         icon="/zscaler.png",
+        #         tags=[Tag.NETWORK],
+        #         execute_func=restart_zscaler,
+        #     )
+        # )
 
-        json_log("info", "startup", "Adding VPN Helper tool")
-        await tool_registry.add_tool(
-            UtilityTool(
-                id="vpn-helper",
-                name="VPN Helper",
-                route="/toolbox/vpn-helper",
-                description="Use VPN Helper when you connect your device to a public Wi-Fi network such as networks in coffee shops, airports, hotels, and other locations.",
-                icon="/vpn.png",
-                tags=[Tag.NETWORK, Tag.WIFI],
-            )
-        )
+        # json_log("info", "startup", "Adding VPN Helper tool")
+        # await tool_registry.add_tool(
+        #     UtilityTool(
+        #         id="vpn-helper",
+        #         name="VPN Helper",
+        #         route="/toolbox/vpn-helper",
+        #         description="Use VPN Helper when you connect your device to a public Wi-Fi network such as networks in coffee shops, airports, hotels, and other locations.",
+        #         icon="/vpn.png",
+        #         tags=[Tag.NETWORK, Tag.WIFI],
+        #     )
+        # )
 
-        json_log("info", "startup", "Adding Import/Export Bookmarks tool")
-        await tool_registry.add_tool(
-            UtilityTool(
-                id="bookmarks",
-                name="Bookmarks Manager",
-                route="/toolbox/bookmarks",
-                description="Save your current bookmarks to easily import them on a new machine for Chrome or Safari; Edge bookmarks are auto-synced with the cloud.",
-                icon="/bookmark.png",
-                tags=[Tag.NEW_MACHINE, Tag.BROWSER],
-            )
-        )
+        # json_log("info", "startup", "Adding Import/Export Bookmarks tool")
+        # await tool_registry.add_tool(
+        #     UtilityTool(
+        #         id="bookmarks",
+        #         name="Bookmarks Manager",
+        #         route="/toolbox/bookmarks",
+        #         description="Save your current bookmarks to easily import them on a new machine for Chrome or Safari; Edge bookmarks are auto-synced with the cloud.",
+        #         icon="/bookmark.png",
+        #         tags=[Tag.NEW_MACHINE, Tag.BROWSER],
+        #     )
+        # )
 
         json_log("info", "startup", "Adding get last boottime tool")
         await tool_registry.add_tool(
