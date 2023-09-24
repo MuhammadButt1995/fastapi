@@ -4,13 +4,15 @@ import platform
 from datetime import datetime
 import re
 from typing import Any
+from utils.user_env import get_logged_in_username
 
 
 async def get_domain_data(**params: Any):
     try:
+        user = get_logged_in_username
+
         if platform.system() == "Windows":
             domain = os.environ.get("USERDOMAIN")
-            user = os.environ.get("USERNAME")
             last_logon_output = (
                 subprocess.check_output(
                     'net user %s /domain | findstr /C:"Last logon"' % user,

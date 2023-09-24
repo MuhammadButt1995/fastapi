@@ -51,8 +51,3 @@ def get_user_env_var(username, var_name):
             f"Environment variable {var_name} not found for user {username}."
         )
     return value
-
-
-user = get_logged_in_username()
-
-print(user)
