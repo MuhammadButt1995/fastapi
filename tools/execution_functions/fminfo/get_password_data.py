@@ -3,12 +3,11 @@ import platform
 from datetime import datetime
 import re
 from typing import Any
-import getpass
-
+from utils.user_env import get_logged_in_username
 
 async def get_password_data(**params: Any):
     try:
-        user = getpass.getuser()
+        user = get_logged_in_username()
         if platform.system() == "Windows":
             password_expires_output = (
                 subprocess.check_output(

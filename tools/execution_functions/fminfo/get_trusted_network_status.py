@@ -7,7 +7,7 @@ import winreg
 import os
 import win32security
 import win32profile
-from user_env import get_logged_in_username
+from utils.user_env import get_logged_in_username
 
 # Global status dictionary for connection states
 status = {
