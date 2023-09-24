@@ -4,8 +4,8 @@ from typing import Any, Optional, Dict
 from pathlib import Path
 import plistlib
 
-# Import functions from user_env.py
-from user_env import get_logged_in_username, get_user_env_var
+# Import functions from user_env
+from utils.user_env import get_logged_in_username
 
 # Global status dictionary for connection states
 status = {
@@ -25,13 +25,8 @@ async def windows_connection_status() -> Dict[str, Any]:
 
     for _ in range(RETRY_COUNT):
         try:
-            # Fetch the logged-in username
-            logged_in_user = get_logged_in_username()
-
-            # Connecting to the registry based on logged-in user
-            registry = winreg.ConnectRegistry(
-                f"\\\\{logged_in_user}", winreg.HKEY_CURRENT_USER
-            )
+            # Connecting to the local registry
+            registry = winreg.ConnectRegistry(None, winreg.HKEY_CURRENT_USER)
             zscaler_key = winreg.OpenKey(registry, r"SOFTWARE\Zscaler\App")
             zpa_state, _ = winreg.QueryValueEx(zscaler_key, "ZPA_State")
             znw_state, _ = winreg.QueryValueEx(zscaler_key, "ZNW_State")
@@ -63,20 +58,20 @@ async def windows_connection_status() -> Dict[str, Any]:
 async def macos_connection_status() -> Dict[str, Any]:
     RETRY_COUNT = 3
     SLEEP_TIME = 0.2
-
-    # Fetch the home directory of the logged-in user
+    log_dir = Path("/Library/Application Support/Zscaler")
     logged_in_user = get_logged_in_username()
-    log_dir = Path(f"/Users/{logged_in_user}/Library/Application Support/Zscaler")
 
     for _ in range(RETRY_COUNT):
         try:
-            log_files = list(log_dir.glob("ztstatus_*.log"))
+            # Reading the ztstatus log file
+            log_files = list(log_dir.glob(f"ztstatus_{logged_in_user}*.log"))
             if not log_files:
                 raise FileNotFoundError("No Zscaler log files found.")
 
             with log_files[0].open("rb") as f:
                 plist_content = plistlib.load(f)
 
+            # Checking the zpn value and returning the appropriate status
             zpn_val = int(plist_content.get("zpn"))
             if zpn_val == 4:
                 return {"status": "ZPA", "description": status["ZPA"], "rating": "ok"}
@@ -100,7 +95,7 @@ async def macos_connection_status() -> Dict[str, Any]:
     }
 
 
-# Main function
+# Main function to determine the trusted network status based on the operating system
 async def get_trusted_network_status(
     params: Optional[Dict[str, Any]] = None
 ) -> Dict[str, Any]:
