@@ -16,6 +16,7 @@ status = {
     "DISCONNECTED": "Please connect to either ZScaler ZPA or Citrix VPN to get onto a trusted network.",
 }
 
+
 async def windows_connection_status() -> Dict[str, Any]:
     RETRY_COUNT = 3
     logged_in_user = get_logged_in_username()
@@ -30,7 +31,7 @@ async def windows_connection_status() -> Dict[str, Any]:
             registry = winreg.ConnectRegistry(None, winreg.HKEY_USERS)
             zscaler_key_path = os.path.join(sid_string, r"SOFTWARE\Zscaler\App")
             zscaler_key = winreg.OpenKey(registry, zscaler_key_path)
-            
+
             zpa_state, _ = winreg.QueryValueEx(zscaler_key, "ZPA_State")
             znw_state, _ = winreg.QueryValueEx(zscaler_key, "ZNW_State")
             winreg.CloseKey(zscaler_key)
@@ -56,6 +57,7 @@ async def windows_connection_status() -> Dict[str, Any]:
         "description": status["DISCONNECTED"],
         "rating": "warn",
     }
+
 
 async def macos_connection_status() -> Dict[str, Any]:
     RETRY_COUNT = 3
@@ -94,6 +96,7 @@ async def macos_connection_status() -> Dict[str, Any]:
         "description": status["DISCONNECTED"],
         "rating": "warn",
     }
+
 
 async def get_trusted_network_status(
     params: Optional[Dict[str, Any]] = None

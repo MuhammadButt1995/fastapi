@@ -9,7 +9,7 @@ from utils.user_env import get_logged_in_username
 
 async def get_domain_data(**params: Any):
     try:
-        user = get_logged_in_username
+        user = get_logged_in_username()
 
         if platform.system() == "Windows":
             domain = os.environ.get("USERDOMAIN")

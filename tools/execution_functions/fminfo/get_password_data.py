@@ -5,6 +5,7 @@ import re
 from typing import Any
 from utils.user_env import get_logged_in_username
 
+
 async def get_password_data(**params: Any):
     try:
         user = get_logged_in_username()
